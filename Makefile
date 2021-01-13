@@ -5,7 +5,7 @@ SRCS        =  	ft_printf.c			\
 				type_d.c			\
 				type_d_positive.c	\
 				type_d_zero.c		\
-				tyep_d_negative.c
+				type_d_negative.c
 OBJS		=	$(SRCS:.c=.o)
 AR			=	ar rcs
 LIB			=	libft
