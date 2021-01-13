@@ -22,5 +22,7 @@
 int				ft_printf(const char *str, ...);
 void			type_d(va_list ap, char *str);
 void			type_d_p(char *str, int num_int, int wid, int pre);
+void			type_d_z(char *str, int wid, int pre);
+void			type_d_n(char *str, int num_int, int wid, int pre);
 
 #endif

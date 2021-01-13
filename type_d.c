@@ -53,16 +53,14 @@ void			type_d(va_list ap, char *str)
 	int 	wid;
 	int		pre;
 	int 	num_int;
-	char 	*num_str;
 
 	wid = wid_check(ap, str);
 	pre = pre_check(ap, str);
 	num_int = va_arg(ap, int);
-
 	if (num_int > 0)
 		type_d_p(str, num_int, wid, pre);
-	/*else if (!num_int)
-		type_d_z();
+	else if (!num_int)
+		type_d_z(str, wid, pre);
 	else
-		type_d_n();*/
+		type_d_n(str, num_int, wid, pre);
 }

@@ -312,6 +312,33 @@ type_d.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_d.c.s
 .PHONY : type_d.c.s
 
+type_d_negative.o: type_d_negative.c.o
+
+.PHONY : type_d_negative.o
+
+# target to build an object file
+type_d_negative.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_d_negative.c.o
+.PHONY : type_d_negative.c.o
+
+type_d_negative.i: type_d_negative.c.i
+
+.PHONY : type_d_negative.i
+
+# target to preprocess a source file
+type_d_negative.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_d_negative.c.i
+.PHONY : type_d_negative.c.i
+
+type_d_negative.s: type_d_negative.c.s
+
+.PHONY : type_d_negative.s
+
+# target to generate assembly for a file
+type_d_negative.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_d_negative.c.s
+.PHONY : type_d_negative.c.s
+
 type_d_positive.o: type_d_positive.c.o
 
 .PHONY : type_d_positive.o
@@ -396,6 +423,9 @@ help:
 	@echo "... type_d.o"
 	@echo "... type_d.i"
 	@echo "... type_d.s"
+	@echo "... type_d_negative.o"
+	@echo "... type_d_negative.i"
+	@echo "... type_d_negative.s"
 	@echo "... type_d_positive.o"
 	@echo "... type_d_positive.i"
 	@echo "... type_d_positive.s"
