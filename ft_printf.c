@@ -14,18 +14,19 @@
 
 static int 	find_type(va_list ap, char *str)
 {
-	int		i;
-	int 	cnt;
+	int 	size;
 
-	i = 0;
-	cnt = 0;
-	while(str[i])
+	size = 0;
+	while(str[size])
 	{
-		if (str[i] == 'd')
-			return (type_d(ap, str, cnt));
-		i++;
-		cnt++;
+		if (str[size] == 'd')
+		{
+			type_d(ap, str);
+			break ;
+		}
+		size++;
 	}
+	return (size + 1);
 }
 
 int    		ft_printf(const char *s, ...)
@@ -42,8 +43,10 @@ int    		ft_printf(const char *s, ...)
 		if (*str == '%')
 			str += find_type(ap, str);
 		else
+		{
 			write(1, str, 1);
-		str++;
+			str++;
+		}
 	}
 	va_end(ap);
 	return (1);

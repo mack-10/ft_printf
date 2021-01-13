@@ -3,10 +3,30 @@
 
 CMakeFiles/ft_printf.h.dir/ft_printf.c.o: ../ft_printf.c
 CMakeFiles/ft_printf.h.dir/ft_printf.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.h.dir/ft_printf.c.o: ../libft/libft.h
+
+CMakeFiles/ft_printf.h.dir/libft/ft_itoa.c.o: ../libft/ft_itoa.c
+CMakeFiles/ft_printf.h.dir/libft/ft_itoa.c.o: ../libft/libft.h
+
+CMakeFiles/ft_printf.h.dir/libft/ft_strchr.c.o: ../libft/ft_strchr.c
+
+CMakeFiles/ft_printf.h.dir/libft/ft_strdup.c.o: ../libft/ft_strdup.c
+CMakeFiles/ft_printf.h.dir/libft/ft_strdup.c.o: ../libft/libft.h
+
+CMakeFiles/ft_printf.h.dir/libft/ft_strlen.c.o: ../libft/ft_strlen.c
+CMakeFiles/ft_printf.h.dir/libft/ft_strlen.c.o: ../libft/libft.h
 
 CMakeFiles/ft_printf.h.dir/main.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.h.dir/main.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.h.dir/main.c.o: ../main.c
 
 CMakeFiles/ft_printf.h.dir/type_d.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.h.dir/type_d.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.h.dir/type_d.c.o: ../type_d.c
+
+CMakeFiles/ft_printf.h.dir/type_d_positive.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.h.dir/type_d_positive.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.h.dir/type_d_positive.c.o: ../type_d_positive.c
+
+CMakeFiles/ft_printf.h.dir/type_d_zero.c.o: ../type_d_zero.c
 

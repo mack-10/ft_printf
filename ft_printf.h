@@ -15,11 +15,12 @@
 
 # include <stdarg.h>
 # include <unistd.h>
+# include "./libft/libft.h"
 
 # include <stdio.h>
 
-
 int				ft_printf(const char *str, ...);
-int		type_d(va_list ap, char *str, int size);
+void			type_d(va_list ap, char *str);
+void			type_d_p(char *str, int num_int, int wid, int pre);
 
 #endif

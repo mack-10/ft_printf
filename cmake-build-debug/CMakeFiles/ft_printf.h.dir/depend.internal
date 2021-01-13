@@ -4,9 +4,29 @@
 CMakeFiles/ft_printf.h.dir/ft_printf.c.o
  /mnt/c/Users/macke/Desktop/ft_printf/ft_printf.c
  /mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
+ /mnt/c/Users/macke/Desktop/ft_printf/libft/libft.h
+CMakeFiles/ft_printf.h.dir/libft/ft_itoa.c.o
+ /mnt/c/Users/macke/Desktop/ft_printf/libft/ft_itoa.c
+ /mnt/c/Users/macke/Desktop/ft_printf/libft/libft.h
+CMakeFiles/ft_printf.h.dir/libft/ft_strchr.c.o
+ /mnt/c/Users/macke/Desktop/ft_printf/libft/ft_strchr.c
+CMakeFiles/ft_printf.h.dir/libft/ft_strdup.c.o
+ /mnt/c/Users/macke/Desktop/ft_printf/libft/ft_strdup.c
+ /mnt/c/Users/macke/Desktop/ft_printf/libft/libft.h
+CMakeFiles/ft_printf.h.dir/libft/ft_strlen.c.o
+ /mnt/c/Users/macke/Desktop/ft_printf/libft/ft_strlen.c
+ /mnt/c/Users/macke/Desktop/ft_printf/libft/libft.h
 CMakeFiles/ft_printf.h.dir/main.c.o
  /mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
+ /mnt/c/Users/macke/Desktop/ft_printf/libft/libft.h
  /mnt/c/Users/macke/Desktop/ft_printf/main.c
 CMakeFiles/ft_printf.h.dir/type_d.c.o
  /mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
+ /mnt/c/Users/macke/Desktop/ft_printf/libft/libft.h
  /mnt/c/Users/macke/Desktop/ft_printf/type_d.c
+CMakeFiles/ft_printf.h.dir/type_d_positive.c.o
+ /mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
+ /mnt/c/Users/macke/Desktop/ft_printf/libft/libft.h
+ /mnt/c/Users/macke/Desktop/ft_printf/type_d_positive.c
+CMakeFiles/ft_printf.h.dir/type_d_zero.c.o
+ /mnt/c/Users/macke/Desktop/ft_printf/type_d_zero.c
