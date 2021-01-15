@@ -1,0 +1,3 @@
+/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir
