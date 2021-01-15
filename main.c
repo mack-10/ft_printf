@@ -2,8 +2,8 @@
 
 int main(void)
 {
-	printf("%7d\n", 33);
-	ft_printf("%7d", 33);
+	printf("%.5d\n", 2);
+	ft_printf("%.5d", 2);
 
 	//printf("----------d----------\n");
 	/*printf("\npositive\n");
