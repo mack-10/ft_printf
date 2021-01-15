@@ -17,7 +17,7 @@ static int		pre_check(va_list ap, char *str)
 	int		pre;
 
 	pre = 0;
-	while (*str != 'd' || *str != 'i')
+	while (*str != 'd' && *str != 'i')
 	{
 		if (*str == '.')
 		{
@@ -50,7 +50,7 @@ static int		wid_check(va_list ap, char *str)
 	int		wid;
 
 	wid = 0;
-	while (*str != 'd' || *str != 'i')
+	while (*str != 'd' && *str != 'i')
 	{
 		if (*str == '.')
 			break ;
@@ -77,6 +77,7 @@ void			type_di(va_list ap, char *str)
 	int 	wid;
 	int		pre;
 	int 	num_int;
+
 
 	wid = wid_check(ap, str);
 	pre = pre_check(ap, str);
