@@ -115,16 +115,16 @@
 		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/main.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/type_d.c">
+		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/type_di.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/type_d_negative.c">
+		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/type_di_negative.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/type_d_positive.c">
+		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/type_di_positive.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/type_d_zero.c">
+		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/type_di_zero.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/CMakeLists.txt">

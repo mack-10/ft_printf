@@ -3,10 +3,10 @@ FLAGS       =   -Wall -Wextra -Werror
 NAME        =   libftprintf.a
 SRCS        =  	ft_printf.c			\
 				ft_printf_utils.c	\
-				type_d.c			\
-				type_d_positive.c	\
-				type_d_zero.c		\
-				type_d_negative.c
+				type_di.c			\
+				type_di_positive.c	\
+				type_di_zero.c		\
+				type_di_negative.c
 OBJS		=	$(SRCS:.c=.o)
 AR			=	ar rcs
 LIB			=	libft

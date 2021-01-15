@@ -187,57 +187,57 @@ CMakeFiles/ft_printf.h.dir/libft/ft_calloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf.h.dir/libft/ft_calloc.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/macke/Desktop/ft_printf/libft/ft_calloc.c -o CMakeFiles/ft_printf.h.dir/libft/ft_calloc.c.s
 
-CMakeFiles/ft_printf.h.dir/type_d.c.o: CMakeFiles/ft_printf.h.dir/flags.make
-CMakeFiles/ft_printf.h.dir/type_d.c.o: ../type_d.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/ft_printf.h.dir/type_d.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.h.dir/type_d.c.o   -c /mnt/c/Users/macke/Desktop/ft_printf/type_d.c
+CMakeFiles/ft_printf.h.dir/type_di.c.o: CMakeFiles/ft_printf.h.dir/flags.make
+CMakeFiles/ft_printf.h.dir/type_di.c.o: ../type_di.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/ft_printf.h.dir/type_di.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.h.dir/type_di.c.o   -c /mnt/c/Users/macke/Desktop/ft_printf/type_di.c
 
-CMakeFiles/ft_printf.h.dir/type_d.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_printf.h.dir/type_d.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/macke/Desktop/ft_printf/type_d.c > CMakeFiles/ft_printf.h.dir/type_d.c.i
+CMakeFiles/ft_printf.h.dir/type_di.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_printf.h.dir/type_di.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/macke/Desktop/ft_printf/type_di.c > CMakeFiles/ft_printf.h.dir/type_di.c.i
 
-CMakeFiles/ft_printf.h.dir/type_d.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf.h.dir/type_d.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/macke/Desktop/ft_printf/type_d.c -o CMakeFiles/ft_printf.h.dir/type_d.c.s
+CMakeFiles/ft_printf.h.dir/type_di.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf.h.dir/type_di.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/macke/Desktop/ft_printf/type_di.c -o CMakeFiles/ft_printf.h.dir/type_di.c.s
 
-CMakeFiles/ft_printf.h.dir/type_d_positive.c.o: CMakeFiles/ft_printf.h.dir/flags.make
-CMakeFiles/ft_printf.h.dir/type_d_positive.c.o: ../type_d_positive.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/ft_printf.h.dir/type_d_positive.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.h.dir/type_d_positive.c.o   -c /mnt/c/Users/macke/Desktop/ft_printf/type_d_positive.c
+CMakeFiles/ft_printf.h.dir/type_di_positive.c.o: CMakeFiles/ft_printf.h.dir/flags.make
+CMakeFiles/ft_printf.h.dir/type_di_positive.c.o: ../type_di_positive.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/ft_printf.h.dir/type_di_positive.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.h.dir/type_di_positive.c.o   -c /mnt/c/Users/macke/Desktop/ft_printf/type_di_positive.c
 
-CMakeFiles/ft_printf.h.dir/type_d_positive.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_printf.h.dir/type_d_positive.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/macke/Desktop/ft_printf/type_d_positive.c > CMakeFiles/ft_printf.h.dir/type_d_positive.c.i
+CMakeFiles/ft_printf.h.dir/type_di_positive.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_printf.h.dir/type_di_positive.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/macke/Desktop/ft_printf/type_di_positive.c > CMakeFiles/ft_printf.h.dir/type_di_positive.c.i
 
-CMakeFiles/ft_printf.h.dir/type_d_positive.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf.h.dir/type_d_positive.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/macke/Desktop/ft_printf/type_d_positive.c -o CMakeFiles/ft_printf.h.dir/type_d_positive.c.s
+CMakeFiles/ft_printf.h.dir/type_di_positive.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf.h.dir/type_di_positive.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/macke/Desktop/ft_printf/type_di_positive.c -o CMakeFiles/ft_printf.h.dir/type_di_positive.c.s
 
-CMakeFiles/ft_printf.h.dir/type_d_zero.c.o: CMakeFiles/ft_printf.h.dir/flags.make
-CMakeFiles/ft_printf.h.dir/type_d_zero.c.o: ../type_d_zero.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/ft_printf.h.dir/type_d_zero.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.h.dir/type_d_zero.c.o   -c /mnt/c/Users/macke/Desktop/ft_printf/type_d_zero.c
+CMakeFiles/ft_printf.h.dir/type_di_zero.c.o: CMakeFiles/ft_printf.h.dir/flags.make
+CMakeFiles/ft_printf.h.dir/type_di_zero.c.o: ../type_di_zero.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/ft_printf.h.dir/type_di_zero.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.h.dir/type_di_zero.c.o   -c /mnt/c/Users/macke/Desktop/ft_printf/type_di_zero.c
 
-CMakeFiles/ft_printf.h.dir/type_d_zero.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_printf.h.dir/type_d_zero.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/macke/Desktop/ft_printf/type_d_zero.c > CMakeFiles/ft_printf.h.dir/type_d_zero.c.i
+CMakeFiles/ft_printf.h.dir/type_di_zero.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_printf.h.dir/type_di_zero.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/macke/Desktop/ft_printf/type_di_zero.c > CMakeFiles/ft_printf.h.dir/type_di_zero.c.i
 
-CMakeFiles/ft_printf.h.dir/type_d_zero.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf.h.dir/type_d_zero.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/macke/Desktop/ft_printf/type_d_zero.c -o CMakeFiles/ft_printf.h.dir/type_d_zero.c.s
+CMakeFiles/ft_printf.h.dir/type_di_zero.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf.h.dir/type_di_zero.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/macke/Desktop/ft_printf/type_di_zero.c -o CMakeFiles/ft_printf.h.dir/type_di_zero.c.s
 
-CMakeFiles/ft_printf.h.dir/type_d_negative.c.o: CMakeFiles/ft_printf.h.dir/flags.make
-CMakeFiles/ft_printf.h.dir/type_d_negative.c.o: ../type_d_negative.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/ft_printf.h.dir/type_d_negative.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.h.dir/type_d_negative.c.o   -c /mnt/c/Users/macke/Desktop/ft_printf/type_d_negative.c
+CMakeFiles/ft_printf.h.dir/type_di_negative.c.o: CMakeFiles/ft_printf.h.dir/flags.make
+CMakeFiles/ft_printf.h.dir/type_di_negative.c.o: ../type_di_negative.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/ft_printf.h.dir/type_di_negative.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.h.dir/type_di_negative.c.o   -c /mnt/c/Users/macke/Desktop/ft_printf/type_di_negative.c
 
-CMakeFiles/ft_printf.h.dir/type_d_negative.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_printf.h.dir/type_d_negative.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/macke/Desktop/ft_printf/type_d_negative.c > CMakeFiles/ft_printf.h.dir/type_d_negative.c.i
+CMakeFiles/ft_printf.h.dir/type_di_negative.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_printf.h.dir/type_di_negative.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/macke/Desktop/ft_printf/type_di_negative.c > CMakeFiles/ft_printf.h.dir/type_di_negative.c.i
 
-CMakeFiles/ft_printf.h.dir/type_d_negative.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf.h.dir/type_d_negative.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/macke/Desktop/ft_printf/type_d_negative.c -o CMakeFiles/ft_printf.h.dir/type_d_negative.c.s
+CMakeFiles/ft_printf.h.dir/type_di_negative.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf.h.dir/type_di_negative.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/macke/Desktop/ft_printf/type_di_negative.c -o CMakeFiles/ft_printf.h.dir/type_di_negative.c.s
 
 CMakeFiles/ft_printf.h.dir/ft_printf_utils.c.o: CMakeFiles/ft_printf.h.dir/flags.make
 CMakeFiles/ft_printf.h.dir/ft_printf_utils.c.o: ../ft_printf_utils.c
@@ -264,10 +264,10 @@ ft_printf_h_OBJECTS = \
 "CMakeFiles/ft_printf.h.dir/libft/ft_atoi.c.o" \
 "CMakeFiles/ft_printf.h.dir/libft/ft_strlcpy.c.o" \
 "CMakeFiles/ft_printf.h.dir/libft/ft_calloc.c.o" \
-"CMakeFiles/ft_printf.h.dir/type_d.c.o" \
-"CMakeFiles/ft_printf.h.dir/type_d_positive.c.o" \
-"CMakeFiles/ft_printf.h.dir/type_d_zero.c.o" \
-"CMakeFiles/ft_printf.h.dir/type_d_negative.c.o" \
+"CMakeFiles/ft_printf.h.dir/type_di.c.o" \
+"CMakeFiles/ft_printf.h.dir/type_di_positive.c.o" \
+"CMakeFiles/ft_printf.h.dir/type_di_zero.c.o" \
+"CMakeFiles/ft_printf.h.dir/type_di_negative.c.o" \
 "CMakeFiles/ft_printf.h.dir/ft_printf_utils.c.o"
 
 # External object files for target ft_printf.h
@@ -283,10 +283,10 @@ ft_printf.h: CMakeFiles/ft_printf.h.dir/libft/ft_strchr.c.o
 ft_printf.h: CMakeFiles/ft_printf.h.dir/libft/ft_atoi.c.o
 ft_printf.h: CMakeFiles/ft_printf.h.dir/libft/ft_strlcpy.c.o
 ft_printf.h: CMakeFiles/ft_printf.h.dir/libft/ft_calloc.c.o
-ft_printf.h: CMakeFiles/ft_printf.h.dir/type_d.c.o
-ft_printf.h: CMakeFiles/ft_printf.h.dir/type_d_positive.c.o
-ft_printf.h: CMakeFiles/ft_printf.h.dir/type_d_zero.c.o
-ft_printf.h: CMakeFiles/ft_printf.h.dir/type_d_negative.c.o
+ft_printf.h: CMakeFiles/ft_printf.h.dir/type_di.c.o
+ft_printf.h: CMakeFiles/ft_printf.h.dir/type_di_positive.c.o
+ft_printf.h: CMakeFiles/ft_printf.h.dir/type_di_zero.c.o
+ft_printf.h: CMakeFiles/ft_printf.h.dir/type_di_negative.c.o
 ft_printf.h: CMakeFiles/ft_printf.h.dir/ft_printf_utils.c.o
 ft_printf.h: CMakeFiles/ft_printf.h.dir/build.make
 ft_printf.h: CMakeFiles/ft_printf.h.dir/link.txt

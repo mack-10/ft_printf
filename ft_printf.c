@@ -21,7 +21,7 @@ static int 	find_type(va_list ap, char *str)
 	{
 		if (str[size] == 'd' || str[size] == 'i')
 		{
-			type_d_i(ap, str);
+			type_di(ap, str);
 			break ;
 		}
 		size++;

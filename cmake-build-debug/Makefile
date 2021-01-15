@@ -420,113 +420,113 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/main.c.s
 .PHONY : main.c.s
 
-type_d.o: type_d.c.o
+type_di.o: type_di.c.o
 
-.PHONY : type_d.o
-
-# target to build an object file
-type_d.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_d.c.o
-.PHONY : type_d.c.o
-
-type_d.i: type_d.c.i
-
-.PHONY : type_d.i
-
-# target to preprocess a source file
-type_d.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_d.c.i
-.PHONY : type_d.c.i
-
-type_d.s: type_d.c.s
-
-.PHONY : type_d.s
-
-# target to generate assembly for a file
-type_d.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_d.c.s
-.PHONY : type_d.c.s
-
-type_d_negative.o: type_d_negative.c.o
-
-.PHONY : type_d_negative.o
+.PHONY : type_di.o
 
 # target to build an object file
-type_d_negative.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_d_negative.c.o
-.PHONY : type_d_negative.c.o
+type_di.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_di.c.o
+.PHONY : type_di.c.o
 
-type_d_negative.i: type_d_negative.c.i
+type_di.i: type_di.c.i
 
-.PHONY : type_d_negative.i
+.PHONY : type_di.i
 
 # target to preprocess a source file
-type_d_negative.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_d_negative.c.i
-.PHONY : type_d_negative.c.i
+type_di.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_di.c.i
+.PHONY : type_di.c.i
 
-type_d_negative.s: type_d_negative.c.s
+type_di.s: type_di.c.s
 
-.PHONY : type_d_negative.s
+.PHONY : type_di.s
 
 # target to generate assembly for a file
-type_d_negative.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_d_negative.c.s
-.PHONY : type_d_negative.c.s
+type_di.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_di.c.s
+.PHONY : type_di.c.s
 
-type_d_positive.o: type_d_positive.c.o
+type_di_negative.o: type_di_negative.c.o
 
-.PHONY : type_d_positive.o
+.PHONY : type_di_negative.o
 
 # target to build an object file
-type_d_positive.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_d_positive.c.o
-.PHONY : type_d_positive.c.o
+type_di_negative.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_di_negative.c.o
+.PHONY : type_di_negative.c.o
 
-type_d_positive.i: type_d_positive.c.i
+type_di_negative.i: type_di_negative.c.i
 
-.PHONY : type_d_positive.i
+.PHONY : type_di_negative.i
 
 # target to preprocess a source file
-type_d_positive.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_d_positive.c.i
-.PHONY : type_d_positive.c.i
+type_di_negative.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_di_negative.c.i
+.PHONY : type_di_negative.c.i
 
-type_d_positive.s: type_d_positive.c.s
+type_di_negative.s: type_di_negative.c.s
 
-.PHONY : type_d_positive.s
+.PHONY : type_di_negative.s
 
 # target to generate assembly for a file
-type_d_positive.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_d_positive.c.s
-.PHONY : type_d_positive.c.s
+type_di_negative.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_di_negative.c.s
+.PHONY : type_di_negative.c.s
 
-type_d_zero.o: type_d_zero.c.o
+type_di_positive.o: type_di_positive.c.o
 
-.PHONY : type_d_zero.o
+.PHONY : type_di_positive.o
 
 # target to build an object file
-type_d_zero.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_d_zero.c.o
-.PHONY : type_d_zero.c.o
+type_di_positive.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_di_positive.c.o
+.PHONY : type_di_positive.c.o
 
-type_d_zero.i: type_d_zero.c.i
+type_di_positive.i: type_di_positive.c.i
 
-.PHONY : type_d_zero.i
+.PHONY : type_di_positive.i
 
 # target to preprocess a source file
-type_d_zero.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_d_zero.c.i
-.PHONY : type_d_zero.c.i
+type_di_positive.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_di_positive.c.i
+.PHONY : type_di_positive.c.i
 
-type_d_zero.s: type_d_zero.c.s
+type_di_positive.s: type_di_positive.c.s
 
-.PHONY : type_d_zero.s
+.PHONY : type_di_positive.s
 
 # target to generate assembly for a file
-type_d_zero.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_d_zero.c.s
-.PHONY : type_d_zero.c.s
+type_di_positive.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_di_positive.c.s
+.PHONY : type_di_positive.c.s
+
+type_di_zero.o: type_di_zero.c.o
+
+.PHONY : type_di_zero.o
+
+# target to build an object file
+type_di_zero.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_di_zero.c.o
+.PHONY : type_di_zero.c.o
+
+type_di_zero.i: type_di_zero.c.i
+
+.PHONY : type_di_zero.i
+
+# target to preprocess a source file
+type_di_zero.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_di_zero.c.i
+.PHONY : type_di_zero.c.i
+
+type_di_zero.s: type_di_zero.c.s
+
+.PHONY : type_di_zero.s
+
+# target to generate assembly for a file
+type_di_zero.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_di_zero.c.s
+.PHONY : type_di_zero.c.s
 
 # Help Target
 help:
@@ -570,18 +570,18 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... type_d.o"
-	@echo "... type_d.i"
-	@echo "... type_d.s"
-	@echo "... type_d_negative.o"
-	@echo "... type_d_negative.i"
-	@echo "... type_d_negative.s"
-	@echo "... type_d_positive.o"
-	@echo "... type_d_positive.i"
-	@echo "... type_d_positive.s"
-	@echo "... type_d_zero.o"
-	@echo "... type_d_zero.i"
-	@echo "... type_d_zero.s"
+	@echo "... type_di.o"
+	@echo "... type_di.i"
+	@echo "... type_di.s"
+	@echo "... type_di_negative.o"
+	@echo "... type_di_negative.i"
+	@echo "... type_di_negative.s"
+	@echo "... type_di_positive.o"
+	@echo "... type_di_positive.i"
+	@echo "... type_di_positive.s"
+	@echo "... type_di_zero.o"
+	@echo "... type_di_zero.i"
+	@echo "... type_di_zero.s"
 .PHONY : help
 
 

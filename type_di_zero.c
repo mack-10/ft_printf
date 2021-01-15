@@ -83,7 +83,7 @@ static void		flag_minus(char *str, int wid, int pre)
 	}
 }
 
-void			type_d_i_z(char *str, int wid, int pre)
+void			type_di_z(char *str, int wid, int pre)
 {
 	if (str[1] == '0' && str[2] == '-')
 		flag_minus(str, wid, pre);
