@@ -24,9 +24,14 @@ static void 	print(int n, char c)
 	}
 }
 
-static void 	non_flag(char str,int wid, int pre)
+static void 	non_flag(char *str,int wid, int pre)
 {
-	if (pre)
+	if (!pre && search_dot(str))
+	{
+		if (wid > 1)
+			print(wid, ' ');
+	}
+	else
 	{
 		if (wid > 1)
 		{
@@ -38,11 +43,6 @@ static void 	non_flag(char str,int wid, int pre)
 		if (pre > 1)
 			print(pre - 1, '0');
 		write(1, "0", 1);
-	}
-	else if (!pre && ft_strchr(str, '.'))
-	{
-		if (wid > 1)
-			print(wid, ' ');
 	}
 }
 
