@@ -72,7 +72,7 @@ static int		wid_check(va_list ap, char *str)
 	return (wid);
 }
 
-void			type_d(va_list ap, char *str)
+void			type_d_i(va_list ap, char *str)
 {
 	int 	wid;
 	int		pre;
@@ -82,9 +82,9 @@ void			type_d(va_list ap, char *str)
 	pre = pre_check(ap, str);
 	num_int = va_arg(ap, int);
 	if (num_int > 0)
-		type_d_p(str, num_int, wid, pre);
+		type_d_i_p(str, num_int, wid, pre);
 	else if (!num_int)
-		type_d_z(str, wid, pre);
+		type_d_i_z(str, wid, pre);
 	else
-		type_d_n(str, num_int, wid, pre);
+		type_d_i_n(str, num_int, wid, pre);
 }

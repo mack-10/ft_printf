@@ -19,9 +19,9 @@ static int 	find_type(va_list ap, char *str)
 	size = 0;
 	while(str[size])
 	{
-		if (str[size] == 'd')
+		if (str[size] == 'd' || str[size] == 'i')
 		{
-			type_d(ap, str);
+			type_d_i(ap, str);
 			break ;
 		}
 		size++;
@@ -32,10 +32,8 @@ static int 	find_type(va_list ap, char *str)
 int    		ft_printf(const char *s, ...)
 {
 	va_list ap;
-	int     i;
 	char	*str;
 
-	i = 0;
 	str = (char *)s;
 	va_start(ap, s);
 	while (*str)

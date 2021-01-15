@@ -76,7 +76,7 @@ static void		flag_minus(char *src, int wid, int pre)
 	}
 }
 
-void			type_d_p(char *str, int num_int, int wid, int pre)
+void			type_d_i_p(char *str, int num_int, int wid, int pre)
 {
 	char 	*num_str;
 

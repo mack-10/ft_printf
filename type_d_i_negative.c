@@ -90,7 +90,7 @@ static void		flag_minus(char *src, int wid, int pre)
 	}
 }
 
-void			type_d_n(char *str, int num_int, int wid, int pre)
+void			type_d_i_n(char *str, int num_int, int wid, int pre)
 {
 	char 	*num_str;
 
