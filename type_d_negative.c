@@ -81,8 +81,6 @@ static void		flag_minus(char *src, int wid, int pre)
 void			type_d_n(char *str, int num_int, int wid, int pre)
 {
 	char 	*num_str;
-	int		idx;
-
 
 	num_str = ft_itoa(num_int);
 	if (str[1] == '-')
@@ -91,6 +89,5 @@ void			type_d_n(char *str, int num_int, int wid, int pre)
 		flag_zero(num_str, wid);
 	else
 		non_flag(num_str, wid, pre);
-	free(num_str);
-	num_str = NULL;
+	free_p(&num_str);
 }

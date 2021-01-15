@@ -60,9 +60,9 @@ static void		flag_minus(int wid, int pre)
 
 void			type_d_z(char *str, int wid, int pre)
 {
-	if (ft_strchr(str, '-'))
+	if (str[1] == '-')
 		flag_minus(wid, pre);
-	else if (ft_strchr(str, '0') && wid)
+	else if (str[1] == '0')
 		flag_zero(wid);
 	else
 		non_flag(wid, pre);

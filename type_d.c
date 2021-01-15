@@ -41,8 +41,7 @@ static int		wid_over9(char *str)
 	wid_s = (char *)ft_calloc(1, 3);
 	ft_strlcpy(wid_s, str, 3);
 	wid = ft_atoi(wid_s);
-	free(wid_s);
-	wid_s = NULL;
+	free_p(&wid_s);
 	return (wid);
 }
 

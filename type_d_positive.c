@@ -41,12 +41,22 @@ static void 	non_flag(char *src, int wid, int pre)
 	write(1, src, size);
 }
 
-static void		flag_zero(char *src, int wid)
+static void		flag_zero(char *src, int wid, int pre)
 {
 	int size;
 
 	size = ft_strlen(src);
-	print(wid - size, '0');
+	if (wid > size)
+	{
+		if (pre > size)
+			print(wid - pre, ' ');
+		else
+			print(wid - size, ' ');
+	}
+	if (pre)
+		print(wid - pre, '0');
+	else
+		print(wid - size, '0');
 	write(1, src, size);
 }
 
@@ -72,12 +82,11 @@ void			type_d_p(char *str, int num_int, int wid, int pre)
 	char 	*num_str;
 
 	num_str = ft_itoa(num_int);
-	if (ft_strchr(str, '-'))
+	if (str[1] == '-')
 		flag_minus(num_str, wid, pre);
-	else if (ft_strchr(str, '0') && wid)
-		flag_zero(num_str, wid);
+	else if (str[1] == '0')
+		flag_zero(num_str, wid, pre);
 	else
 		non_flag(num_str, wid, pre);
-	free(num_str);
-	num_str = NULL;
+	free_p(&num_str);
 }

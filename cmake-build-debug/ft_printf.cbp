@@ -82,6 +82,9 @@
 		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h">
 			<Option target="ft_printf.h"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/ft_printf_utils.c">
+			<Option target="ft_printf.h"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/libft/ft_atoi.c">
 			<Option target="ft_printf.h"/>
 		</Unit>

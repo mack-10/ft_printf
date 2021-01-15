@@ -5,6 +5,10 @@ CMakeFiles/ft_printf.h.dir/ft_printf.c.o: ../ft_printf.c
 CMakeFiles/ft_printf.h.dir/ft_printf.c.o: ../ft_printf.h
 CMakeFiles/ft_printf.h.dir/ft_printf.c.o: ../libft/libft.h
 
+CMakeFiles/ft_printf.h.dir/ft_printf_utils.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.h.dir/ft_printf_utils.c.o: ../ft_printf_utils.c
+CMakeFiles/ft_printf.h.dir/ft_printf_utils.c.o: ../libft/libft.h
+
 CMakeFiles/ft_printf.h.dir/libft/ft_atoi.c.o: ../libft/ft_atoi.c
 CMakeFiles/ft_printf.h.dir/libft/ft_atoi.c.o: ../libft/libft.h
 

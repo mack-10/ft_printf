@@ -150,6 +150,33 @@ ft_printf.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/ft_printf.c.s
 .PHONY : ft_printf.c.s
 
+ft_printf_utils.o: ft_printf_utils.c.o
+
+.PHONY : ft_printf_utils.o
+
+# target to build an object file
+ft_printf_utils.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/ft_printf_utils.c.o
+.PHONY : ft_printf_utils.c.o
+
+ft_printf_utils.i: ft_printf_utils.c.i
+
+.PHONY : ft_printf_utils.i
+
+# target to preprocess a source file
+ft_printf_utils.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/ft_printf_utils.c.i
+.PHONY : ft_printf_utils.c.i
+
+ft_printf_utils.s: ft_printf_utils.c.s
+
+.PHONY : ft_printf_utils.s
+
+# target to generate assembly for a file
+ft_printf_utils.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/ft_printf_utils.c.s
+.PHONY : ft_printf_utils.c.s
+
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
 .PHONY : libft/ft_atoi.o
@@ -513,6 +540,9 @@ help:
 	@echo "... ft_printf.o"
 	@echo "... ft_printf.i"
 	@echo "... ft_printf.s"
+	@echo "... ft_printf_utils.o"
+	@echo "... ft_printf_utils.i"
+	@echo "... ft_printf_utils.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"

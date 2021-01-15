@@ -2,8 +2,9 @@
 
 int main(void)
 {
-	printf("%10.5d\n", -216);
-	ft_printf("%10.5d", -216);
+	printf("%10.5d\n", 34);
+	ft_printf("%10.5d", 34);
+	printf("\n");
 
 	//printf("----------d----------\n");
 	/*printf("\npositive\n");

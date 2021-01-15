@@ -2,6 +2,7 @@ CC          =   gcc
 FLAGS       =   -Wall -Wextra -Werror
 NAME        =   libftprintf.a
 SRCS        =  	ft_printf.c			\
+				ft_printf_utils.c	\
 				type_d.c			\
 				type_d_positive.c	\
 				type_d_zero.c		\

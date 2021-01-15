@@ -5,6 +5,10 @@ CMakeFiles/ft_printf.h.dir/ft_printf.c.o
  /mnt/c/Users/macke/Desktop/ft_printf/ft_printf.c
  /mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
  /mnt/c/Users/macke/Desktop/ft_printf/libft/libft.h
+CMakeFiles/ft_printf.h.dir/ft_printf_utils.c.o
+ /mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
+ /mnt/c/Users/macke/Desktop/ft_printf/ft_printf_utils.c
+ /mnt/c/Users/macke/Desktop/ft_printf/libft/libft.h
 CMakeFiles/ft_printf.h.dir/libft/ft_atoi.c.o
  /mnt/c/Users/macke/Desktop/ft_printf/libft/ft_atoi.c
  /mnt/c/Users/macke/Desktop/ft_printf/libft/libft.h
