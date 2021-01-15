@@ -36,19 +36,19 @@ CMakeFiles/ft_printf.h.dir/main.c.o: ../ft_printf.h
 CMakeFiles/ft_printf.h.dir/main.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.h.dir/main.c.o: ../main.c
 
-CMakeFiles/ft_printf.h.dir/type_d.c.o: ../ft_printf.h
-CMakeFiles/ft_printf.h.dir/type_d.c.o: ../libft/libft.h
-CMakeFiles/ft_printf.h.dir/type_d.c.o: ../type_d.c
+CMakeFiles/ft_printf.h.dir/type_di.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.h.dir/type_di.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.h.dir/type_di.c.o: ../type_di.c
 
-CMakeFiles/ft_printf.h.dir/type_d_negative.c.o: ../ft_printf.h
-CMakeFiles/ft_printf.h.dir/type_d_negative.c.o: ../libft/libft.h
-CMakeFiles/ft_printf.h.dir/type_d_negative.c.o: ../type_d_negative.c
+CMakeFiles/ft_printf.h.dir/type_di_negative.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.h.dir/type_di_negative.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.h.dir/type_di_negative.c.o: ../type_di_negative.c
 
-CMakeFiles/ft_printf.h.dir/type_d_positive.c.o: ../ft_printf.h
-CMakeFiles/ft_printf.h.dir/type_d_positive.c.o: ../libft/libft.h
-CMakeFiles/ft_printf.h.dir/type_d_positive.c.o: ../type_d_positive.c
+CMakeFiles/ft_printf.h.dir/type_di_positive.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.h.dir/type_di_positive.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.h.dir/type_di_positive.c.o: ../type_di_positive.c
 
-CMakeFiles/ft_printf.h.dir/type_d_zero.c.o: ../ft_printf.h
-CMakeFiles/ft_printf.h.dir/type_d_zero.c.o: ../libft/libft.h
-CMakeFiles/ft_printf.h.dir/type_d_zero.c.o: ../type_d_zero.c
+CMakeFiles/ft_printf.h.dir/type_di_zero.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.h.dir/type_di_zero.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.h.dir/type_di_zero.c.o: ../type_di_zero.c
 

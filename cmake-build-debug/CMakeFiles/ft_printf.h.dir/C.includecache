@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/mnt/c/Users/macke/Desktop/ft_printf/ft_printf.c
+ft_printf.h
+/mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
+
 /mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
 stdarg.h
 -
@@ -16,6 +20,10 @@ unistd.h
 stdio.h
 -
 
+/mnt/c/Users/macke/Desktop/ft_printf/ft_printf_utils.c
+ft_printf.h
+/mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
+
 /mnt/c/Users/macke/Desktop/ft_printf/libft/libft.h
 stddef.h
 -
@@ -24,7 +32,23 @@ stdlib.h
 unistd.h
 -
 
-/mnt/c/Users/macke/Desktop/ft_printf/type_d_zero.c
+/mnt/c/Users/macke/Desktop/ft_printf/main.c
+ft_printf.h
+/mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
+
+/mnt/c/Users/macke/Desktop/ft_printf/type_di.c
+ft_printf.h
+/mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
+
+/mnt/c/Users/macke/Desktop/ft_printf/type_di_negative.c
+ft_printf.h
+/mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
+
+/mnt/c/Users/macke/Desktop/ft_printf/type_di_positive.c
+ft_printf.h
+/mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
+
+/mnt/c/Users/macke/Desktop/ft_printf/type_di_zero.c
 ft_printf.h
 /mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
 

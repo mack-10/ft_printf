@@ -2,14 +2,9 @@
 
 int main(void)
 {
-	printf("265\n");
-	printf("%-5.0d\n", 0);
-	ft_printf("%-5.0d", 0);
-	printf("\n\n");
-
-	printf("266\n");
-	printf("%-5.d\n", 0);
-	ft_printf("%-5.d", 0);
+	printf("269\n");
+	printf("this %i number\n", 0);
+	ft_printf("this %i number", 0);
 	printf("\n\n");
 
 	//printf("----------d----------\n");
