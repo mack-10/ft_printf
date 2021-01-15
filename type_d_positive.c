@@ -81,7 +81,9 @@ void			type_d_p(char *str, int num_int, int wid, int pre)
 	char 	*num_str;
 
 	num_str = ft_itoa(num_int);
-	if (str[1] == '-')
+	if (str[1] == '0' && str[2] == '-')
+		flag_minus(num_str, wid, pre);
+	else if (str[1] == '-')
 		flag_minus(num_str, wid, pre);
 	else if (str[1] == '0')
 		flag_zero(num_str, wid, pre);

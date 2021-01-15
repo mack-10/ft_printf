@@ -69,7 +69,9 @@ static void		flag_minus(int wid, int pre)
 
 void			type_d_z(char *str, int wid, int pre)
 {
-	if (str[1] == '-')
+	if (str[1] == '0' && str[2] == '-')
+		flag_minus(wid, pre);
+	else if (str[1] == '-')
 		flag_minus(wid, pre);
 	else if (str[1] == '0')
 		flag_zero(wid, pre);
