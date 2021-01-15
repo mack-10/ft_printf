@@ -1,14 +1,28 @@
-Test 265 (d_prec0val0_wlj) : FAILED.
-    First line of code: {return test("%-5.0d", 0);}
-      expected output : "     "
-      your output     : "0    "
-      expected (nonprintable as hex) : "     "
-      actual   (nonprintable as hex) : "0    "
+Test 269 (i_basic_zero) : FAILED.
+    First line of code: {return test("this %i number", 0);}
+      expected output : "this 0 number"
+      your output     : "this  number"
+      expected (nonprintable as hex) : "this 0 number"
+      actual   (nonprintable as hex) : "this  number"
 
-Test 266 (d_prec0val0_wlj_impl) : FAILED.
-    First line of code: {return test("%-5.d", 0);}
-      expected output : "     "
-      your output     : "0    "
-      expected (nonprintable as hex) : "     "
-      actual   (nonprintable as hex) : "0    "
+Test 272 (i_basic_onlyzero) : FAILED.
+    First line of code: {return test("%i", 0);}
+      expected output : "0"
+      your output     : ""
+      expected (nonprintable as hex) : "0"
+      actual   (nonprintable as hex) : ""
+
+Test 277 (i_width_zero_fits) : FAILED.
+    First line of code: {return test("%3i", 0);}
+      expected output : "  0"
+      your output     : "   "
+      expected (nonprintable as hex) : "  0"
+      actual   (nonprintable as hex) : "   "
+
+Test 284 (i_width_zero_fits_lj) : FAILED.
+    First line of code: {return test("%-3i", 0);}
+      expected output : "0  "
+      your output     : "   "
+      expected (nonprintable as hex) : "0  "
+      actual   (nonprintable as hex) : "   "
 
