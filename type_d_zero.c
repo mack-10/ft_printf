@@ -61,26 +61,34 @@ static void		flag_zero(int wid, int pre)
 	write(1, "0", 1);
 }
 
-static void		flag_minus(int wid, int pre)
+static void		flag_minus(char *str, int wid, int pre)
 {
-	if (pre > 1)
-		print(pre - 1, '0');
-	write(1, "0", 1);
-	if (wid > 1)
+	if (!pre && search_dot(str))
+	{
+		if (wid > 1)
+			print(wid, ' ');
+	}
+	else
 	{
 		if (pre > 1)
-			print(wid - pre, ' ');
-		else
-			print(wid - 1, ' ');
+			print(pre - 1, '0');
+		write(1, "0", 1);
+		if (wid > 1)
+		{
+			if (pre > 1)
+				print(wid - pre, ' ');
+			else
+				print(wid - 1, ' ');
+		}
 	}
 }
 
 void			type_d_z(char *str, int wid, int pre)
 {
 	if (str[1] == '0' && str[2] == '-')
-		flag_minus(wid, pre);
+		flag_minus(str, wid, pre);
 	else if (str[1] == '-')
-		flag_minus(wid, pre);
+		flag_minus(str, wid, pre);
 	else if (str[1] == '0')
 		flag_zero(wid, pre);
 	else

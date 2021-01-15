@@ -2,10 +2,15 @@
 
 int main(void)
 {
-	/*printf("261\n");
-	printf("%.0d\n", 0);
-	ft_printf("%.0d", 0);
-	printf("\n\n");*/
+	printf("265\n");
+	printf("%-5.0d\n", 0);
+	ft_printf("%-5.0d", 0);
+	printf("\n\n");
+
+	printf("266\n");
+	printf("%-5.d\n", 0);
+	ft_printf("%-5.d", 0);
+	printf("\n\n");
 
 	//printf("----------d----------\n");
 	/*printf("\npositive\n");
@@ -30,7 +35,7 @@ int main(void)
 	printf("p=6\t\t\t:%.*d\n", 6, 123);
 	ft_printf("ft/p=6\t\t:%.*d\n", 6, 123);*/
 
-	printf("\nzero\n");
+	/*printf("\nzero\n");
 	printf("flag -o\t\t:%-*d\n", 6, 0);
 	ft_printf("ft/flag -o\t:%-*d\n", 6, 0);
 	printf("flag 0\t\t:%0*d\n", 6, 0);
@@ -42,7 +47,7 @@ int main(void)
 	printf("w=6\t\t\t:%*d\n", 6, 0);
 	ft_printf("ft/w=6\t\t:%*d\n", 6, 0);
 	printf("p=6\t\t\t:%.*d\n", 6, 0);
-	ft_printf("ft/p=6\t\t:%.*d\n", 6, 0);
+	ft_printf("ft/p=6\t\t:%.*d\n", 6, 0);*/
 
 	/*printf("\nnegative\n");
 	printf("flag -o\t\t:%-*d\n", 6, -123);
