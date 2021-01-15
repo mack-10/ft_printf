@@ -8,7 +8,7 @@ int main(void)
 	printf("\n\n");
 
 	//printf("----------d----------\n");
-	/*printf("\npositive\n");
+	printf("\npositive\n");
 	printf("flag -o\t\t:%-*d\n", 6, 123);
 	ft_printf("ft/flag -o\t:%-*d\n", 6, 123);
 	printf("flag -x\t\t:%*d\n", 6, 123);
@@ -28,7 +28,7 @@ int main(void)
 	printf("w=6\t\t\t:%*d\n", 6, 123);
 	ft_printf("ft/w=6\t\t:%*d\n", 6, 123);
 	printf("p=6\t\t\t:%.*d\n", 6, 123);
-	ft_printf("ft/p=6\t\t:%.*d\n", 6, 123);*/
+	ft_printf("ft/p=6\t\t:%.*d\n", 6, 123);
 
 	/*printf("\nzero\n");
 	printf("flag -o\t\t:%-*d\n", 6, 0);

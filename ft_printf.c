@@ -49,7 +49,7 @@ int    		ft_printf(const char *s, ...)
 	while (str[idx])
 	{
 		if (str[idx] == '%')
-			idx += find_type(ap, str);
+			idx += find_type(ap, str + idx);
 		else
 		{
 			write(1, &str[idx], 1);

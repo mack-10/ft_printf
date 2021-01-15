@@ -41,14 +41,14 @@ int 		cnt_size(char *str)
 			break ;
 		size++;
 	}
-	return (size);
+	return (size + 1);
 }
 
 int 		search_dot(char *str)
 {
 	char 	c;
 
-	c = str[cnt_size(str)];
+	c = str[cnt_size(str) - 1];
 	while (*str != c)
 	{
 		if (*str == '.')
