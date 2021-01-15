@@ -1,9 +1,9 @@
-Test 219 (d_zp_pos_fits) : FAILED.
-    First line of code: {return test("%05d", 43);}
-      expected output : "00043"
-      your output     : "   00043"
-      expected (nonprintable as hex) : "00043"
-      actual   (nonprintable as hex) : "   00043"
+Test 243 (d_prec_width_ff_pos_zp) : FAILED.
+    First line of code: {return test("%08.5d", 34);}
+      expected output : "   00034"
+      your output     : "00034"
+      expected (nonprintable as hex) : "   00034"
+      actual   (nonprintable as hex) : "00034"
 
 Test 244 (d_prec_width_ff_neg_zp) : FAILED.
     First line of code: {return test("%010.5d", -216);}
@@ -22,9 +22,9 @@ Test 245 (d_prec_width_ff_zero_zp) : FAILED.
 Test 246 (d_prec_width_nf_pos_zp) : FAILED.
     First line of code: {return test("%08.3d", 8375);}
       expected output : "    8375"
-      your output     : "    000008375"
+      your output     : "000008375"
       expected (nonprintable as hex) : "    8375"
-      actual   (nonprintable as hex) : "    000008375"
+      actual   (nonprintable as hex) : "000008375"
 
 Test 247 (d_prec_width_nf_neg_zp) : FAILED.
     First line of code: {return test("%08.3d", -8473);}
@@ -50,9 +50,9 @@ Test 249 (d_prec_width_fn_neg_zp) : FAILED.
 Test 252 (d_prec_width_ff_pos_lj_zp_ignoreflag) : FAILED.
     First line of code: {return test("%0-8.5d", 34);}
       expected output : "00034   "
-      your output     : "   00034"
+      your output     : "00034"
       expected (nonprintable as hex) : "00034   "
-      actual   (nonprintable as hex) : "   00034"
+      actual   (nonprintable as hex) : "00034"
 
 Test 253 (d_prec_width_ff_neg_ljzp_ignoreflag) : FAILED.
     First line of code: {return test("%0-10.5d", -216);}
@@ -71,9 +71,9 @@ Test 254 (d_prec_width_ff_zero_ljzp_ignoreflag) : FAILED.
 Test 255 (d_prec_width_nf_pos_ljzp_ignoreflag) : FAILED.
     First line of code: {return test("%0-8.3d", 8375);}
       expected output : "8375    "
-      your output     : "    000008375"
+      your output     : "000008375"
       expected (nonprintable as hex) : "8375    "
-      actual   (nonprintable as hex) : "    000008375"
+      actual   (nonprintable as hex) : "000008375"
 
 Test 256 (d_prec_width_nf_neg_ljzp_ignoreflag) : FAILED.
     First line of code: {return test("%0-8.3d", -8473);}
