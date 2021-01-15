@@ -26,16 +26,25 @@ static void 	print(int n, char c)
 
 static void 	non_flag(int wid, int pre)
 {
-	if (wid > 1)
+	if (pre)
 	{
+		if (wid > 1)
+		{
+			if (pre > 1)
+				print(wid - pre, ' ');
+			else
+				print(wid - 1, ' ');
+		}
 		if (pre > 1)
-			print(wid - pre, ' ');
-		else
-			print(wid - 1, ' ');
+			print(pre - 1, '0');
+		write(1, "0", 1);
 	}
-	if (pre > 1)
-		print(pre - 1, '0');
-	write(1, "0", 1);
+	else
+	{
+		if (wid > 1)
+			print(wid, ' ');
+	}
+
 }
 
 static void		flag_zero(int wid, int pre)

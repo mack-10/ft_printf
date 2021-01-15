@@ -2,19 +2,29 @@
 
 int main(void)
 {
+	printf("261\n");
+	printf("%.0d\n", 0);
+	ft_printf("%.0d", 0);
+	printf("\n\n");
+
+	printf("262\n");
+	printf("%.0d\n", 0);
+	ft_printf("%.0d", 0);
+	printf("\n\n");
+
 	printf("252\n");
-	printf("%0-8.5d\n", 34);
-	ft_printf("%0-8.5d", 34);
+	printf("%.0d\n", 0);
+	ft_printf("%.0d", 0);
 	printf("\n\n");
 
-	printf("253\n");
-	printf("%0-10.5d\n", -216);
-	ft_printf("%0-10.5d", -216);
+	printf("252\n");
+	printf("%.0d\n", 0);
+	ft_printf("%.0d", 0);
 	printf("\n\n");
 
-	printf("254\n");
-	printf("%0-8.5d\n", 0);
-	ft_printf("%0-8.5d", 0);
+	printf("252\n");
+	printf("%.0d\n", 0);
+	ft_printf("%.0d", 0);
 	printf("\n\n");
 
 	//printf("----------d----------\n");
