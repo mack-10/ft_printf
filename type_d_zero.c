@@ -38,9 +38,15 @@ static void 	non_flag(int wid, int pre)
 	write(1, "0", 1);
 }
 
-static void		flag_zero(int wid)
+static void		flag_zero(int wid, int pre)
 {
-	print(wid - 1, '0');
+	if (pre && pre > 1)
+	{
+		print(wid - pre, ' ');
+		print(pre - 1, '0');
+	}
+	else
+		print(wid - 1, '0');
 	write(1, "0", 1);
 }
 
@@ -63,7 +69,7 @@ void			type_d_z(char *str, int wid, int pre)
 	if (str[1] == '-')
 		flag_minus(wid, pre);
 	else if (str[1] == '0')
-		flag_zero(wid);
+		flag_zero(wid, pre);
 	else
 		non_flag(wid, pre);
 }

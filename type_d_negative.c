@@ -46,13 +46,22 @@ static void 	non_flag(char *src, int wid, int pre)
 		write(1, src, size);
 }
 
-static void		flag_zero(char *src, int wid)
+static void		flag_zero(char *src, int wid, int pre)
 {
 	int size;
 
 	size = ft_strlen(src);
-	write(1, "-", 1);
-	print(wid - size, '0');
+	if (pre && pre > size)
+	{
+		print(wid - (pre + 1), ' ');
+		write(1, "-", 1);
+		print(pre - (size - 1), '0');
+	}
+	else
+	{
+		write(1, "-", 1);
+		print(wid - size, '0');
+	}
 	write(1, src + 1, size - 1);
 }
 
@@ -86,7 +95,7 @@ void			type_d_n(char *str, int num_int, int wid, int pre)
 	if (str[1] == '-')
 		flag_minus(num_str, wid, pre);
 	else if (str[1] == '0')
-		flag_zero(num_str, wid);
+		flag_zero(num_str, wid, pre);
 	else
 		non_flag(num_str, wid, pre);
 	free_p(&num_str);
