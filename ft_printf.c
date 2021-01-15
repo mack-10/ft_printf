@@ -41,21 +41,21 @@ int    		ft_printf(const char *s, ...)
 {
 	va_list ap;
 	char	*str;
-	int		idx;
+	int		ret;
 
-	idx = 0;
 	str = (char *)s;
+	ret = ft_strlen(str);
 	va_start(ap, s);
-	while (str[idx])
+	while (*str)
 	{
-		if (str[idx] == '%')
-			idx += find_type(ap, str + idx);
+		if (*str == '%')
+			str += find_type(ap, str);
 		else
 		{
-			write(1, &str[idx], 1);
-			idx++;
+			write(1, str, 1);
+			str++;
 		}
 	}
 	va_end(ap);
-	return (idx);
+	return (ret);
 }
