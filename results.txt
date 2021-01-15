@@ -1,45 +1,3 @@
-Test 198 (d_width_pos_fits) : FAILED.
-    First line of code: {return test("%7d", 33);}
-      expected output : "     33"
-      your output     : "33"
-      expected (nonprintable as hex) : "     33"
-      actual   (nonprintable as hex) : "33"
-
-Test 199 (d_width_neg_fits) : FAILED.
-    First line of code: {return test("%7d", -14);}
-      expected output : "    -14"
-      your output     : "-14"
-      expected (nonprintable as hex) : "    -14"
-      actual   (nonprintable as hex) : "-14"
-
-Test 200 (d_width_zero_fits) : FAILED.
-    First line of code: {return test("%3d", 0);}
-      expected output : "  0"
-      your output     : "0"
-      expected (nonprintable as hex) : "  0"
-      actual   (nonprintable as hex) : "0"
-
-Test 205 (d_width_pos_fits_lj) : FAILED.
-    First line of code: {return test("%-7d", 33);}
-      expected output : "33     "
-      your output     : "33"
-      expected (nonprintable as hex) : "33     "
-      actual   (nonprintable as hex) : "33"
-
-Test 206 (d_width_neg_fits_lj) : FAILED.
-    First line of code: {return test("%-7d", -14);}
-      expected output : "-14    "
-      your output     : "-14"
-      expected (nonprintable as hex) : "-14    "
-      actual   (nonprintable as hex) : "-14"
-
-Test 207 (d_width_zero_fits_lj) : FAILED.
-    First line of code: {return test("%-3d", 0);}
-      expected output : "0  "
-      your output     : "0"
-      expected (nonprintable as hex) : "0  "
-      actual   (nonprintable as hex) : "0"
-
 Test 212 (d_prec_fits_pos) : FAILED.
     First line of code: {return test("%.5d", 2);}
       expected output : "00002"
@@ -127,9 +85,9 @@ Test 226 (d_prec_width_fit_fit_neg) : FAILED.
 Test 227 (d_prec_width_fit_fit_zero) : FAILED.
     First line of code: {return test("%8.5d", 0);}
       expected output : "   00000"
-      your output     : "0"
+      your output     : "       0"
       expected (nonprintable as hex) : "   00000"
-      actual   (nonprintable as hex) : "0"
+      actual   (nonprintable as hex) : "       0"
 
 Test 228 (d_prec_width_nofit_fit_pos) : FAILED.
     First line of code: {return test("%8.3d", 8375);}
@@ -141,9 +99,9 @@ Test 228 (d_prec_width_nofit_fit_pos) : FAILED.
 Test 229 (d_prec_width_nofit_fit_neg) : FAILED.
     First line of code: {return test("%8.3d", -8473);}
       expected output : "   -8473"
-      your output     : "0"
+      your output     : "       0"
       expected (nonprintable as hex) : "   -8473"
-      actual   (nonprintable as hex) : "0"
+      actual   (nonprintable as hex) : "       0"
 
 Test 230 (d_prec_width_fit_nofit_pos) : FAILED.
     First line of code: {return test("%3.7d", 3267);}
@@ -155,9 +113,9 @@ Test 230 (d_prec_width_fit_nofit_pos) : FAILED.
 Test 231 (d_prec_width_fit_nofit_neg) : FAILED.
     First line of code: {return test("%3.7d", -2375);}
       expected output : "-0002375"
-      your output     : "0"
+      your output     : "  0"
       expected (nonprintable as hex) : "-0002375"
-      actual   (nonprintable as hex) : "0"
+      actual   (nonprintable as hex) : "  0"
 
 Test 232 (d_prec_width_nofit_nofit_pos) : FAILED.
     First line of code: {return test("%3.3d", 6983);}
@@ -169,9 +127,9 @@ Test 232 (d_prec_width_nofit_nofit_pos) : FAILED.
 Test 233 (d_prec_width_nofit_nofit_neg) : FAILED.
     First line of code: {return test("%3.3d", -8462);}
       expected output : "-8462"
-      your output     : "0"
+      your output     : "  0"
       expected (nonprintable as hex) : "-8462"
-      actual   (nonprintable as hex) : "0"
+      actual   (nonprintable as hex) : "  0"
 
 Test 234 (d_prec_width_fit_fit_pos_lj) : FAILED.
     First line of code: {return test("%-8.5d", 34);}
@@ -190,9 +148,9 @@ Test 235 (d_prec_width_fit_fit_neg_lj) : FAILED.
 Test 236 (d_prec_width_fit_fit_zero_lj) : FAILED.
     First line of code: {return test("%-8.5d", 0);}
       expected output : "00000   "
-      your output     : "0"
+      your output     : "0       "
       expected (nonprintable as hex) : "00000   "
-      actual   (nonprintable as hex) : "0"
+      actual   (nonprintable as hex) : "0       "
 
 Test 237 (d_prec_width_nofit_fit_pos_lj) : FAILED.
     First line of code: {return test("%-8.3d", 8375);}
@@ -204,9 +162,9 @@ Test 237 (d_prec_width_nofit_fit_pos_lj) : FAILED.
 Test 238 (d_prec_width_nofit_fit_neg_lj) : FAILED.
     First line of code: {return test("%-8.3d", -8473);}
       expected output : "-8473   "
-      your output     : "0"
+      your output     : "0       "
       expected (nonprintable as hex) : "-8473   "
-      actual   (nonprintable as hex) : "0"
+      actual   (nonprintable as hex) : "0       "
 
 Test 239 (d_prec_width_fit_nofit_pos_lj) : FAILED.
     First line of code: {return test("%-3.7d", 3267);}
@@ -218,9 +176,9 @@ Test 239 (d_prec_width_fit_nofit_pos_lj) : FAILED.
 Test 240 (d_prec_width_fit_nofit_neg_lj) : FAILED.
     First line of code: {return test("%-3.7d", -2375);}
       expected output : "-0002375"
-      your output     : "0"
+      your output     : "0  "
       expected (nonprintable as hex) : "-0002375"
-      actual   (nonprintable as hex) : "0"
+      actual   (nonprintable as hex) : "0  "
 
 Test 241 (d_prec_width_nofit_nofit_pos_lj) : FAILED.
     First line of code: {return test("%-3.3d", 6983);}
@@ -232,9 +190,9 @@ Test 241 (d_prec_width_nofit_nofit_pos_lj) : FAILED.
 Test 242 (d_prec_width_nofit_nofit_neg_lj) : FAILED.
     First line of code: {return test("%-3.3d", -8462);}
       expected output : "-8462"
-      your output     : "0"
+      your output     : "0  "
       expected (nonprintable as hex) : "-8462"
-      actual   (nonprintable as hex) : "0"
+      actual   (nonprintable as hex) : "0  "
 
 Test 243 (d_prec_width_ff_pos_zp) : FAILED.
     First line of code: {return test("%08.5d", 34);}
@@ -379,28 +337,28 @@ Test 262 (d_prec0val0_implicit) : FAILED.
 Test 263 (d_prec0val0_w) : FAILED.
     First line of code: {return test("%5.0d", 0);}
       expected output : "     "
-      your output     : "0"
+      your output     : "00000"
       expected (nonprintable as hex) : "     "
-      actual   (nonprintable as hex) : "0"
+      actual   (nonprintable as hex) : "00000"
 
 Test 264 (d_prec0val0_w_impl) : FAILED.
     First line of code: {return test("%5.d", 0);}
       expected output : "     "
-      your output     : "0"
+      your output     : "    0"
       expected (nonprintable as hex) : "     "
-      actual   (nonprintable as hex) : "0"
+      actual   (nonprintable as hex) : "    0"
 
 Test 265 (d_prec0val0_wlj) : FAILED.
     First line of code: {return test("%-5.0d", 0);}
       expected output : "     "
-      your output     : "0"
+      your output     : "0    "
       expected (nonprintable as hex) : "     "
-      actual   (nonprintable as hex) : "0"
+      actual   (nonprintable as hex) : "0    "
 
 Test 266 (d_prec0val0_wlj_impl) : FAILED.
     First line of code: {return test("%-5.d", 0);}
       expected output : "     "
-      your output     : "0"
+      your output     : "0    "
       expected (nonprintable as hex) : "     "
-      actual   (nonprintable as hex) : "0"
+      actual   (nonprintable as hex) : "0    "
 
