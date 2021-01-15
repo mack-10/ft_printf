@@ -24,7 +24,7 @@ static void 	print(int n, char c)
 	}
 }
 
-static void 	non_flag(int wid, int pre)
+static void 	non_flag(char str,int wid, int pre)
 {
 	if (pre)
 	{
@@ -39,12 +39,11 @@ static void 	non_flag(int wid, int pre)
 			print(pre - 1, '0');
 		write(1, "0", 1);
 	}
-	else
+	else if (!pre && ft_strchr(str, '.'))
 	{
 		if (wid > 1)
 			print(wid, ' ');
 	}
-
 }
 
 static void		flag_zero(int wid, int pre)
@@ -85,5 +84,5 @@ void			type_d_z(char *str, int wid, int pre)
 	else if (str[1] == '0')
 		flag_zero(wid, pre);
 	else
-		non_flag(wid, pre);
+		non_flag(str, wid, pre);
 }
