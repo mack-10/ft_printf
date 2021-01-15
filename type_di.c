@@ -72,7 +72,7 @@ static int		wid_check(va_list ap, char *str)
 	return (wid);
 }
 
-void			type_di(va_list ap, char *str)
+int				type_di(va_list ap, char *str)
 {
 	int 	wid;
 	int		pre;
@@ -88,4 +88,5 @@ void			type_di(va_list ap, char *str)
 		type_di_z(str, wid, pre);
 	else
 		type_di_n(str, num_int, wid, pre);
+	return (cnt_size(str));
 }

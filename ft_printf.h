@@ -20,11 +20,12 @@
 # include <stdio.h>
 
 int				ft_printf(const char *str, ...);
-void			type_di(va_list ap, char *str);
+int 			type_di(va_list ap, char *str);
 void			type_di_p(char *str, int num_int, int wid, int pre);
 void			type_di_z(char *str, int wid, int pre);
 void			type_di_n(char *str, int num_int, int wid, int pre);
 void 			free_p(char **p);
 int	 			search_dot(char *str);
+int 			cnt_size(char *str);
 
 #endif
