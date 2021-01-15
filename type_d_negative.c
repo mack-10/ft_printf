@@ -85,9 +85,9 @@ void			type_d_n(char *str, int num_int, int wid, int pre)
 
 
 	num_str = ft_itoa(num_int);
-	if (ft_strchr(str, '-'))
+	if (str[1] == '-')
 		flag_minus(num_str, wid, pre);
-	else if (ft_strchr(str, '0'))
+	else if (str[1] == '0')
 		flag_zero(num_str, wid);
 	else
 		non_flag(num_str, wid, pre);

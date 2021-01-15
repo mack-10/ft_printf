@@ -150,6 +150,87 @@ ft_printf.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/ft_printf.c.s
 .PHONY : ft_printf.c.s
 
+libft/ft_atoi.o: libft/ft_atoi.c.o
+
+.PHONY : libft/ft_atoi.o
+
+# target to build an object file
+libft/ft_atoi.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_atoi.c.o
+.PHONY : libft/ft_atoi.c.o
+
+libft/ft_atoi.i: libft/ft_atoi.c.i
+
+.PHONY : libft/ft_atoi.i
+
+# target to preprocess a source file
+libft/ft_atoi.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_atoi.c.i
+.PHONY : libft/ft_atoi.c.i
+
+libft/ft_atoi.s: libft/ft_atoi.c.s
+
+.PHONY : libft/ft_atoi.s
+
+# target to generate assembly for a file
+libft/ft_atoi.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_atoi.c.s
+.PHONY : libft/ft_atoi.c.s
+
+libft/ft_bzero.o: libft/ft_bzero.c.o
+
+.PHONY : libft/ft_bzero.o
+
+# target to build an object file
+libft/ft_bzero.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_bzero.c.o
+.PHONY : libft/ft_bzero.c.o
+
+libft/ft_bzero.i: libft/ft_bzero.c.i
+
+.PHONY : libft/ft_bzero.i
+
+# target to preprocess a source file
+libft/ft_bzero.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_bzero.c.i
+.PHONY : libft/ft_bzero.c.i
+
+libft/ft_bzero.s: libft/ft_bzero.c.s
+
+.PHONY : libft/ft_bzero.s
+
+# target to generate assembly for a file
+libft/ft_bzero.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_bzero.c.s
+.PHONY : libft/ft_bzero.c.s
+
+libft/ft_calloc.o: libft/ft_calloc.c.o
+
+.PHONY : libft/ft_calloc.o
+
+# target to build an object file
+libft/ft_calloc.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_calloc.c.o
+.PHONY : libft/ft_calloc.c.o
+
+libft/ft_calloc.i: libft/ft_calloc.c.i
+
+.PHONY : libft/ft_calloc.i
+
+# target to preprocess a source file
+libft/ft_calloc.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_calloc.c.i
+.PHONY : libft/ft_calloc.c.i
+
+libft/ft_calloc.s: libft/ft_calloc.c.s
+
+.PHONY : libft/ft_calloc.s
+
+# target to generate assembly for a file
+libft/ft_calloc.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_calloc.c.s
+.PHONY : libft/ft_calloc.c.s
+
 libft/ft_itoa.o: libft/ft_itoa.c.o
 
 .PHONY : libft/ft_itoa.o
@@ -230,6 +311,33 @@ libft/ft_strdup.s: libft/ft_strdup.c.s
 libft/ft_strdup.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_strdup.c.s
 .PHONY : libft/ft_strdup.c.s
+
+libft/ft_strlcpy.o: libft/ft_strlcpy.c.o
+
+.PHONY : libft/ft_strlcpy.o
+
+# target to build an object file
+libft/ft_strlcpy.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_strlcpy.c.o
+.PHONY : libft/ft_strlcpy.c.o
+
+libft/ft_strlcpy.i: libft/ft_strlcpy.c.i
+
+.PHONY : libft/ft_strlcpy.i
+
+# target to preprocess a source file
+libft/ft_strlcpy.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_strlcpy.c.i
+.PHONY : libft/ft_strlcpy.c.i
+
+libft/ft_strlcpy.s: libft/ft_strlcpy.c.s
+
+.PHONY : libft/ft_strlcpy.s
+
+# target to generate assembly for a file
+libft/ft_strlcpy.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_strlcpy.c.s
+.PHONY : libft/ft_strlcpy.c.s
 
 libft/ft_strlen.o: libft/ft_strlen.c.o
 
@@ -405,6 +513,15 @@ help:
 	@echo "... ft_printf.o"
 	@echo "... ft_printf.i"
 	@echo "... ft_printf.s"
+	@echo "... libft/ft_atoi.o"
+	@echo "... libft/ft_atoi.i"
+	@echo "... libft/ft_atoi.s"
+	@echo "... libft/ft_bzero.o"
+	@echo "... libft/ft_bzero.i"
+	@echo "... libft/ft_bzero.s"
+	@echo "... libft/ft_calloc.o"
+	@echo "... libft/ft_calloc.i"
+	@echo "... libft/ft_calloc.s"
 	@echo "... libft/ft_itoa.o"
 	@echo "... libft/ft_itoa.i"
 	@echo "... libft/ft_itoa.s"
@@ -414,6 +531,9 @@ help:
 	@echo "... libft/ft_strdup.o"
 	@echo "... libft/ft_strdup.i"
 	@echo "... libft/ft_strdup.s"
+	@echo "... libft/ft_strlcpy.o"
+	@echo "... libft/ft_strlcpy.i"
+	@echo "... libft/ft_strlcpy.s"
 	@echo "... libft/ft_strlen.o"
 	@echo "... libft/ft_strlen.i"
 	@echo "... libft/ft_strlen.s"

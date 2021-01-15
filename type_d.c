@@ -33,6 +33,19 @@ static int		pre_check(va_list ap, char *str)
 	return (pre);
 }
 
+static int		wid_over9(char *str)
+{
+	int 	wid;
+	char	*wid_s;
+
+	wid_s = (char *)ft_calloc(1, 3);
+	ft_strlcpy(wid_s, str, 3);
+	wid = ft_atoi(wid_s);
+	free(wid_s);
+	wid_s = NULL;
+	return (wid);
+}
+
 static int		wid_check(va_list ap, char *str)
 {
 	int		wid;
@@ -49,7 +62,10 @@ static int		wid_check(va_list ap, char *str)
 		}
 		else if (*str > '0' && *str <= '9')
 		{
-			wid = *str - '0';
+			if (*(str + 1) >= '0' && *(str + 1) <= '9')
+				wid = wid_over9(str);
+			else
+				wid = *str - '0';
 			break ;
 		}
 		str++;

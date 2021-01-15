@@ -5,6 +5,15 @@ CMakeFiles/ft_printf.h.dir/ft_printf.c.o: ../ft_printf.c
 CMakeFiles/ft_printf.h.dir/ft_printf.c.o: ../ft_printf.h
 CMakeFiles/ft_printf.h.dir/ft_printf.c.o: ../libft/libft.h
 
+CMakeFiles/ft_printf.h.dir/libft/ft_atoi.c.o: ../libft/ft_atoi.c
+CMakeFiles/ft_printf.h.dir/libft/ft_atoi.c.o: ../libft/libft.h
+
+CMakeFiles/ft_printf.h.dir/libft/ft_bzero.c.o: ../libft/ft_bzero.c
+CMakeFiles/ft_printf.h.dir/libft/ft_bzero.c.o: ../libft/libft.h
+
+CMakeFiles/ft_printf.h.dir/libft/ft_calloc.c.o: ../libft/ft_calloc.c
+CMakeFiles/ft_printf.h.dir/libft/ft_calloc.c.o: ../libft/libft.h
+
 CMakeFiles/ft_printf.h.dir/libft/ft_itoa.c.o: ../libft/ft_itoa.c
 CMakeFiles/ft_printf.h.dir/libft/ft_itoa.c.o: ../libft/libft.h
 
@@ -12,6 +21,9 @@ CMakeFiles/ft_printf.h.dir/libft/ft_strchr.c.o: ../libft/ft_strchr.c
 
 CMakeFiles/ft_printf.h.dir/libft/ft_strdup.c.o: ../libft/ft_strdup.c
 CMakeFiles/ft_printf.h.dir/libft/ft_strdup.c.o: ../libft/libft.h
+
+CMakeFiles/ft_printf.h.dir/libft/ft_strlcpy.c.o: ../libft/ft_strlcpy.c
+CMakeFiles/ft_printf.h.dir/libft/ft_strlcpy.c.o: ../libft/libft.h
 
 CMakeFiles/ft_printf.h.dir/libft/ft_strlen.c.o: ../libft/ft_strlen.c
 CMakeFiles/ft_printf.h.dir/libft/ft_strlen.c.o: ../libft/libft.h
