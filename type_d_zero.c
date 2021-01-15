@@ -40,9 +40,12 @@ static void 	non_flag(int wid, int pre)
 
 static void		flag_zero(int wid, int pre)
 {
-	if (pre && pre > 1)
+	if (pre)
 	{
-		print(wid - pre, ' ');
+		if (pre > 1)
+			print(wid - pre, ' ');
+		else
+			print(wid - 1, ' ');
 		print(pre - 1, '0');
 	}
 	else

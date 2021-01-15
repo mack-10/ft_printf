@@ -17,6 +17,11 @@ int main(void)
 	ft_printf("%08.5d", 0);
 	printf("\n\n");
 
+	printf("246\n");
+	printf("%08.3d\n", 8375);
+	printf("%08.3d", 8375);
+	printf("\n\n");
+
 	//printf("----------d----------\n");
 	/*printf("\npositive\n");
 	printf("flag -o\t\t:%-*d\n", 6, 123);

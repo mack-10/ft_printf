@@ -46,9 +46,12 @@ static void		flag_zero(char *src, int wid, int pre)
 	int size;
 
 	size = ft_strlen(src);
-	if (pre && pre > size)
+	if (pre)
 	{
-		print(wid - pre, ' ');
+		if (pre > size)
+			print(wid - pre, ' ');
+		else
+			print(wid - size, ' ');
 		print(pre - size, '0');
 	}
 	else
