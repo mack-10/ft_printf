@@ -2,8 +2,8 @@
 
 int main(void)
 {
-	/*ft_printf("abc%0dddd", 0);
-	printf("\nabc%0dddd", 0);*/
+	printf("%7d\n", 33);
+	ft_printf("%7d", 33);
 
 	//printf("----------d----------\n");
 	/*printf("\npositive\n");
@@ -50,7 +50,7 @@ int main(void)
 	printf("p=6\t\t\t:%.*d\n", 6, 0);
 	ft_printf("ft/p=6\t\t:%.*d\n", 6, 0);*/
 
-	printf("\nnegative\n");
+	/*printf("\nnegative\n");
 	printf("flag -o\t\t:%-*d\n", 6, -123);
 	ft_printf("ft/flag -o\t:%-*d\n", 6, -123);
 	printf("flag -x\t\t:%*d\n", 6, -123);
@@ -64,6 +64,6 @@ int main(void)
 	printf("w=6\t\t\t:%*d\n", 6, -123);
 	ft_printf("ft/w=6\t\t:%*d\n", 6, -123);
 	printf("p=6\t\t\t:%.*d\n", 6, -123);
-	ft_printf("ft/p=6\t\t:%.*d\n", 6, -123);
+	ft_printf("ft/p=6\t\t:%.*d\n", 6, -123);*/
 	return (0);
 }

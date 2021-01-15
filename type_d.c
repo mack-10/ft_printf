@@ -21,8 +21,16 @@ static int		pre_check(va_list ap, char *str)
 	{
 		if (*str == '.')
 		{
-			pre = va_arg(ap, int);
-			break ;
+			if (*str >= '0' && *str <= '9')
+			{
+				pre = *str - '0';
+				break ;
+			}
+			else
+			{
+				pre = va_arg(ap, int);
+				break ;
+			}
 		}
 		str++;
 	}
@@ -41,6 +49,11 @@ static int		wid_check(va_list ap, char *str)
 		if (*str == '*')
 		{
 			wid = va_arg(ap, int);
+			break ;
+		}
+		else if (*str >= '0' && *str <= '9')
+		{
+			wid = *str - '0';
 			break ;
 		}
 		str++;
