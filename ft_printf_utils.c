@@ -8,7 +8,19 @@ void 		free_p(char **p)
 
 int 		search_dot(char *str)
 {
-	while (*str != 'd')
+	int		i;
+	char 	c;
+
+	i = 0;
+	while (str[i])
+	{
+		if (str[i] == 'd')
+			c = 'd';
+		else if (str[i] == 'i')
+			c = 'i';
+		i++;
+	}
+	while (*str != c)
 	{
 		if (*str == '.')
 			return (1);
