@@ -6,7 +6,7 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/16 03:36:40 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/17 21:17:02 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/18 03:17:48 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void		free_p(v_list **p1, char **p2)
 
 int			cnt_add(v_list *lst)
 {
-	char 	*src;
+	char	*src;
 	int		cnt;
 
 	src = lst->src;
@@ -37,8 +37,9 @@ int			cnt_add(v_list *lst)
 	{
 		if (src[0] == '%' && src[1] == '%')
 			return (2);
-		if (src[cnt] == 'd' || src[cnt] == 'i' || src[cnt] == 'u' || src[cnt] == 'X'
-		|| src[cnt] == 'x' || src[cnt] == 'c' || src[cnt] == 's' || src[cnt] == 'p')
+		if (src[cnt] == 'd' || src[cnt] == 'i' || src[cnt] == 'u'
+				|| src[cnt] == 'X' || src[cnt] == 'x' || src[cnt] == 'c'
+				|| src[cnt] == 's' || src[cnt] == 'p')
 			break ;
 		cnt++;
 	}
@@ -46,7 +47,8 @@ int			cnt_add(v_list *lst)
 }
 
 int			search_dot(v_list *lst)
-{	char *src;
+{
+	char *src;
 
 	src = lst->src;
 	while (*src != lst->type)

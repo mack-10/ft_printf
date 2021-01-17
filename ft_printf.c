@@ -6,13 +6,13 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/18 01:28:10 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/18 01:28:11 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/18 03:12:57 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static void		pre_check(va_list ap, v_list *lst)
+static void	pre_check(va_list ap, v_list *lst)
 {
 	char	*src;
 
@@ -32,7 +32,7 @@ static void		pre_check(va_list ap, v_list *lst)
 	}
 }
 
-static void		wid_over9(v_list *lst, char *src)
+static void	wid_over9(v_list *lst, char *src)
 {
 	char	*wid_s;
 
@@ -42,7 +42,7 @@ static void		wid_over9(v_list *lst, char *src)
 	free_p(0, &wid_s);
 }
 
-static void		wid_check(va_list ap, v_list *lst)
+static void	wid_check(va_list ap, v_list *lst)
 {
 	char *src;
 

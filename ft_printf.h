@@ -6,7 +6,7 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/07 19:51:36 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/17 23:52:42 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/18 03:23:02 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,27 +19,27 @@
 
 # include <stdio.h>
 
-typedef struct	values
+typedef struct	s_value
 {
 	int		ret;
 	int		wid;
 	int		pre;
 	int		size;
 	char	*src;
-	char 	type;
-}				v_list;
+	char	type;
+}				t_list;
 
-int			ft_printf(const char *str, ...);
-void		type_di(va_list ap, v_list *lst);
-int			type_u(va_list ap, v_list *lst);
-void		type_x(va_list ap, v_list *lst);
-void		print_p(v_list *lst, char *s);
-void		print_z(v_list *lst);
-void		print_n(v_list *lst, char *s);
+int				ft_printf(const char *str, ...);
+void			type_di(va_list ap, v_list *lst);
+void			type_u(va_list ap, v_list *lst);
+void			type_x(va_list ap, v_list *lst);
+void			print_p(v_list *lst, char *s);
+void			print_z(v_list *lst);
+void			print_n(v_list *lst, char *s);
 
-void		free_p(v_list **p1, char **p2);
-int			search_dot(v_list *lst);
-int			cnt_add(v_list *lst);
-char		*ft_itoa_un(unsigned int n);
+void			free_p(v_list **p1, char **p2);
+int				search_dot(v_list *lst);
+int				cnt_add(v_list *lst);
+char			*ft_itoa_un(unsigned int n);
 
 #endif

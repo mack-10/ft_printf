@@ -6,9 +6,9 @@ SRCS        =  	ft_printf.c			\
 				type_di.c			\
 				type_u.c			\
 				type_x.c			\
-				print_+.c			\
-				print_0.c			\
-				print_-.c
+				print_plus.c		\
+				print_zero.c		\
+				print_minus.c
 OBJS		=	$(SRCS:.c=.o)
 AR			=	ar rcs
 LIB			=	libft
