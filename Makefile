@@ -5,8 +5,10 @@ SRCS        =  	ft_printf.c			\
 				ft_printf_utils.c	\
 				type_di.c			\
 				type_di_positive.c	\
-				type_di_zero.c		\
-				type_di_negative.c
+				type_diu_zero.c		\
+				type_di_negative.c	\
+				type_u.c			\
+				type_u_positive.c
 OBJS		=	$(SRCS:.c=.o)
 AR			=	ar rcs
 LIB			=	libft
