@@ -3,12 +3,12 @@
 int main(void)
 {
 	printf("269\n");
-	printf("this %i number\n", 0);
-	ft_printf("this %i number", 0);
+	printf("this %% number\n");
+	ft_printf("this %% number");
 	printf("\n\n");
 
 	//printf("----------d----------\n");
-	printf("\npositive\n");
+	/*printf("\npositive\n");
 	printf("flag -o\t\t:%-*d\n", 6, 123);
 	ft_printf("ft/flag -o\t:%-*d\n", 6, 123);
 	printf("flag -x\t\t:%*d\n", 6, 123);
@@ -28,7 +28,7 @@ int main(void)
 	printf("w=6\t\t\t:%*d\n", 6, 123);
 	ft_printf("ft/w=6\t\t:%*d\n", 6, 123);
 	printf("p=6\t\t\t:%.*d\n", 6, 123);
-	ft_printf("ft/p=6\t\t:%.*d\n", 6, 123);
+	ft_printf("ft/p=6\t\t:%.*d\n", 6, 123);*/
 
 	/*printf("\nzero\n");
 	printf("flag -o\t\t:%-*d\n", 6, 0);

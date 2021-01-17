@@ -16,11 +16,14 @@ static int 	find_type(va_list ap, char *str)
 {
 	int 	idx;
 
-	idx = 0;
-	while(str[idx])
+	idx = -1;
+	while(str[++idx])
 	{
 		if (str[1] == '%')
+		{
 			write(1, "%" , 1);
+			return (2);
+		}
 		else if (str[idx] == 'd' || str[idx] == 'i')
 			return (type_di(ap, str));
 		else if (str[idx] == 'u')
@@ -33,7 +36,6 @@ static int 	find_type(va_list ap, char *str)
 			;
 		else if (str[idx] == 's')
 			;
-		idx++;
 	}
 }
 
