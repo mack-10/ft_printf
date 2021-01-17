@@ -21,6 +21,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/mnt/c/Users/macke/Desktop/ft_printf/type_diu_zero.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/type_diu_zero.c.o"
   "/mnt/c/Users/macke/Desktop/ft_printf/type_u.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/type_u.c.o"
   "/mnt/c/Users/macke/Desktop/ft_printf/type_u_positive.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/type_u_positive.c.o"
+  "/mnt/c/Users/macke/Desktop/ft_printf/type_x.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/type_x.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

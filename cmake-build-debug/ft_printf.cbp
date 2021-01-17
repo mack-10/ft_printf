@@ -133,6 +133,9 @@
 		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/type_u_positive.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/type_x.c">
+			<Option target="ft_printf.h"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

@@ -29,7 +29,7 @@ static int	find_type(va_list ap, char *src)
 		else if (src[idx] == 'u')
 			return (type_u(ap, src));
 		else if (src[idx] == 'X' || src[idx] == 'x')
-			;
+			return (type_x(ap, src));
 		else if (src[idx] == 'p')
 			;
 		else if (src[idx] == 'c')

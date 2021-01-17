@@ -582,6 +582,33 @@ type_u_positive.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_u_positive.c.s
 .PHONY : type_u_positive.c.s
 
+type_x.o: type_x.c.o
+
+.PHONY : type_x.o
+
+# target to build an object file
+type_x.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_x.c.o
+.PHONY : type_x.c.o
+
+type_x.i: type_x.c.i
+
+.PHONY : type_x.i
+
+# target to preprocess a source file
+type_x.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_x.c.i
+.PHONY : type_x.c.i
+
+type_x.s: type_x.c.s
+
+.PHONY : type_x.s
+
+# target to generate assembly for a file
+type_x.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_x.c.s
+.PHONY : type_x.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -642,6 +669,9 @@ help:
 	@echo "... type_u_positive.o"
 	@echo "... type_u_positive.i"
 	@echo "... type_u_positive.s"
+	@echo "... type_x.o"
+	@echo "... type_x.i"
+	@echo "... type_x.s"
 .PHONY : help
 
 
