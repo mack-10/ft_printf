@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/mnt/c/Users/macke/Desktop/ft_printf/ft_printf.c
+ft_printf.h
+/mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
+
 /mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
 stdarg.h
 -
@@ -23,8 +27,4 @@ stdlib.h
 -
 unistd.h
 -
-
-/mnt/c/Users/macke/Desktop/ft_printf/main.c
-ft_printf.h
-/mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
 

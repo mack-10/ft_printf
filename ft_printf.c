@@ -32,12 +32,12 @@ static void		pre_check(va_list ap, v_list *lst)
 	}
 }
 
-static void		wid_over9(v_list *lst)
+static void		wid_over9(v_list *lst, char *src)
 {
 	char	*wid_s;
 
 	wid_s = (char *)ft_calloc(1, 3);
-	ft_strlcpy(wid_s, lst->src, 3);
+	ft_strlcpy(wid_s, src, 3);
 	lst->wid = ft_atoi(wid_s);
 	free_p(0, &wid_s);
 }
@@ -59,7 +59,7 @@ static void		wid_check(va_list ap, v_list *lst)
 		else if (*src > '0' && *src <= '9')
 		{
 			if (src[1] >= '0' && src[1] <= '9')
-				wid_over9(lst);
+				wid_over9(lst, src);
 			else
 				lst->wid = *src - '0';
 			break ;

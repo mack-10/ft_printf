@@ -4,10 +4,12 @@ int main(void)
 {
 	int ret;
 
-	/*printf("\n");
-	printf("this %u number\n", 2147483648);
-	ft_printf("this %u number", 2147483648);
-	printf("\n\n");*/
+	printf("\n");
+	ret = printf("flag -\t\t\t|%10.5d|", -216);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("flag -\t\t\t|%10.5d|", -216);
+	printf("\tret: %d\n\n", ret);
+	printf("\n\n");
 
 	/*printf("----------di----------\n");
 	printf("+\n");
@@ -102,7 +104,7 @@ int main(void)
 	ret = ft_printf("wid:6, pre:5\t|%6.5d|", 0);
 	printf("\tret: %d\n\n", ret);*/
 
-	printf("----------u----------\n");
+	/*printf("----------u----------\n");
 	printf("+\n");
 	unsigned int p_i = 123;
 	ret = printf("flag -\t\t\t|%-6u|", p_i);
@@ -162,7 +164,7 @@ int main(void)
 	ret = printf("wid:6, pre:5\t|%6.5u|", 0);
 	printf("\tret: %d\n", ret);
 	ret = ft_printf("wid:6, pre:5\t|%6.5u|", 0);
-	printf("\tret: %d\n\n", ret);
+	printf("\tret: %d\n\n", ret);*/
 
 	/*printf("----------X----------\n");
 	printf("flag -\t\t\t:%-6X\n", p);
