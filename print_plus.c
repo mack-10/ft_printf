@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   type_di_positive.c                                 :+:      :+:    :+:   */
+/*   print_plus.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/12 23:23:45 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/17 23:53:06 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/18 03:24:57 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static void		print(v_list *lst, int n, char c)
+static void		print(t_list *lst, int n, char c)
 {
 	int		i;
 
@@ -25,7 +25,7 @@ static void		print(v_list *lst, int n, char c)
 	}
 }
 
-static void		non_flag(v_list *lst, char *src)
+static void		non_flag(t_list *lst, char *src)
 {
 	if (lst->wid > lst->size)
 	{
@@ -39,7 +39,7 @@ static void		non_flag(v_list *lst, char *src)
 	write(1, src, lst->size);
 }
 
-static void		flag_zero(v_list *lst, char *src)
+static void		flag_zero(t_list *lst, char *src)
 {
 	if (lst->pre)
 	{
@@ -54,7 +54,7 @@ static void		flag_zero(v_list *lst, char *src)
 	write(1, src, lst->size);
 }
 
-static void		flag_minus(v_list *lst, char *src)
+static void		flag_minus(t_list *lst, char *src)
 {
 	if (lst->pre > lst->size)
 		print(lst, lst->pre - lst->size, '0');
@@ -68,7 +68,7 @@ static void		flag_minus(v_list *lst, char *src)
 	}
 }
 
-void			print_p(v_list *lst, char *s)
+void			print_p(t_list *lst, char *s)
 {
 	lst->size = ft_strlen(s);
 	lst->ret += lst->size;

@@ -6,13 +6,13 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/16 03:36:40 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/18 03:17:48 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/18 03:24:36 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void		free_p(v_list **p1, char **p2)
+void		free_p(t_list **p1, char **p2)
 {
 	if (p1)
 	{
@@ -26,7 +26,7 @@ void		free_p(v_list **p1, char **p2)
 	}
 }
 
-int			cnt_add(v_list *lst)
+int			cnt_add(t_list *lst)
 {
 	char	*src;
 	int		cnt;
@@ -46,7 +46,7 @@ int			cnt_add(v_list *lst)
 	return (cnt + 1);
 }
 
-int			search_dot(v_list *lst)
+int			search_dot(t_list *lst)
 {
 	char *src;
 

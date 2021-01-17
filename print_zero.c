@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   type_diu_zero.c                                    :+:      :+:    :+:   */
+/*   print_zero.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/14 01:39:37 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/17 23:53:17 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/18 03:25:01 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static void		print(v_list *lst, int n, char c)
+static void		print(t_list *lst, int n, char c)
 {
 	int		i;
 

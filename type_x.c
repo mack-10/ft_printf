@@ -6,7 +6,7 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 21:25:35 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/17 21:25:36 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/18 03:25:19 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ static int	cnt_size(unsigned int n)
 	return (cnt);
 }
 
-static char	*trans_d_h(v_list *lst, unsigned int n)
+static char	*trans_d_h(t_list *lst, unsigned int n)
 {
 	char	*s;
 	int		size;
@@ -50,7 +50,7 @@ static char	*trans_d_h(v_list *lst, unsigned int n)
 	return (s);
 }
 
-void		type_x(va_list ap, v_list *lst)
+void		type_x(va_list ap, t_list *lst)
 {
 	unsigned int	n;
 	char			*s;

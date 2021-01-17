@@ -6,13 +6,13 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 20:13:47 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/18 03:11:26 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/18 03:25:11 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	type_u(va_list ap, v_list *lst)
+void	type_u(va_list ap, t_list *lst)
 {
 	unsigned int	n;
 	char 			*s;
