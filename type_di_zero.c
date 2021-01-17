@@ -6,13 +6,13 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/14 01:39:37 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/14 01:39:37 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/17 20:05:24 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static void 	print(int n, char c)
+static void		print(int n, char c)
 {
 	int		i;
 
@@ -24,7 +24,7 @@ static void 	print(int n, char c)
 	}
 }
 
-static void 	non_flag(char *str,int wid, int pre)
+static void		non_flag(char *str, int wid, int pre)
 {
 	if (!pre && search_dot(str))
 	{

@@ -6,22 +6,22 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/07 19:51:30 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/07 19:51:30 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/17 19:59:04 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static int 	find_type(va_list ap, char *str)
+static int	find_type(va_list ap, char *str)
 {
-	int 	idx;
+	int idx;
 
 	idx = -1;
-	while(str[++idx])
+	while (str[++idx])
 	{
 		if (str[1] == '%')
 		{
-			write(1, "%" , 1);
+			write(1, "%", 1);
 			return (2);
 		}
 		else if (str[idx] == 'd' || str[idx] == 'i')
@@ -39,7 +39,7 @@ static int 	find_type(va_list ap, char *str)
 	}
 }
 
-int    		ft_printf(const char *s, ...)
+int			ft_printf(const char *s, ...)
 {
 	va_list ap;
 	char	*str;

@@ -6,19 +6,19 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/16 03:36:40 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/16 03:36:40 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/17 20:01:03 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void 		free_p(char **p)
+void		free_p(char **p)
 {
 	free(*p);
 	p = NULL;
 }
 
-int 		cnt_size(char *str)
+int			cnt_size(char *str)
 {
 	int size;
 
@@ -44,9 +44,9 @@ int 		cnt_size(char *str)
 	return (size + 1);
 }
 
-int 		search_dot(char *str)
+int			search_dot(char *str)
 {
-	char 	c;
+	char c;
 
 	c = str[cnt_size(str) - 1];
 	while (*str != c)

@@ -6,13 +6,13 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/14 01:39:45 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/14 01:39:45 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/17 20:08:35 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static void 	print(int n, char c)
+static void		print(int n, char c)
 {
 	int		i;
 
@@ -24,7 +24,7 @@ static void 	print(int n, char c)
 	}
 }
 
-static void 	non_flag(char *src, int wid, int pre)
+static void		non_flag(char *src, int wid, int pre)
 {
 	int size;
 
@@ -92,7 +92,7 @@ static void		flag_minus(char *src, int wid, int pre)
 
 void			type_di_n(char *str, int num_int, int wid, int pre)
 {
-	char 	*num_str;
+	char	*num_str;
 
 	num_str = ft_itoa(num_int);
 	if (str[1] == '0' && str[2] == '-')

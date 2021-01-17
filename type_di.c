@@ -6,7 +6,7 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/12 23:23:49 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/12 23:23:49 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/17 20:02:43 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ static int		pre_check(va_list ap, char *str)
 
 static int		wid_over9(char *str)
 {
-	int 	wid;
+	int		wid;
 	char	*wid_s;
 
 	wid_s = (char *)ft_calloc(1, 3);
@@ -74,10 +74,9 @@ static int		wid_check(va_list ap, char *str)
 
 int				type_di(va_list ap, char *str)
 {
-	int 	wid;
-	int		pre;
-	int 	num_int;
-
+	int wid;
+	int pre;
+	int num_int;
 
 	wid = wid_check(ap, str);
 	pre = pre_check(ap, str);
