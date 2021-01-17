@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   type_d_zero.c                                      :+:      :+:    :+:   */
+/*   type_di_zero.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/14 01:39:37 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/17 20:05:24 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/17 20:17:41 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@ static void		print(int n, char c)
 	}
 }
 
-static void		non_flag(char *str, int wid, int pre)
+static void		non_flag(char *src, int wid, int pre)
 {
-	if (!pre && search_dot(str))
+	if (!pre && search_dot(src))
 	{
 		if (wid > 1)
 			print(wid, ' ');
@@ -61,9 +61,9 @@ static void		flag_zero(int wid, int pre)
 	write(1, "0", 1);
 }
 
-static void		flag_minus(char *str, int wid, int pre)
+static void		flag_minus(char *src, int wid, int pre)
 {
-	if (!pre && search_dot(str))
+	if (!pre && search_dot(src))
 	{
 		if (wid > 1)
 			print(wid, ' ');
@@ -83,14 +83,14 @@ static void		flag_minus(char *str, int wid, int pre)
 	}
 }
 
-void			type_di_z(char *str, int wid, int pre)
+void			type_diu_z(char *src, int wid, int pre)
 {
-	if (str[1] == '0' && str[2] == '-')
-		flag_minus(str, wid, pre);
-	else if (str[1] == '-')
-		flag_minus(str, wid, pre);
-	else if (str[1] == '0')
+	if (src[1] == '0' && src[2] == '-')
+		flag_minus(src, wid, pre);
+	else if (src[1] == '-')
+		flag_minus(src, wid, pre);
+	else if (src[1] == '0')
 		flag_zero(wid, pre);
 	else
-		non_flag(str, wid, pre);
+		non_flag(src, wid, pre);
 }

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   type_di_negative.c                                 :+:      :+:    :+:   */
+/*   type_u_positive.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/14 01:39:45 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/17 20:17:15 by sujeon           ###   ########.fr       */
+/*   Created: 2021/01/17 20:31:00 by sujeon            #+#    #+#             */
+/*   Updated: 2021/01/17 20:31:01 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,18 +32,13 @@ static void		non_flag(char *src, int wid, int pre)
 	if (wid > size)
 	{
 		if (pre > size)
-			print(wid - (pre + 1), ' ');
+			print(wid - pre, ' ');
 		else
 			print(wid - size, ' ');
 	}
 	if (pre > size)
-	{
-		write(1, "-", 1);
-		print(pre - (size - 1), '0');
-		write(1, src + 1, size - 1);
-	}
-	else
-		write(1, src, size);
+		print(pre - size, '0');
+	write(1, src, size);
 }
 
 static void		flag_zero(char *src, int wid, int pre)
@@ -54,18 +49,14 @@ static void		flag_zero(char *src, int wid, int pre)
 	if (pre)
 	{
 		if (pre > size)
-			print(wid - (pre + 1), ' ');
+			print(wid - pre, ' ');
 		else
 			print(wid - size, ' ');
-		write(1, "-", 1);
-		print(pre - (size - 1), '0');
+		print(pre - size, '0');
 	}
 	else
-	{
-		write(1, "-", 1);
 		print(wid - size, '0');
-	}
-	write(1, src + 1, size - 1);
+	write(1, src, size);
 }
 
 static void		flag_minus(char *src, int wid, int pre)
@@ -74,27 +65,22 @@ static void		flag_minus(char *src, int wid, int pre)
 
 	size = ft_strlen(src);
 	if (pre > size)
-	{
-		write(1, "-", 1);
-		print(pre - (size - 1), '0');
-		write(1, src + 1, size - 1);
-	}
-	else
-		write(1, src, size);
+		print(pre - size, '0');
+	write(1, src, size);
 	if (wid > size)
 	{
 		if (pre > size)
-			print(wid - (pre + 1), ' ');
+			print(wid - pre, ' ');
 		else
 			print(wid - size, ' ');
 	}
 }
 
-void			type_di_n(char *src, int num_int, int wid, int pre)
+void 		type_u_p(char *src, unsigned int num_int, int wid, int pre)
 {
 	char	*num_str;
 
-	num_str = ft_itoa(num_int);
+	num_str = ft_itoa_un(num_int);
 	if (src[1] == '0' && src[2] == '-')
 		flag_minus(num_str, wid, pre);
 	else if (src[1] == '-')

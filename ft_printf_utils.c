@@ -6,7 +6,7 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/16 03:36:40 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/17 20:01:03 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/17 20:16:07 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,42 +18,65 @@ void		free_p(char **p)
 	p = NULL;
 }
 
-int			cnt_size(char *str)
+int			cnt_size(char *src)
 {
 	int size;
 
 	size = 0;
-	while (str[size])
+	while (src[size])
 	{
-		if (str[1] == '%')
+		if (src[1] == '%')
 			return (1);
-		else if (str[size] == 'd' || str[size] == 'i')
+		else if (src[size] == 'd' || src[size] == 'i')
 			break ;
-		else if (str[size] == 'u')
+		else if (src[size] == 'u')
 			break ;
-		else if (str[size] == 'X' || str[size] == 'x')
+		else if (src[size] == 'X' || src[size] == 'x')
 			break ;
-		else if (str[size] == 'p')
+		else if (src[size] == 'p')
 			break ;
-		else if (str[size] == 'c')
+		else if (src[size] == 'c')
 			break ;
-		else if (str[size] == 's')
+		else if (src[size] == 's')
 			break ;
 		size++;
 	}
 	return (size + 1);
 }
 
-int			search_dot(char *str)
+int			search_dot(char *src)
 {
 	char c;
 
-	c = str[cnt_size(str) - 1];
-	while (*str != c)
+	c = src[cnt_size(src) - 1];
+	while (*src != c)
 	{
-		if (*str == '.')
+		if (*src == '.')
 			return (1);
-		str++;
+		src++;
 	}
 	return (0);
+}
+
+char	*ft_itoa_un(unsigned int n)
+{
+	char			*str;
+	unsigned int	cpy_n;
+	int				idx;
+
+	cpy_n = n;
+	idx = 0;
+	while (cpy_n)
+	{
+		cpy_n = cpy_n / 10;
+		idx++;
+	}
+	str = (char *)ft_calloc(1, idx + 1);
+	str[idx] = 0;
+	while (--idx != -1)
+	{
+		str[idx] = (n % 10) + '0';
+		n = n / 10;
+	}
+	return (str);
 }

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   type_di.c                                          :+:      :+:    :+:   */
+/*   type_u.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/12 23:23:49 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/17 20:16:54 by sujeon           ###   ########.fr       */
+/*   Created: 2021/01/17 20:13:47 by sujeon            #+#    #+#             */
+/*   Updated: 2021/01/17 20:13:48 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static int		pre_check(va_list ap, char *src)
 	int		pre;
 
 	pre = 0;
-	while (*src != 'd' && *src != 'i')
+	while (*src != 'u')
 	{
 		if (*src == '.')
 		{
@@ -50,7 +50,7 @@ static int		wid_check(va_list ap, char *src)
 	int		wid;
 
 	wid = 0;
-	while (*src != 'd' && *src != 'i')
+	while (*src != 'u')
 	{
 		if (*src == '.')
 			break ;
@@ -72,20 +72,18 @@ static int		wid_check(va_list ap, char *src)
 	return (wid);
 }
 
-int				type_di(va_list ap, char *src)
+int				type_u(va_list ap, char *src)
 {
-	int wid;
-	int pre;
-	int num_int;
+	int				wid;
+	int				pre;
+	unsigned int	num_int;
 
 	wid = wid_check(ap, src);
 	pre = pre_check(ap, src);
-	num_int = va_arg(ap, int);
-	if (num_int > 0)
-		type_di_p(src, num_int, wid, pre);
-	else if (!num_int)
-		type_diu_z(src, wid, pre);
+	num_int = va_arg(ap, unsigned int);
+	if (num_int)
+		type_u_p(src, num_int, wid, pre);
 	else
-		type_di_n(src, num_int, wid, pre);
+		type_diu_z(src, wid, pre);
 	return (cnt_size(src));
 }

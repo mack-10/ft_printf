@@ -6,35 +6,35 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/07 19:51:30 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/17 19:59:04 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/17 20:15:49 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static int	find_type(va_list ap, char *str)
+static int	find_type(va_list ap, char *src)
 {
 	int idx;
 
 	idx = -1;
-	while (str[++idx])
+	while (src[++idx])
 	{
-		if (str[1] == '%')
+		if (src[1] == '%')
 		{
 			write(1, "%", 1);
 			return (2);
 		}
-		else if (str[idx] == 'd' || str[idx] == 'i')
-			return (type_di(ap, str));
-		else if (str[idx] == 'u')
+		else if (src[idx] == 'd' || src[idx] == 'i')
+			return (type_di(ap, src));
+		else if (src[idx] == 'u')
+			return (type_u(ap, src));
+		else if (src[idx] == 'X' || src[idx] == 'x')
 			;
-		else if (str[idx] == 'X' || str[idx] == 'x')
+		else if (src[idx] == 'p')
 			;
-		else if (str[idx] == 'p')
+		else if (src[idx] == 'c')
 			;
-		else if (str[idx] == 'c')
-			;
-		else if (str[idx] == 's')
+		else if (src[idx] == 's')
 			;
 	}
 }
@@ -42,20 +42,20 @@ static int	find_type(va_list ap, char *str)
 int			ft_printf(const char *s, ...)
 {
 	va_list ap;
-	char	*str;
+	char	*src;
 	int		ret;
 
-	str = (char *)s;
-	ret = ft_strlen(str);
+	src = (char *)s;
+	ret = ft_strlen(src);
 	va_start(ap, s);
-	while (*str)
+	while (*src)
 	{
-		if (*str == '%')
-			str += find_type(ap, str);
+		if (*src == '%')
+			src += find_type(ap, src);
 		else
 		{
-			write(1, str, 1);
-			str++;
+			write(1, src, 1);
+			src++;
 		}
 	}
 	va_end(ap);

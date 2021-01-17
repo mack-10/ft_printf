@@ -2,9 +2,9 @@
 
 int main(void)
 {
-	printf("269\n");
-	printf("this %% number\n");
-	ft_printf("this %% number");
+	printf("u\n");
+	printf("this %u number\n", 2147483648);
+	ft_printf("this %u number", 2147483648);
 	printf("\n\n");
 
 	//printf("----------d----------\n");

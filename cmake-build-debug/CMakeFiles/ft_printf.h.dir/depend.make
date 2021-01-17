@@ -48,7 +48,15 @@ CMakeFiles/ft_printf.h.dir/type_di_positive.c.o: ../ft_printf.h
 CMakeFiles/ft_printf.h.dir/type_di_positive.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.h.dir/type_di_positive.c.o: ../type_di_positive.c
 
-CMakeFiles/ft_printf.h.dir/type_di_zero.c.o: ../ft_printf.h
-CMakeFiles/ft_printf.h.dir/type_di_zero.c.o: ../libft/libft.h
-CMakeFiles/ft_printf.h.dir/type_di_zero.c.o: ../type_di_zero.c
+CMakeFiles/ft_printf.h.dir/type_diu_zero.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.h.dir/type_diu_zero.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.h.dir/type_diu_zero.c.o: ../type_diu_zero.c
+
+CMakeFiles/ft_printf.h.dir/type_u.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.h.dir/type_u.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.h.dir/type_u.c.o: ../type_u.c
+
+CMakeFiles/ft_printf.h.dir/type_u_positive.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.h.dir/type_u_positive.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.h.dir/type_u_positive.c.o: ../type_u_positive.c
 

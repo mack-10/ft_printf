@@ -48,7 +48,15 @@ CMakeFiles/ft_printf.h.dir/type_di_positive.c.o
  /mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
  /mnt/c/Users/macke/Desktop/ft_printf/libft/libft.h
  /mnt/c/Users/macke/Desktop/ft_printf/type_di_positive.c
-CMakeFiles/ft_printf.h.dir/type_di_zero.c.o
+CMakeFiles/ft_printf.h.dir/type_diu_zero.c.o
  /mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
  /mnt/c/Users/macke/Desktop/ft_printf/libft/libft.h
- /mnt/c/Users/macke/Desktop/ft_printf/type_di_zero.c
+ /mnt/c/Users/macke/Desktop/ft_printf/type_diu_zero.c
+CMakeFiles/ft_printf.h.dir/type_u.c.o
+ /mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
+ /mnt/c/Users/macke/Desktop/ft_printf/libft/libft.h
+ /mnt/c/Users/macke/Desktop/ft_printf/type_u.c
+CMakeFiles/ft_printf.h.dir/type_u_positive.c.o
+ /mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
+ /mnt/c/Users/macke/Desktop/ft_printf/libft/libft.h
+ /mnt/c/Users/macke/Desktop/ft_printf/type_u_positive.c

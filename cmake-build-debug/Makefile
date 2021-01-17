@@ -501,32 +501,86 @@ type_di_positive.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_di_positive.c.s
 .PHONY : type_di_positive.c.s
 
-type_di_zero.o: type_di_zero.c.o
+type_diu_zero.o: type_diu_zero.c.o
 
-.PHONY : type_di_zero.o
+.PHONY : type_diu_zero.o
 
 # target to build an object file
-type_di_zero.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_di_zero.c.o
-.PHONY : type_di_zero.c.o
+type_diu_zero.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_diu_zero.c.o
+.PHONY : type_diu_zero.c.o
 
-type_di_zero.i: type_di_zero.c.i
+type_diu_zero.i: type_diu_zero.c.i
 
-.PHONY : type_di_zero.i
+.PHONY : type_diu_zero.i
 
 # target to preprocess a source file
-type_di_zero.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_di_zero.c.i
-.PHONY : type_di_zero.c.i
+type_diu_zero.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_diu_zero.c.i
+.PHONY : type_diu_zero.c.i
 
-type_di_zero.s: type_di_zero.c.s
+type_diu_zero.s: type_diu_zero.c.s
 
-.PHONY : type_di_zero.s
+.PHONY : type_diu_zero.s
 
 # target to generate assembly for a file
-type_di_zero.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_di_zero.c.s
-.PHONY : type_di_zero.c.s
+type_diu_zero.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_diu_zero.c.s
+.PHONY : type_diu_zero.c.s
+
+type_u.o: type_u.c.o
+
+.PHONY : type_u.o
+
+# target to build an object file
+type_u.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_u.c.o
+.PHONY : type_u.c.o
+
+type_u.i: type_u.c.i
+
+.PHONY : type_u.i
+
+# target to preprocess a source file
+type_u.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_u.c.i
+.PHONY : type_u.c.i
+
+type_u.s: type_u.c.s
+
+.PHONY : type_u.s
+
+# target to generate assembly for a file
+type_u.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_u.c.s
+.PHONY : type_u.c.s
+
+type_u_positive.o: type_u_positive.c.o
+
+.PHONY : type_u_positive.o
+
+# target to build an object file
+type_u_positive.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_u_positive.c.o
+.PHONY : type_u_positive.c.o
+
+type_u_positive.i: type_u_positive.c.i
+
+.PHONY : type_u_positive.i
+
+# target to preprocess a source file
+type_u_positive.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_u_positive.c.i
+.PHONY : type_u_positive.c.i
+
+type_u_positive.s: type_u_positive.c.s
+
+.PHONY : type_u_positive.s
+
+# target to generate assembly for a file
+type_u_positive.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_u_positive.c.s
+.PHONY : type_u_positive.c.s
 
 # Help Target
 help:
@@ -579,9 +633,15 @@ help:
 	@echo "... type_di_positive.o"
 	@echo "... type_di_positive.i"
 	@echo "... type_di_positive.s"
-	@echo "... type_di_zero.o"
-	@echo "... type_di_zero.i"
-	@echo "... type_di_zero.s"
+	@echo "... type_diu_zero.o"
+	@echo "... type_diu_zero.i"
+	@echo "... type_diu_zero.s"
+	@echo "... type_u.o"
+	@echo "... type_u.i"
+	@echo "... type_u.s"
+	@echo "... type_u_positive.o"
+	@echo "... type_u_positive.i"
+	@echo "... type_u_positive.s"
 .PHONY : help
 
 

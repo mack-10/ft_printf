@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   type_d_positive.c                                  :+:      :+:    :+:   */
+/*   type_di_positive.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/12 23:23:45 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/17 20:04:11 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/17 20:17:26 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,16 +76,16 @@ static void		flag_minus(char *src, int wid, int pre)
 	}
 }
 
-void			type_di_p(char *str, int num_int, int wid, int pre)
+void			type_di_p(char *src, int num_int, int wid, int pre)
 {
 	char	*num_str;
 
 	num_str = ft_itoa(num_int);
-	if (str[1] == '0' && str[2] == '-')
+	if (src[1] == '0' && src[2] == '-')
 		flag_minus(num_str, wid, pre);
-	else if (str[1] == '-')
+	else if (src[1] == '-')
 		flag_minus(num_str, wid, pre);
-	else if (str[1] == '0')
+	else if (src[1] == '0')
 		flag_zero(num_str, wid, pre);
 	else
 		non_flag(num_str, wid, pre);
