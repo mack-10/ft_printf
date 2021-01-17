@@ -6,7 +6,7 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/07 19:51:36 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/18 03:23:02 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/18 03:33:06 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,16 +30,16 @@ typedef struct	s_value
 }				t_value;
 
 int				ft_printf(const char *str, ...);
-void			type_di(va_list ap, v_list *lst);
-void			type_u(va_list ap, v_list *lst);
-void			type_x(va_list ap, v_list *lst);
-void			print_p(v_list *lst, char *s);
-void			print_z(v_list *lst);
-void			print_n(v_list *lst, char *s);
+void			type_di(va_list ap, t_value *lst);
+void			type_u(va_list ap, t_value *lst);
+void			type_x(va_list ap, t_value *lst);
+void			print_p(t_value *lst, char *s);
+void			print_z(t_value *lst);
+void			print_n(t_value *lst, char *s);
 
-void			free_p(v_list **p1, char **p2);
-int				search_dot(v_list *lst);
-int				cnt_add(v_list *lst);
+void			free_p(t_value **p1, char **p2);
+int				search_dot(t_value *lst);
+int				cnt_add(t_value *lst);
 char			*ft_itoa_un(unsigned int n);
 
 #endif
