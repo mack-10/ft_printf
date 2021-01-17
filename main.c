@@ -4,10 +4,11 @@ int main(void)
 {
 	int ret;
 
-	printf("\n");
-	ret = printf("flag -\t\t\t|%10.5d|", -216);
+	printf("x +\n");
+	int n = 123;
+	ret = printf("|%X|", n);
 	printf("\tret: %d\n", ret);
-	ret = ft_printf("flag -\t\t\t|%10.5d|", -216);
+	ret = ft_printf("|%X|", n);
 	printf("\tret: %d\n\n", ret);
 	printf("\n\n");
 
@@ -41,6 +42,10 @@ int main(void)
 	ret = printf("wid:6, pre:5\t|%6.5d|", p_d);
 	printf("\tret: %d\n", ret);
 	ret = ft_printf("wid:6, pre:5\t|%6.5d|", p_d);
+	printf("\tret: %d\n\n", ret);
+	ret = printf("wid:10, pre:5\t|%10.5d|", p_d);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("wid:10, pre:5\t|%10.5d|", p_d);
 	printf("\tret: %d\n\n", ret);
 
 	printf("-\n");
@@ -145,6 +150,10 @@ int main(void)
 	printf("\tret: %d\n", ret);
 	ret = ft_printf("flag 0\t\t\t|%06u|", 0);
 	printf("\tret: %d\n\n", ret);
+	 ret = printf("flag 0, pre\t\t|%06.2u|", 0);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("flag 0, pre\t\t|%06.2u|", 0);
+	printf("\tret: %d\n\n", ret);
 	ret = printf("flag 0-\t\t\t|%0-6u|", 0);
 	printf("\tret: %d\n", ret);
 	ret = ft_printf("flag 0-\t\t\t|%0-6u|", 0);
@@ -167,13 +176,79 @@ int main(void)
 	printf("\tret: %d\n\n", ret);*/
 
 	/*printf("----------X----------\n");
-	printf("flag -\t\t\t:%-6X\n", p);
-	printf("flag 0\t\t\t:%-6X\n", p);
-	printf("flag complex\t:%0-6X\n", p);
-	printf("w=6\t\t\t\t:%6X\n", p);
-	printf("p=6\t\t\t\t:%.6X\n", p);
-	printf("w=6/p=2\t\t\t:%6.2X\n", p);
-	printf("w=6/p=5\t\t\t:%6.5X\n", p);*/
+	printf("+\n");
+	unsigned int p_x = 123;
+	ret = printf("flag -\t\t\t|%-6X|", p_x);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("flag -\t\t\t|%-6X|", p_x);
+	printf("\tret: %d\n\n", ret);
+	ret = printf("flag 0\t\t\t|%06X|", p_x);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("flag 0\t\t\t|%06X|", p_x);
+	printf("\tret: %d\n\n", ret);
+	ret = printf("flag 0-\t\t\t|%0-6X|", p_x);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("flag 0-\t\t\t|%0-6X|", p_x);
+	printf("\tret: %d\n\n", ret);
+	ret = printf("wid:6\t\t\t|%6X|", p_x);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("wid:6\t\t\t|%6X|", p_x);
+	printf("\tret: %d\n\n", ret);
+	ret = printf("pre:6\t\t\t|%.6X|", p_x);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("pre:6\t\t\t|%.6X|", p_x);
+	printf("\tret: %d\n\n", ret);
+	ret = printf("wid:6, pre:2\t|%6.2X|", p_x);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("wid:6, pre:2\t|%6.2X|", p_x);
+	printf("\tret: %d\n\n", ret);
+	ret = printf("wid:6, pre:5\t|%6.5X|", p_x);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("wid:6, pre:5\t|%6.5X|", p_x);
+	printf("\tret: %d\n\n", ret);
+	ret = printf("wid:10, pre:5\t|%10.5X|", p_x);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("wid:10, pre:5\t|%10.5X|", p_x);
+	printf("\tret: %d\n\n", ret);
+
+	printf("0\n");
+	ret = printf("flag -\t\t\t|%-6X|", 0);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("flag -\t\t\t|%-6X|", 0);
+	printf("\tret: %d\n\n", ret);
+	ret = printf("flag 0\t\t\t|%06X|", 0);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("flag 0\t\t\t|%06X|", 0);
+	printf("\tret: %d\n\n", ret);
+	ret = printf("flag 0, pre\t\t|%06.2X|", 0);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("flag 0, pre\t\t|%06.2X|", 0);
+	printf("\tret: %d\n\n", ret);
+	ret = printf("flag 0-\t\t\t|%0-6X|", 0);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("flag 0-\t\t\t|%0-6X|", 0);
+	printf("\tret: %d\n\n", ret);
+	ret = printf("wid:6\t\t\t|%6X|", 0);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("wid:6\t\t\t|%6X|", 0);
+	printf("\tret: %d\n\n", ret);
+	ret = printf("pre:6\t\t\t|%.6X|", 0);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("pre:6\t\t\t|%.6X|", 0);
+	printf("\tret: %d\n\n", ret);
+	ret = printf("wid:6, pre:2\t|%6.2X|", 0);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("wid:6, pre:2\t|%6.2X|", 0);
+	printf("\tret: %d\n\n", ret);
+	ret = printf("wid:6, pre:5\t|%6.5X|", 0);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("wid:6, pre:5\t|%6.5X|", 0);
+	printf("\tret: %d\n\n", ret);
+	ret = printf("wid:10, pre:5\t|%10.5X|", 0);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("wid:10, pre:5\t|%10.5X|", 0);
+	printf("\tret: %d\n\n", ret);*/
+
 
 	/*printf("----------x----------\n");
 	printf("flag -\t\t\t:%-6x\n", p);

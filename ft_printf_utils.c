@@ -26,30 +26,23 @@ void		free_p(v_list **p1, char **p2)
 	}
 }
 
-int			cnt_size(char *src)
+int			cnt_add(v_list *lst)
 {
-	int size;
+	char 	*src;
+	int		cnt;
 
-	size = 0;
-	while (src[size])
+	src = lst->src;
+	cnt = 0;
+	while (src[cnt])
 	{
-		if (src[1] == '%')
-			return (1);
-		else if (src[size] == 'd' || src[size] == 'i')
+		if (src[0] == '%' && src[1] == '%')
+			return (2);
+		if (src[cnt] == 'd' || src[cnt] == 'i' || src[cnt] == 'u' || src[cnt] == 'X'
+		|| src[cnt] == 'x' || src[cnt] == 'c' || src[cnt] == 's' || src[cnt] == 'p')
 			break ;
-		else if (src[size] == 'u')
-			break ;
-		else if (src[size] == 'X' || src[size] == 'x')
-			break ;
-		else if (src[size] == 'p')
-			break ;
-		else if (src[size] == 'c')
-			break ;
-		else if (src[size] == 's')
-			break ;
-		size++;
+		cnt++;
 	}
-	return (size + 1);
+	return (cnt + 1);
 }
 
 int			search_dot(v_list *lst)

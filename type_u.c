@@ -14,12 +14,15 @@
 
 int				type_u(va_list ap, v_list *lst)
 {
-	unsigned int	num_int;
+	unsigned int	n;
+	char 			*s;
 
-	num_int = va_arg(ap, unsigned int);
-	if (num_int)
-		type_u_p(lst, num_int);
+	n = va_arg(ap, unsigned int);
+	s = ft_itoa_un(n);
+	if (n)
+		print_p(lst, s);
 	else
-		type_diu_z(lst);
-	lst->src += cnt_size(lst->src);
+		print_z(lst);
+	free_p(0, &s);
+	lst->src += cnt_add(lst);
 }

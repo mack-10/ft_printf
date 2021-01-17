@@ -14,13 +14,14 @@ set(CMAKE_DEPENDS_CHECK_C
   "/mnt/c/Users/macke/Desktop/ft_printf/libft/ft_strdup.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/libft/ft_strdup.c.o"
   "/mnt/c/Users/macke/Desktop/ft_printf/libft/ft_strlcpy.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/libft/ft_strlcpy.c.o"
   "/mnt/c/Users/macke/Desktop/ft_printf/libft/ft_strlen.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/libft/ft_strlen.c.o"
+  "/mnt/c/Users/macke/Desktop/ft_printf/libft/ft_tolower.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/libft/ft_tolower.c.o"
   "/mnt/c/Users/macke/Desktop/ft_printf/main.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/main.c.o"
+  "/mnt/c/Users/macke/Desktop/ft_printf/print_+.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/print_+.c.o"
+  "/mnt/c/Users/macke/Desktop/ft_printf/print_-.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/print_-.c.o"
+  "/mnt/c/Users/macke/Desktop/ft_printf/print_0.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/print_0.c.o"
   "/mnt/c/Users/macke/Desktop/ft_printf/type_di.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/type_di.c.o"
-  "/mnt/c/Users/macke/Desktop/ft_printf/type_di_negative.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/type_di_negative.c.o"
-  "/mnt/c/Users/macke/Desktop/ft_printf/type_di_positive.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/type_di_positive.c.o"
-  "/mnt/c/Users/macke/Desktop/ft_printf/type_diu_zero.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/type_diu_zero.c.o"
   "/mnt/c/Users/macke/Desktop/ft_printf/type_u.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/type_u.c.o"
-  "/mnt/c/Users/macke/Desktop/ft_printf/type_u_positive.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/type_u_positive.c.o"
+  "/mnt/c/Users/macke/Desktop/ft_printf/type_x.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/type_x.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

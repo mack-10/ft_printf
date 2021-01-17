@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   type_u_positive.c                                  :+:      :+:    :+:   */
+/*   type_di_positive.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/17 20:31:00 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/17 21:20:02 by sujeon           ###   ########.fr       */
+/*   Created: 2021/01/12 23:23:45 by sujeon            #+#    #+#             */
+/*   Updated: 2021/01/17 23:53:06 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,20 +68,16 @@ static void		flag_minus(v_list *lst, char *src)
 	}
 }
 
-void			type_u_p(v_list *lst, unsigned int num_int)
+void			print_p(v_list *lst, char *s)
 {
-	char	*num_str;
-
-	num_str = ft_itoa_un(num_int);
-	lst->size = ft_strlen(num_str);
+	lst->size = ft_strlen(s);
 	lst->ret += lst->size;
 	if (lst->src[1] == '0' && lst->src[2] == '-')
-		flag_minus(lst, num_str);
+		flag_minus(lst, s);
 	else if (lst->src[1] == '-')
-		flag_minus(lst, num_str);
+		flag_minus(lst, s);
 	else if (lst->src[1] == '0')
-		flag_zero(lst, num_str);
+		flag_zero(lst, s);
 	else
-		non_flag(lst, num_str);
-	free_p(0, &num_str);
+		non_flag(lst, s);
 }

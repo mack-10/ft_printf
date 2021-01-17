@@ -393,6 +393,33 @@ libft/ft_strlen.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_strlen.c.s
 .PHONY : libft/ft_strlen.c.s
 
+libft/ft_tolower.o: libft/ft_tolower.c.o
+
+.PHONY : libft/ft_tolower.o
+
+# target to build an object file
+libft/ft_tolower.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_tolower.c.o
+.PHONY : libft/ft_tolower.c.o
+
+libft/ft_tolower.i: libft/ft_tolower.c.i
+
+.PHONY : libft/ft_tolower.i
+
+# target to preprocess a source file
+libft/ft_tolower.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_tolower.c.i
+.PHONY : libft/ft_tolower.c.i
+
+libft/ft_tolower.s: libft/ft_tolower.c.s
+
+.PHONY : libft/ft_tolower.s
+
+# target to generate assembly for a file
+libft/ft_tolower.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_tolower.c.s
+.PHONY : libft/ft_tolower.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -419,6 +446,87 @@ main.s: main.c.s
 main.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/main.c.s
 .PHONY : main.c.s
+
+print_+.o: print_+.c.o
+
+.PHONY : print_+.o
+
+# target to build an object file
+print_+.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_+.c.o
+.PHONY : print_+.c.o
+
+print_+.i: print_+.c.i
+
+.PHONY : print_+.i
+
+# target to preprocess a source file
+print_+.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_+.c.i
+.PHONY : print_+.c.i
+
+print_+.s: print_+.c.s
+
+.PHONY : print_+.s
+
+# target to generate assembly for a file
+print_+.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_+.c.s
+.PHONY : print_+.c.s
+
+print_-.o: print_-.c.o
+
+.PHONY : print_-.o
+
+# target to build an object file
+print_-.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_-.c.o
+.PHONY : print_-.c.o
+
+print_-.i: print_-.c.i
+
+.PHONY : print_-.i
+
+# target to preprocess a source file
+print_-.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_-.c.i
+.PHONY : print_-.c.i
+
+print_-.s: print_-.c.s
+
+.PHONY : print_-.s
+
+# target to generate assembly for a file
+print_-.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_-.c.s
+.PHONY : print_-.c.s
+
+print_0.o: print_0.c.o
+
+.PHONY : print_0.o
+
+# target to build an object file
+print_0.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_0.c.o
+.PHONY : print_0.c.o
+
+print_0.i: print_0.c.i
+
+.PHONY : print_0.i
+
+# target to preprocess a source file
+print_0.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_0.c.i
+.PHONY : print_0.c.i
+
+print_0.s: print_0.c.s
+
+.PHONY : print_0.s
+
+# target to generate assembly for a file
+print_0.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_0.c.s
+.PHONY : print_0.c.s
 
 type_di.o: type_di.c.o
 
@@ -447,87 +555,6 @@ type_di.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_di.c.s
 .PHONY : type_di.c.s
 
-type_di_negative.o: type_di_negative.c.o
-
-.PHONY : type_di_negative.o
-
-# target to build an object file
-type_di_negative.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_di_negative.c.o
-.PHONY : type_di_negative.c.o
-
-type_di_negative.i: type_di_negative.c.i
-
-.PHONY : type_di_negative.i
-
-# target to preprocess a source file
-type_di_negative.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_di_negative.c.i
-.PHONY : type_di_negative.c.i
-
-type_di_negative.s: type_di_negative.c.s
-
-.PHONY : type_di_negative.s
-
-# target to generate assembly for a file
-type_di_negative.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_di_negative.c.s
-.PHONY : type_di_negative.c.s
-
-type_di_positive.o: type_di_positive.c.o
-
-.PHONY : type_di_positive.o
-
-# target to build an object file
-type_di_positive.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_di_positive.c.o
-.PHONY : type_di_positive.c.o
-
-type_di_positive.i: type_di_positive.c.i
-
-.PHONY : type_di_positive.i
-
-# target to preprocess a source file
-type_di_positive.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_di_positive.c.i
-.PHONY : type_di_positive.c.i
-
-type_di_positive.s: type_di_positive.c.s
-
-.PHONY : type_di_positive.s
-
-# target to generate assembly for a file
-type_di_positive.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_di_positive.c.s
-.PHONY : type_di_positive.c.s
-
-type_diu_zero.o: type_diu_zero.c.o
-
-.PHONY : type_diu_zero.o
-
-# target to build an object file
-type_diu_zero.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_diu_zero.c.o
-.PHONY : type_diu_zero.c.o
-
-type_diu_zero.i: type_diu_zero.c.i
-
-.PHONY : type_diu_zero.i
-
-# target to preprocess a source file
-type_diu_zero.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_diu_zero.c.i
-.PHONY : type_diu_zero.c.i
-
-type_diu_zero.s: type_diu_zero.c.s
-
-.PHONY : type_diu_zero.s
-
-# target to generate assembly for a file
-type_diu_zero.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_diu_zero.c.s
-.PHONY : type_diu_zero.c.s
-
 type_u.o: type_u.c.o
 
 .PHONY : type_u.o
@@ -555,32 +582,32 @@ type_u.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_u.c.s
 .PHONY : type_u.c.s
 
-type_u_positive.o: type_u_positive.c.o
+type_x.o: type_x.c.o
 
-.PHONY : type_u_positive.o
+.PHONY : type_x.o
 
 # target to build an object file
-type_u_positive.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_u_positive.c.o
-.PHONY : type_u_positive.c.o
+type_x.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_x.c.o
+.PHONY : type_x.c.o
 
-type_u_positive.i: type_u_positive.c.i
+type_x.i: type_x.c.i
 
-.PHONY : type_u_positive.i
+.PHONY : type_x.i
 
 # target to preprocess a source file
-type_u_positive.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_u_positive.c.i
-.PHONY : type_u_positive.c.i
+type_x.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_x.c.i
+.PHONY : type_x.c.i
 
-type_u_positive.s: type_u_positive.c.s
+type_x.s: type_x.c.s
 
-.PHONY : type_u_positive.s
+.PHONY : type_x.s
 
 # target to generate assembly for a file
-type_u_positive.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_u_positive.c.s
-.PHONY : type_u_positive.c.s
+type_x.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_x.c.s
+.PHONY : type_x.c.s
 
 # Help Target
 help:
@@ -621,27 +648,30 @@ help:
 	@echo "... libft/ft_strlen.o"
 	@echo "... libft/ft_strlen.i"
 	@echo "... libft/ft_strlen.s"
+	@echo "... libft/ft_tolower.o"
+	@echo "... libft/ft_tolower.i"
+	@echo "... libft/ft_tolower.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... print_+.o"
+	@echo "... print_+.i"
+	@echo "... print_+.s"
+	@echo "... print_-.o"
+	@echo "... print_-.i"
+	@echo "... print_-.s"
+	@echo "... print_0.o"
+	@echo "... print_0.i"
+	@echo "... print_0.s"
 	@echo "... type_di.o"
 	@echo "... type_di.i"
 	@echo "... type_di.s"
-	@echo "... type_di_negative.o"
-	@echo "... type_di_negative.i"
-	@echo "... type_di_negative.s"
-	@echo "... type_di_positive.o"
-	@echo "... type_di_positive.i"
-	@echo "... type_di_positive.s"
-	@echo "... type_diu_zero.o"
-	@echo "... type_diu_zero.i"
-	@echo "... type_diu_zero.s"
 	@echo "... type_u.o"
 	@echo "... type_u.i"
 	@echo "... type_u.s"
-	@echo "... type_u_positive.o"
-	@echo "... type_u_positive.i"
-	@echo "... type_u_positive.s"
+	@echo "... type_x.o"
+	@echo "... type_x.i"
+	@echo "... type_x.s"
 .PHONY : help
 
 

@@ -31,14 +31,15 @@ typedef struct	values
 
 int			ft_printf(const char *str, ...);
 void		type_di(va_list ap, v_list *lst);
-void		type_di_p(v_list *lst, int num_int);
-void		type_diu_z(v_list *lst);
-void		type_di_n(v_list *lst, int num_int);
 int			type_u(va_list ap, v_list *lst);
-void		type_u_p(v_list *lst, unsigned int num_int);
+void		type_x(va_list ap, v_list *lst);
+void		print_p(v_list *lst, char *s);
+void		print_z(v_list *lst);
+void		print_n(v_list *lst, char *s);
+
 void		free_p(v_list **p1, char **p2);
 int			search_dot(v_list *lst);
-int			cnt_size(char *str);
+int			cnt_add(v_list *lst);
 char		*ft_itoa_un(unsigned int n);
 
 #endif

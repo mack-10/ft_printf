@@ -12,7 +12,55 @@
 
 #include "ft_printf.h"
 
-int			type_x(va_list ap, char *src)
+static int	cnt_size(unsigned int n)
 {
+	int cnt;
 
+	cnt = 0;
+	while (n)
+	{
+		n = n / 16;
+		cnt++;
+	}
+	return (cnt);
+}
+
+static char	*trans_d_h(v_list *lst, unsigned int n)
+{
+	char	*s;
+	int		size;
+
+	size = cnt_size(n);
+	s = (char *)ft_calloc(1, size);
+	s[size] = 0;
+	size--;
+	while (n)
+	{
+		if ((n % 16) >= 10)
+		{
+			s[size] = (n % 16) + 55;
+			if (lst->type == 'x')
+				s[size] = ft_tolower(s[size]);
+		}
+		else
+			s[size] = (n % 16) + '0';
+		n = n / 16;
+		size--;
+	}
+	return (s);
+}
+
+void		type_x(va_list ap, v_list *lst)
+{
+	unsigned int	n;
+	char			*s;
+
+	n = va_arg(ap, unsigned int);
+	s = trans_d_h(lst, n);
+	if (n)
+		print_p(lst, s);
+	else
+		print_z(lst);
+	free_p(0, &s);
+	lst->src += cnt_add(lst);
 }

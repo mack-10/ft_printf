@@ -84,7 +84,7 @@ static void		flag_minus(v_list *lst)
 	}
 }
 
-void			type_diu_z(v_list *lst)
+void			print_z(v_list *lst)
 {
 	if (lst->src[1] == '0' && lst->src[2] == '-')
 		flag_minus(lst);

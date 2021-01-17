@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.lst->type                                        :+:      :+:    :+:   */
+/*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/07 19:51:30 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/17 23:51:28 by sujeon           ###   ########.fr       */
+/*   Created: 2021/01/18 01:28:10 by sujeon            #+#    #+#             */
+/*   Updated: 2021/01/18 01:28:11 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,22 +68,22 @@ static void		wid_check(va_list ap, v_list *lst)
 	}
 }
 
-static int	find_type(va_list ap, v_list *lst)
+static void	find_type(va_list ap, v_list *lst)
 {
 	wid_check(ap, lst);
 	pre_check(ap, lst);
-	lst->type = lst->src[cnt_size(lst->src) - 1];
+	lst->type = lst->src[cnt_add(lst) - 1];
 	if (lst->type == '%')
 	{
 		write(1, "%", 1);
-		return (2);
+		lst->src += cnt_add(lst);
 	}
 	else if (lst->type == 'd' || lst->type == 'i')
 		type_di(ap, lst);
 	else if (lst->type == 'u')
 		type_u(ap, lst);
 	else if (lst->type == 'X' || lst->type == 'x')
-		;
+		type_x(ap, lst);
 	else if (lst->type == 'p')
 		;
 	else if (lst->type == 'c')

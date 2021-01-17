@@ -109,28 +109,31 @@
 		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/libft/ft_strlen.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/libft/ft_tolower.c">
+			<Option target="ft_printf.h"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/libft/libft.h">
 			<Option target="ft_printf.h"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/main.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/print_+.c">
+			<Option target="ft_printf.h"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/print_-.c">
+			<Option target="ft_printf.h"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/print_0.c">
+			<Option target="ft_printf.h"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/type_di.c">
-			<Option target="ft_printf.h"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/type_di_negative.c">
-			<Option target="ft_printf.h"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/type_di_positive.c">
-			<Option target="ft_printf.h"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/type_diu_zero.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/type_u.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/type_u_positive.c">
+		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/type_x.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/CMakeLists.txt">
