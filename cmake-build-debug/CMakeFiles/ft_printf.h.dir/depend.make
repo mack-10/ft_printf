@@ -60,7 +60,3 @@ CMakeFiles/ft_printf.h.dir/type_u_positive.c.o: ../ft_printf.h
 CMakeFiles/ft_printf.h.dir/type_u_positive.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.h.dir/type_u_positive.c.o: ../type_u_positive.c
 
-CMakeFiles/ft_printf.h.dir/type_x.c.o: ../ft_printf.h
-CMakeFiles/ft_printf.h.dir/type_x.c.o: ../libft/libft.h
-CMakeFiles/ft_printf.h.dir/type_x.c.o: ../type_x.c
-

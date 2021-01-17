@@ -6,17 +6,18 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/12 23:23:45 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/17 20:17:26 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/17 23:53:06 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static void		print(int n, char c)
+static void		print(v_list *lst, int n, char c)
 {
 	int		i;
 
 	i = 0;
+	lst->ret += n;
 	while (i < n)
 	{
 		write(1, &c, 1);
@@ -24,70 +25,63 @@ static void		print(int n, char c)
 	}
 }
 
-static void		non_flag(char *src, int wid, int pre)
+static void		non_flag(v_list *lst, char *src)
 {
-	int size;
-
-	size = ft_strlen(src);
-	if (wid > size)
+	if (lst->wid > lst->size)
 	{
-		if (pre > size)
-			print(wid - pre, ' ');
+		if (lst->pre > lst->size)
+			print(lst, lst->wid - lst->pre, ' ');
 		else
-			print(wid - size, ' ');
+			print(lst, lst->wid - lst->size, ' ');
 	}
-	if (pre > size)
-		print(pre - size, '0');
-	write(1, src, size);
+	if (lst->pre > lst->size)
+		print(lst, lst->pre - lst->size, '0');
+	write(1, src, lst->size);
 }
 
-static void		flag_zero(char *src, int wid, int pre)
+static void		flag_zero(v_list *lst, char *src)
 {
-	int size;
-
-	size = ft_strlen(src);
-	if (pre)
+	if (lst->pre)
 	{
-		if (pre > size)
-			print(wid - pre, ' ');
+		if (lst->pre > lst->size)
+			print(lst, lst->wid - lst->pre, ' ');
 		else
-			print(wid - size, ' ');
-		print(pre - size, '0');
+			print(lst, lst->wid - lst->size, ' ');
+		print(lst, lst->pre - lst->size, '0');
 	}
 	else
-		print(wid - size, '0');
-	write(1, src, size);
+		print(lst, lst->wid - lst->size, '0');
+	write(1, src, lst->size);
 }
 
-static void		flag_minus(char *src, int wid, int pre)
+static void		flag_minus(v_list *lst, char *src)
 {
-	int		size;
-
-	size = ft_strlen(src);
-	if (pre > size)
-		print(pre - size, '0');
-	write(1, src, size);
-	if (wid > size)
+	if (lst->pre > lst->size)
+		print(lst, lst->pre - lst->size, '0');
+	write(1, src, lst->size);
+	if (lst->wid > lst->size)
 	{
-		if (pre > size)
-			print(wid - pre, ' ');
+		if (lst->pre > lst->size)
+			print(lst, lst->wid - lst->pre, ' ');
 		else
-			print(wid - size, ' ');
+			print(lst, lst->wid - lst->size, ' ');
 	}
 }
 
-void			type_di_p(char *src, int num_int, int wid, int pre)
+void			type_di_p(v_list *lst, int num_int)
 {
 	char	*num_str;
 
 	num_str = ft_itoa(num_int);
-	if (src[1] == '0' && src[2] == '-')
-		flag_minus(num_str, wid, pre);
-	else if (src[1] == '-')
-		flag_minus(num_str, wid, pre);
-	else if (src[1] == '0')
-		flag_zero(num_str, wid, pre);
+	lst->size = ft_strlen(num_str);
+	lst->ret += lst->size;
+	if (lst->src[1] == '0' && lst->src[2] == '-')
+		flag_minus(lst, num_str);
+	else if (lst->src[1] == '-')
+		flag_minus(lst, num_str);
+	else if (lst->src[1] == '0')
+		flag_zero(lst, num_str);
 	else
-		non_flag(num_str, wid, pre);
-	free_p(&num_str);
+		non_flag(lst, num_str);
+	free_p(0, &num_str);
 }

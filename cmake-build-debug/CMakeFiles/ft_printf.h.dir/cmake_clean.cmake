@@ -16,7 +16,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_printf.h.dir/type_diu_zero.c.o"
   "CMakeFiles/ft_printf.h.dir/type_u.c.o"
   "CMakeFiles/ft_printf.h.dir/type_u_positive.c.o"
-  "CMakeFiles/ft_printf.h.dir/type_x.c.o"
   "ft_printf.h"
   "ft_printf.h.pdb"
 )

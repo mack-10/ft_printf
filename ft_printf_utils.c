@@ -12,10 +12,18 @@
 
 #include "ft_printf.h"
 
-void		free_p(char **p)
+void		free_p(v_list **p1, char **p2)
 {
-	free(*p);
-	p = NULL;
+	if (p1)
+	{
+		free(*p1);
+		p1 = NULL;
+	}
+	else
+	{
+		free(*p2);
+		p2 = NULL;
+	}
 }
 
 int			cnt_size(char *src)
@@ -44,12 +52,11 @@ int			cnt_size(char *src)
 	return (size + 1);
 }
 
-int			search_dot(char *src)
-{
-	char c;
+int			search_dot(v_list *lst)
+{	char *src;
 
-	c = src[cnt_size(src) - 1];
-	while (*src != c)
+	src = lst->src;
+	while (*src != lst->type)
 	{
 		if (*src == '.')
 			return (1);

@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   type_di_zero.c                                     :+:      :+:    :+:   */
+/*   type_diu_zero.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/14 01:39:37 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/17 20:17:41 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/17 23:53:17 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static void		print(int n, char c)
+static void		print(v_list *lst, int n, char c)
 {
 	int		i;
 
 	i = 0;
+	lst->ret += n;
 	while (i < n)
 	{
 		write(1, &c, 1);
@@ -24,73 +25,74 @@ static void		print(int n, char c)
 	}
 }
 
-static void		non_flag(char *src, int wid, int pre)
+static void		non_flag(v_list *lst)
 {
-	if (!pre && search_dot(src))
+	if (!lst->pre && search_dot(lst))
 	{
-		if (wid > 1)
-			print(wid, ' ');
+		if (lst->wid > 1)
+			print(lst, lst->wid, ' ');
 	}
 	else
 	{
-		if (wid > 1)
+		if (lst->wid > 1)
 		{
-			if (pre > 1)
-				print(wid - pre, ' ');
+			if (lst->pre > 1)
+				print(lst, lst->wid - lst->pre, ' ');
 			else
-				print(wid - 1, ' ');
+				print(lst, lst->wid - 1, ' ');
 		}
-		if (pre > 1)
-			print(pre - 1, '0');
+		if (lst->pre > 1)
+			print(lst, lst->pre - 1, '0');
 		write(1, "0", 1);
 	}
 }
 
-static void		flag_zero(int wid, int pre)
+static void		flag_zero(v_list *lst)
 {
-	if (pre)
+	if (lst->pre)
 	{
-		if (pre > 1)
-			print(wid - pre, ' ');
+		if (lst->pre > 1)
+			print(lst, lst->wid - lst->pre, ' ');
 		else
-			print(wid - 1, ' ');
-		print(pre - 1, '0');
+			print(lst, lst->wid - 1, ' ');
+		print(lst, lst->pre - 1, '0');
 	}
 	else
-		print(wid - 1, '0');
+		print(lst, lst->wid - 1, '0');
 	write(1, "0", 1);
 }
 
-static void		flag_minus(char *src, int wid, int pre)
+static void		flag_minus(v_list *lst)
 {
-	if (!pre && search_dot(src))
+	if (!lst->pre && search_dot(lst))
 	{
-		if (wid > 1)
-			print(wid, ' ');
+		if (lst->wid > 1)
+			print(lst, lst->wid, ' ');
 	}
 	else
 	{
-		if (pre > 1)
-			print(pre - 1, '0');
+		if (lst->pre > 1)
+			print(lst, lst->pre - 1, '0');
 		write(1, "0", 1);
-		if (wid > 1)
+		if (lst->wid > 1)
 		{
-			if (pre > 1)
-				print(wid - pre, ' ');
+			if (lst->pre > 1)
+				print(lst, lst->wid - lst->pre, ' ');
 			else
-				print(wid - 1, ' ');
+				print(lst, lst->wid - 1, ' ');
 		}
 	}
 }
 
-void			type_diu_z(char *src, int wid, int pre)
+void			type_diu_z(v_list *lst)
 {
-	if (src[1] == '0' && src[2] == '-')
-		flag_minus(src, wid, pre);
-	else if (src[1] == '-')
-		flag_minus(src, wid, pre);
-	else if (src[1] == '0')
-		flag_zero(wid, pre);
+	if (lst->src[1] == '0' && lst->src[2] == '-')
+		flag_minus(lst);
+	else if (lst->src[1] == '-')
+		flag_minus(lst);
+	else if (lst->src[1] == '0')
+		flag_zero(lst);
 	else
-		non_flag(src, wid, pre);
+		non_flag(lst);
+	lst->ret++;
 }

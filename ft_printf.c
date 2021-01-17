@@ -1,63 +1,119 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   ft_printf.lst->type                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/07 19:51:30 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/17 20:15:49 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/17 23:51:28 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static int	find_type(va_list ap, char *src)
+static void		pre_check(va_list ap, v_list *lst)
 {
-	int idx;
+	char	*src;
 
-	idx = -1;
-	while (src[++idx])
+	src = lst->src;
+	while (*src != lst->type)
 	{
-		if (src[1] == '%')
+		if (*src == '.')
 		{
-			write(1, "%", 1);
-			return (2);
+			src++;
+			if (*src >= '0' && *src <= '9')
+				lst->pre = *src - '0';
+			else
+				lst->pre = va_arg(ap, int);
+			break ;
 		}
-		else if (src[idx] == 'd' || src[idx] == 'i')
-			return (type_di(ap, src));
-		else if (src[idx] == 'u')
-			return (type_u(ap, src));
-		else if (src[idx] == 'X' || src[idx] == 'x')
-			return (type_x(ap, src));
-		else if (src[idx] == 'p')
-			;
-		else if (src[idx] == 'c')
-			;
-		else if (src[idx] == 's')
-			;
+		src++;
 	}
+}
+
+static void		wid_over9(v_list *lst)
+{
+	char	*wid_s;
+
+	wid_s = (char *)ft_calloc(1, 3);
+	ft_strlcpy(wid_s, lst->src, 3);
+	lst->wid = ft_atoi(wid_s);
+	free_p(0, &wid_s);
+}
+
+static void		wid_check(va_list ap, v_list *lst)
+{
+	char *src;
+
+	src = lst->src;
+	while (*src != lst->type)
+	{
+		if (*src == '.')
+			break ;
+		if (*src == '*')
+		{
+			lst->wid = va_arg(ap, int);
+			break ;
+		}
+		else if (*src > '0' && *src <= '9')
+		{
+			if (src[1] >= '0' && src[1] <= '9')
+				wid_over9(lst);
+			else
+				lst->wid = *src - '0';
+			break ;
+		}
+		src++;
+	}
+}
+
+static int	find_type(va_list ap, v_list *lst)
+{
+	wid_check(ap, lst);
+	pre_check(ap, lst);
+	lst->type = lst->src[cnt_size(lst->src) - 1];
+	if (lst->type == '%')
+	{
+		write(1, "%", 1);
+		return (2);
+	}
+	else if (lst->type == 'd' || lst->type == 'i')
+		type_di(ap, lst);
+	else if (lst->type == 'u')
+		type_u(ap, lst);
+	else if (lst->type == 'X' || lst->type == 'x')
+		;
+	else if (lst->type == 'p')
+		;
+	else if (lst->type == 'c')
+		;
+	else if (lst->type == 's')
+		;
 }
 
 int			ft_printf(const char *s, ...)
 {
 	va_list ap;
-	char	*src;
+	v_list	*lst;
 	int		ret;
 
-	src = (char *)s;
-	ret = ft_strlen(src);
+	lst = (v_list *)ft_calloc(1, sizeof(v_list));
+	lst->src = (char *)s;
 	va_start(ap, s);
-	while (*src)
+	while (*lst->src)
 	{
-		if (*src == '%')
-			src += find_type(ap, src);
+		if (*lst->src == '%')
+			find_type(ap, lst);
 		else
 		{
-			write(1, src, 1);
-			src++;
+			write(1, lst->src, 1);
+			lst->ret++;
+			lst->src++;
 		}
 	}
+	ret = lst->ret;
+	free_p(&lst, 0);
 	va_end(ap);
 	return (ret);
 }
