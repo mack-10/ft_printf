@@ -6,7 +6,7 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 20:31:00 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/17 20:31:01 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/17 21:20:02 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ static void		flag_minus(char *src, int wid, int pre)
 	}
 }
 
-void 		type_u_p(char *src, unsigned int num_int, int wid, int pre)
+void			type_u_p(char *src, unsigned int num_int, int wid, int pre)
 {
 	char	*num_str;
 

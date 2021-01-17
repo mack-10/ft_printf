@@ -6,7 +6,7 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/16 03:36:40 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/17 20:16:07 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/17 21:17:02 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ int			search_dot(char *src)
 	return (0);
 }
 
-char	*ft_itoa_un(unsigned int n)
+char		*ft_itoa_un(unsigned int n)
 {
 	char			*str;
 	unsigned int	cpy_n;
