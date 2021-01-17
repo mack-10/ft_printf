@@ -27,7 +27,7 @@ typedef struct	s_value
 	int		size;
 	char	*src;
 	char	type;
-}				t_list;
+}				t_value;
 
 int				ft_printf(const char *str, ...);
 void			type_di(va_list ap, v_list *lst);

@@ -6,13 +6,13 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/14 01:39:37 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/18 03:25:01 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/18 03:30:29 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static void		print(t_list *lst, int n, char c)
+static void		print(t_value *lst, int n, char c)
 {
 	int		i;
 
@@ -25,7 +25,7 @@ static void		print(t_list *lst, int n, char c)
 	}
 }
 
-static void		non_flag(v_list *lst)
+static void		non_flag(t_value *lst)
 {
 	if (!lst->pre && search_dot(lst))
 	{
@@ -47,7 +47,7 @@ static void		non_flag(v_list *lst)
 	}
 }
 
-static void		flag_zero(v_list *lst)
+static void		flag_zero(t_value *lst)
 {
 	if (lst->pre)
 	{
@@ -62,7 +62,7 @@ static void		flag_zero(v_list *lst)
 	write(1, "0", 1);
 }
 
-static void		flag_minus(v_list *lst)
+static void		flag_minus(t_value *lst)
 {
 	if (!lst->pre && search_dot(lst))
 	{
@@ -84,7 +84,7 @@ static void		flag_minus(v_list *lst)
 	}
 }
 
-void			print_z(v_list *lst)
+void			print_z(t_value *lst)
 {
 	if (lst->src[1] == '0' && lst->src[2] == '-')
 		flag_minus(lst);

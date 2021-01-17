@@ -6,13 +6,13 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/18 01:28:10 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/18 03:24:25 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/18 03:29:08 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static void	pre_check(va_list ap, t_list *lst)
+static void	pre_check(va_list ap, t_value *lst)
 {
 	char	*src;
 
@@ -32,7 +32,7 @@ static void	pre_check(va_list ap, t_list *lst)
 	}
 }
 
-static void	wid_over9(t_list *lst, char *src)
+static void	wid_over9(t_value *lst, char *src)
 {
 	char	*wid_s;
 
@@ -42,7 +42,7 @@ static void	wid_over9(t_list *lst, char *src)
 	free_p(0, &wid_s);
 }
 
-static void	wid_check(va_list ap, t_list *lst)
+static void	wid_check(va_list ap, t_value *lst)
 {
 	char *src;
 
@@ -68,7 +68,7 @@ static void	wid_check(va_list ap, t_list *lst)
 	}
 }
 
-static void	find_type(va_list ap, t_list *lst)
+static void	find_type(va_list ap, t_value *lst)
 {
 	wid_check(ap, lst);
 	pre_check(ap, lst);
@@ -95,10 +95,10 @@ static void	find_type(va_list ap, t_list *lst)
 int			ft_printf(const char *s, ...)
 {
 	va_list ap;
-	t_list	*lst;
+	t_value	*lst;
 	int		ret;
 
-	lst = (t_list *)ft_calloc(1, sizeof(t_list));
+	lst = (t_value *)ft_calloc(1, sizeof(t_value));
 	lst->src = (char *)s;
 	va_start(ap, s);
 	while (*lst->src)

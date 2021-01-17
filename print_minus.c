@@ -6,13 +6,13 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/14 01:39:45 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/18 03:24:49 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/18 03:29:21 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static void		print(t_list *lst, int n, char c)
+static void		print(t_value *lst, int n, char c)
 {
 	int		i;
 
@@ -25,7 +25,7 @@ static void		print(t_list *lst, int n, char c)
 	}
 }
 
-static void		non_flag(t_list *lst, char *src)
+static void		non_flag(t_value *lst, char *src)
 {
 	if (lst->wid > lst->size)
 	{
@@ -44,7 +44,7 @@ static void		non_flag(t_list *lst, char *src)
 		write(1, src, lst->size);
 }
 
-static void		flag_zero(t_list *lst, char *src)
+static void		flag_zero(t_value *lst, char *src)
 {
 	if (lst->pre)
 	{
@@ -63,7 +63,7 @@ static void		flag_zero(t_list *lst, char *src)
 	write(1, src + 1, lst->size - 1);
 }
 
-static void		flag_minus(t_list *lst, char *src)
+static void		flag_minus(t_value *lst, char *src)
 {
 	if (lst->pre > lst->size)
 	{
@@ -82,7 +82,7 @@ static void		flag_minus(t_list *lst, char *src)
 	}
 }
 
-void			print_n(t_list *lst, char *s)
+void			print_n(t_value *lst, char *s)
 {
 	lst->size = ft_strlen(s);
 	lst->ret += lst->size;
