@@ -76,6 +76,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/ex_base.c">
+			<Option target="ft_printf.h"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/ft_printf.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
@@ -109,7 +112,7 @@
 		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/libft/ft_strlen.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/libft/ft_tolower.c">
+		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/libft/ft_toupper.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/libft/libft.h">
@@ -127,13 +130,7 @@
 		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/print_zero.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/type_di.c">
-			<Option target="ft_printf.h"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/type_u.c">
-			<Option target="ft_printf.h"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/type_x.c">
+		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/type.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/CMakeLists.txt">

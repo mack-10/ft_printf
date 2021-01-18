@@ -123,6 +123,33 @@ ft_printf.h/fast:
 	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/build
 .PHONY : ft_printf.h/fast
 
+ex_base.o: ex_base.c.o
+
+.PHONY : ex_base.o
+
+# target to build an object file
+ex_base.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/ex_base.c.o
+.PHONY : ex_base.c.o
+
+ex_base.i: ex_base.c.i
+
+.PHONY : ex_base.i
+
+# target to preprocess a source file
+ex_base.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/ex_base.c.i
+.PHONY : ex_base.c.i
+
+ex_base.s: ex_base.c.s
+
+.PHONY : ex_base.s
+
+# target to generate assembly for a file
+ex_base.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/ex_base.c.s
+.PHONY : ex_base.c.s
+
 ft_printf.o: ft_printf.c.o
 
 .PHONY : ft_printf.o
@@ -393,32 +420,32 @@ libft/ft_strlen.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_strlen.c.s
 .PHONY : libft/ft_strlen.c.s
 
-libft/ft_tolower.o: libft/ft_tolower.c.o
+libft/ft_toupper.o: libft/ft_toupper.c.o
 
-.PHONY : libft/ft_tolower.o
+.PHONY : libft/ft_toupper.o
 
 # target to build an object file
-libft/ft_tolower.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_tolower.c.o
-.PHONY : libft/ft_tolower.c.o
+libft/ft_toupper.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_toupper.c.o
+.PHONY : libft/ft_toupper.c.o
 
-libft/ft_tolower.i: libft/ft_tolower.c.i
+libft/ft_toupper.i: libft/ft_toupper.c.i
 
-.PHONY : libft/ft_tolower.i
+.PHONY : libft/ft_toupper.i
 
 # target to preprocess a source file
-libft/ft_tolower.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_tolower.c.i
-.PHONY : libft/ft_tolower.c.i
+libft/ft_toupper.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_toupper.c.i
+.PHONY : libft/ft_toupper.c.i
 
-libft/ft_tolower.s: libft/ft_tolower.c.s
+libft/ft_toupper.s: libft/ft_toupper.c.s
 
-.PHONY : libft/ft_tolower.s
+.PHONY : libft/ft_toupper.s
 
 # target to generate assembly for a file
-libft/ft_tolower.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_tolower.c.s
-.PHONY : libft/ft_tolower.c.s
+libft/ft_toupper.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_toupper.c.s
+.PHONY : libft/ft_toupper.c.s
 
 main.o: main.c.o
 
@@ -528,86 +555,32 @@ print_zero.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_zero.c.s
 .PHONY : print_zero.c.s
 
-type_di.o: type_di.c.o
+type.o: type.c.o
 
-.PHONY : type_di.o
-
-# target to build an object file
-type_di.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_di.c.o
-.PHONY : type_di.c.o
-
-type_di.i: type_di.c.i
-
-.PHONY : type_di.i
-
-# target to preprocess a source file
-type_di.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_di.c.i
-.PHONY : type_di.c.i
-
-type_di.s: type_di.c.s
-
-.PHONY : type_di.s
-
-# target to generate assembly for a file
-type_di.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_di.c.s
-.PHONY : type_di.c.s
-
-type_u.o: type_u.c.o
-
-.PHONY : type_u.o
+.PHONY : type.o
 
 # target to build an object file
-type_u.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_u.c.o
-.PHONY : type_u.c.o
+type.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type.c.o
+.PHONY : type.c.o
 
-type_u.i: type_u.c.i
+type.i: type.c.i
 
-.PHONY : type_u.i
-
-# target to preprocess a source file
-type_u.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_u.c.i
-.PHONY : type_u.c.i
-
-type_u.s: type_u.c.s
-
-.PHONY : type_u.s
-
-# target to generate assembly for a file
-type_u.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_u.c.s
-.PHONY : type_u.c.s
-
-type_x.o: type_x.c.o
-
-.PHONY : type_x.o
-
-# target to build an object file
-type_x.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_x.c.o
-.PHONY : type_x.c.o
-
-type_x.i: type_x.c.i
-
-.PHONY : type_x.i
+.PHONY : type.i
 
 # target to preprocess a source file
-type_x.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_x.c.i
-.PHONY : type_x.c.i
+type.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type.c.i
+.PHONY : type.c.i
 
-type_x.s: type_x.c.s
+type.s: type.c.s
 
-.PHONY : type_x.s
+.PHONY : type.s
 
 # target to generate assembly for a file
-type_x.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type_x.c.s
-.PHONY : type_x.c.s
+type.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/type.c.s
+.PHONY : type.c.s
 
 # Help Target
 help:
@@ -618,6 +591,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ft_printf.h"
+	@echo "... ex_base.o"
+	@echo "... ex_base.i"
+	@echo "... ex_base.s"
 	@echo "... ft_printf.o"
 	@echo "... ft_printf.i"
 	@echo "... ft_printf.s"
@@ -648,9 +624,9 @@ help:
 	@echo "... libft/ft_strlen.o"
 	@echo "... libft/ft_strlen.i"
 	@echo "... libft/ft_strlen.s"
-	@echo "... libft/ft_tolower.o"
-	@echo "... libft/ft_tolower.i"
-	@echo "... libft/ft_tolower.s"
+	@echo "... libft/ft_toupper.o"
+	@echo "... libft/ft_toupper.i"
+	@echo "... libft/ft_toupper.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -663,15 +639,9 @@ help:
 	@echo "... print_zero.o"
 	@echo "... print_zero.i"
 	@echo "... print_zero.s"
-	@echo "... type_di.o"
-	@echo "... type_di.i"
-	@echo "... type_di.s"
-	@echo "... type_u.o"
-	@echo "... type_u.i"
-	@echo "... type_u.s"
-	@echo "... type_x.o"
-	@echo "... type_x.i"
-	@echo "... type_x.s"
+	@echo "... type.o"
+	@echo "... type.i"
+	@echo "... type.s"
 .PHONY : help
 
 

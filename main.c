@@ -4,14 +4,13 @@ int main(void)
 {
 	int ret;
 
-	printf("p +\n");
-	int n = 1;
-	char p = &n;
-	ret = printf("|%p|", p);
+	//printf("p +\n");
+	int a = 2147483648;
+	ret = printf("|%u|", a);
 	printf("\tret: %d\n", ret);
-	/*ret = ft_printf("|%p|", p);
-	printf("\tret: %d\n\n", ret);
-	printf("\n\n");*/
+	ret = ft_printf("|%u|", a);
+	printf("\tret: %d\n", ret);
+	printf("\n\n");
 
 	/*printf("----------di----------\n");
 	printf("+\n");

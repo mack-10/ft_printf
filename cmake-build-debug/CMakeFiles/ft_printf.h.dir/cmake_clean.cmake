@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/ft_printf.h.dir/ex_base.c.o"
   "CMakeFiles/ft_printf.h.dir/ft_printf.c.o"
   "CMakeFiles/ft_printf.h.dir/ft_printf_utils.c.o"
   "CMakeFiles/ft_printf.h.dir/libft/ft_atoi.c.o"
@@ -9,14 +10,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_printf.h.dir/libft/ft_strdup.c.o"
   "CMakeFiles/ft_printf.h.dir/libft/ft_strlcpy.c.o"
   "CMakeFiles/ft_printf.h.dir/libft/ft_strlen.c.o"
-  "CMakeFiles/ft_printf.h.dir/libft/ft_tolower.c.o"
+  "CMakeFiles/ft_printf.h.dir/libft/ft_toupper.c.o"
   "CMakeFiles/ft_printf.h.dir/main.c.o"
   "CMakeFiles/ft_printf.h.dir/print_minus.c.o"
   "CMakeFiles/ft_printf.h.dir/print_plus.c.o"
   "CMakeFiles/ft_printf.h.dir/print_zero.c.o"
-  "CMakeFiles/ft_printf.h.dir/type_di.c.o"
-  "CMakeFiles/ft_printf.h.dir/type_u.c.o"
-  "CMakeFiles/ft_printf.h.dir/type_x.c.o"
+  "CMakeFiles/ft_printf.h.dir/type.c.o"
   "ft_printf.h"
   "ft_printf.h.pdb"
 )

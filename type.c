@@ -1,61 +1,51 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   type_x.c                                           :+:      :+:    :+:   */
+/*   type.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/17 21:25:35 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/18 03:35:26 by sujeon           ###   ########.fr       */
+/*   Created: 2021/01/19 01:40:20 by sujeon            #+#    #+#             */
+/*   Updated: 2021/01/19 01:40:21 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static int	cnt_size(unsigned int n)
+void	type_diu(va_list ap, t_value *lst)
 {
-	int cnt;
+	int				n1;
+	unsigned int	n2;
+	char 			*s;
 
-	cnt = 0;
-	while (n)
+	n1 = 0;
+	n2 = 0;
+	if (lst->type == 'u')
 	{
-		n = n / 16;
-		cnt++;
+		n1 = va_arg(ap, unsigned int);
+		s = ft_itoa_un(n1);
 	}
-	return (cnt);
-}
-
-static char	*trans_d_h(t_value *lst, unsigned int n)
-{
-	char	*s;
-	int		size;
-
-	size = cnt_size(n);
-	s = (char *)ft_calloc(1, size);
-	s[size] = 0;
-	size--;
-	while (n)
+	else
 	{
-		if ((n % 16) >= 10)
-		{
-			s[size] = (n % 16) + 55;
-			if (lst->type == 'x')
-				s[size] = ft_tolower(s[size]);
-		}
-		else
-			s[size] = (n % 16) + '0';
-		n = n / 16;
-		size--;
+		n2 = va_arg(ap, int);
+		s = ft_itoa(n2);
 	}
-	return (s);
+	if (n1 || n2 > 0)
+		print_p(lst, s);
+	else if (!n1 || !n2)
+		print_z(lst);
+	else
+		print_n(lst, s);
+	free_p(0, &s);
+	lst->src += cnt_add(lst);
 }
 
 void		type_x(va_list ap, t_value *lst)
 {
-	unsigned int	n;
+	unsigned long long	n;
 	char			*s;
 
-	n = va_arg(ap, unsigned int);
+	n = va_arg(ap, unsigned long long);
 	s = trans_d_h(lst, n);
 	if (n)
 		print_p(lst, s);
@@ -64,3 +54,11 @@ void		type_x(va_list ap, t_value *lst)
 	free_p(0, &s);
 	lst->src += cnt_add(lst);
 }
+
+/*void 	type_p(va_list ap, t_value *lst)
+{
+	char *s;
+
+	s = trans_d_h(lst, va_arg(ap, unsigned long long));
+	print_p(lst, s);
+}*/

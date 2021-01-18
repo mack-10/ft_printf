@@ -3,9 +3,8 @@ FLAGS       =   -Wall -Wextra -Werror
 NAME        =   libftprintf.a
 SRCS        =  	ft_printf.c			\
 				ft_printf_utils.c	\
-				type_di.c			\
-				type_u.c			\
-				type_x.c			\
+				ex_base.c			\
+				type.c				\
 				print_plus.c		\
 				print_zero.c		\
 				print_minus.c
