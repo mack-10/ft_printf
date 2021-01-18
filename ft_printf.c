@@ -17,6 +17,7 @@ static void	pre_check(va_list ap, t_value *lst)
 	char	*src;
 
 	src = lst->src;
+	lst->pre = 0;
 	while (*src != lst->type)
 	{
 		if (*src == '.')
@@ -47,6 +48,7 @@ static void	wid_check(va_list ap, t_value *lst)
 	char *src;
 
 	src = lst->src;
+	lst->wid = 0;
 	while (*src != lst->type)
 	{
 		if (*src == '.')
@@ -70,9 +72,9 @@ static void	wid_check(va_list ap, t_value *lst)
 
 static void	find_type(va_list ap, t_value *lst)
 {
+	lst->type = lst->src[cnt_add(lst) - 1];
 	wid_check(ap, lst);
 	pre_check(ap, lst);
-	lst->type = lst->src[cnt_add(lst) - 1];
 	if (lst->type == '%')
 	{
 		write(1, "%", 1);

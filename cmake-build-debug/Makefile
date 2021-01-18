@@ -447,86 +447,86 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/main.c.s
 .PHONY : main.c.s
 
-print_+.o: print_+.c.o
+print_minus.o: print_minus.c.o
 
-.PHONY : print_+.o
-
-# target to build an object file
-print_+.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_+.c.o
-.PHONY : print_+.c.o
-
-print_+.i: print_+.c.i
-
-.PHONY : print_+.i
-
-# target to preprocess a source file
-print_+.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_+.c.i
-.PHONY : print_+.c.i
-
-print_+.s: print_+.c.s
-
-.PHONY : print_+.s
-
-# target to generate assembly for a file
-print_+.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_+.c.s
-.PHONY : print_+.c.s
-
-print_-.o: print_-.c.o
-
-.PHONY : print_-.o
+.PHONY : print_minus.o
 
 # target to build an object file
-print_-.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_-.c.o
-.PHONY : print_-.c.o
+print_minus.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_minus.c.o
+.PHONY : print_minus.c.o
 
-print_-.i: print_-.c.i
+print_minus.i: print_minus.c.i
 
-.PHONY : print_-.i
+.PHONY : print_minus.i
 
 # target to preprocess a source file
-print_-.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_-.c.i
-.PHONY : print_-.c.i
+print_minus.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_minus.c.i
+.PHONY : print_minus.c.i
 
-print_-.s: print_-.c.s
+print_minus.s: print_minus.c.s
 
-.PHONY : print_-.s
+.PHONY : print_minus.s
 
 # target to generate assembly for a file
-print_-.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_-.c.s
-.PHONY : print_-.c.s
+print_minus.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_minus.c.s
+.PHONY : print_minus.c.s
 
-print_0.o: print_0.c.o
+print_plus.o: print_plus.c.o
 
-.PHONY : print_0.o
+.PHONY : print_plus.o
 
 # target to build an object file
-print_0.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_0.c.o
-.PHONY : print_0.c.o
+print_plus.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_plus.c.o
+.PHONY : print_plus.c.o
 
-print_0.i: print_0.c.i
+print_plus.i: print_plus.c.i
 
-.PHONY : print_0.i
+.PHONY : print_plus.i
 
 # target to preprocess a source file
-print_0.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_0.c.i
-.PHONY : print_0.c.i
+print_plus.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_plus.c.i
+.PHONY : print_plus.c.i
 
-print_0.s: print_0.c.s
+print_plus.s: print_plus.c.s
 
-.PHONY : print_0.s
+.PHONY : print_plus.s
 
 # target to generate assembly for a file
-print_0.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_0.c.s
-.PHONY : print_0.c.s
+print_plus.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_plus.c.s
+.PHONY : print_plus.c.s
+
+print_zero.o: print_zero.c.o
+
+.PHONY : print_zero.o
+
+# target to build an object file
+print_zero.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_zero.c.o
+.PHONY : print_zero.c.o
+
+print_zero.i: print_zero.c.i
+
+.PHONY : print_zero.i
+
+# target to preprocess a source file
+print_zero.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_zero.c.i
+.PHONY : print_zero.c.i
+
+print_zero.s: print_zero.c.s
+
+.PHONY : print_zero.s
+
+# target to generate assembly for a file
+print_zero.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_zero.c.s
+.PHONY : print_zero.c.s
 
 type_di.o: type_di.c.o
 
@@ -654,15 +654,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... print_+.o"
-	@echo "... print_+.i"
-	@echo "... print_+.s"
-	@echo "... print_-.o"
-	@echo "... print_-.i"
-	@echo "... print_-.s"
-	@echo "... print_0.o"
-	@echo "... print_0.i"
-	@echo "... print_0.s"
+	@echo "... print_minus.o"
+	@echo "... print_minus.i"
+	@echo "... print_minus.s"
+	@echo "... print_plus.o"
+	@echo "... print_plus.i"
+	@echo "... print_plus.s"
+	@echo "... print_zero.o"
+	@echo "... print_zero.i"
+	@echo "... print_zero.s"
 	@echo "... type_di.o"
 	@echo "... type_di.i"
 	@echo "... type_di.s"

@@ -9,5 +9,5 @@ add_executable(ft_printf.h
         libft/ft_strlen.c libft/ft_bzero.c libft/ft_strdup.c libft/ft_itoa.c libft/ft_strchr.c
         libft/ft_atoi.c libft/ft_strlcpy.c libft/ft_calloc.c libft/ft_tolower.c
         type_di.c type_u.c type_x.c
-        print_+.c print_0.c print_-.c
+        print_plus.c print_zero.c print_minus.c
         )

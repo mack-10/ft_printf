@@ -118,13 +118,13 @@
 		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/main.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/print_+.c">
+		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/print_minus.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/print_-.c">
+		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/print_plus.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/print_0.c">
+		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/print_zero.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/type_di.c">

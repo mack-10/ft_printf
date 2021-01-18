@@ -4,13 +4,14 @@ int main(void)
 {
 	int ret;
 
-	printf("x +\n");
-	int n = 123;
-	ret = printf("|%X|", n);
+	printf("p +\n");
+	int n = 1;
+	char p = &n;
+	ret = printf("|%p|", p);
 	printf("\tret: %d\n", ret);
-	ret = ft_printf("|%X|", n);
+	/*ret = ft_printf("|%p|", p);
 	printf("\tret: %d\n\n", ret);
-	printf("\n\n");
+	printf("\n\n");*/
 
 	/*printf("----------di----------\n");
 	printf("+\n");

@@ -38,17 +38,17 @@ CMakeFiles/ft_printf.h.dir/main.c.o: ../ft_printf.h
 CMakeFiles/ft_printf.h.dir/main.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.h.dir/main.c.o: ../main.c
 
-CMakeFiles/ft_printf.h.dir/print_+.c.o: ../ft_printf.h
-CMakeFiles/ft_printf.h.dir/print_+.c.o: ../libft/libft.h
-CMakeFiles/ft_printf.h.dir/print_+.c.o: ../print_+.c
+CMakeFiles/ft_printf.h.dir/print_minus.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.h.dir/print_minus.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.h.dir/print_minus.c.o: ../print_minus.c
 
-CMakeFiles/ft_printf.h.dir/print_-.c.o: ../ft_printf.h
-CMakeFiles/ft_printf.h.dir/print_-.c.o: ../libft/libft.h
-CMakeFiles/ft_printf.h.dir/print_-.c.o: ../print_-.c
+CMakeFiles/ft_printf.h.dir/print_plus.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.h.dir/print_plus.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.h.dir/print_plus.c.o: ../print_plus.c
 
-CMakeFiles/ft_printf.h.dir/print_0.c.o: ../ft_printf.h
-CMakeFiles/ft_printf.h.dir/print_0.c.o: ../libft/libft.h
-CMakeFiles/ft_printf.h.dir/print_0.c.o: ../print_0.c
+CMakeFiles/ft_printf.h.dir/print_zero.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.h.dir/print_zero.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.h.dir/print_zero.c.o: ../print_zero.c
 
 CMakeFiles/ft_printf.h.dir/type_di.c.o: ../ft_printf.h
 CMakeFiles/ft_printf.h.dir/type_di.c.o: ../libft/libft.h
