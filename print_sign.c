@@ -85,10 +85,10 @@ static void		flag_minus(t_value *lst, char *src)
 void			print_sign(t_value *lst, char *s)
 {
 	lst->sign = 0;
-	if (lst->type == 'd')
-		lst->sign = 1;
-	else
+	if (lst->type == 'u')
 		lst->sign = 2;
+	else
+		lst->sign = 1;
 	lst->size = ft_strlen(s);
 	lst->ret += lst->size;
 	if (lst->src[1] == '-' || (lst->src[1] == '0' && lst->src[2] == '-'))
