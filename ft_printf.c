@@ -6,7 +6,7 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/18 01:28:10 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/18 03:29:08 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/19 21:28:54 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ static void	wid_check(va_list ap, t_value *lst)
 				else
 					lst->wid = *src - '0';
 			}
-			break;
+			break ;
 		}
 		src++;
 	}

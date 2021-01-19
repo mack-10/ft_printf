@@ -6,7 +6,7 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/19 01:40:20 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/19 01:40:21 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/19 21:30:17 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	type_di(va_list ap, t_value *lst)
 {
-	int				n;
-	char 			*s;
+	int		n;
+	char	*s;
 
 	n = va_arg(ap, int);
 	s = ft_itoa(n);
@@ -31,7 +31,7 @@ void	type_di(va_list ap, t_value *lst)
 void	type_u(va_list ap, t_value *lst)
 {
 	unsigned int	n;
-	char 			*s;
+	char			*s;
 
 	n = va_arg(ap, unsigned int);
 	s = ft_itoa_un(n);
@@ -56,7 +56,7 @@ void	type_x(va_list ap, t_value *lst)
 	free_p(0, &s);
 }
 
-void 	type_p(va_list ap, t_value *lst)
+void	type_p(va_list ap, t_value *lst)
 {
 	char	*s1;
 	char	*s2;
@@ -68,7 +68,7 @@ void 	type_p(va_list ap, t_value *lst)
 	free_p(0, &s2);
 }
 
-void 	type_s(va_list ap, t_value *lst)
+void	type_s(va_list ap, t_value *lst)
 {
 	print_p(lst, va_arg(ap, char *));
 }

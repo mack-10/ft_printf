@@ -6,7 +6,7 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/19 01:40:33 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/19 01:40:34 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/19 21:32:30 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ static int	cnt_size(unsigned long long n)
 	return (cnt);
 }
 
-char	*trans_d_h(t_value *lst, unsigned long long n)
+char		*trans_d_h(t_value *lst, unsigned long long n)
 {
 	char	*s;
 	int		size;

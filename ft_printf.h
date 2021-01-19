@@ -6,7 +6,7 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/07 19:51:36 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/18 03:33:06 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/19 21:28:36 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ typedef struct	s_value
 	int		wid;
 	int		pre;
 	int		size;
-	int 	sign;
+	int		sign;
 	char	*src;
 	char	type;
 }				t_value;
@@ -34,8 +34,8 @@ int				ft_printf(const char *str, ...);
 void			type_di(va_list ap, t_value *lst);
 void			type_u(va_list ap, t_value *lst);
 void			type_x(va_list ap, t_value *lst);
-void 			type_p(va_list ap, t_value *lst);
-void 			type_s(va_list ap, t_value *lst);
+void			type_p(va_list ap, t_value *lst);
+void			type_s(va_list ap, t_value *lst);
 void			print_p(t_value *lst, char *s);
 void			print_c(t_value *lst, char c);
 void			print_sign(t_value *lst, char *s);
