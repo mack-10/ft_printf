@@ -72,9 +72,7 @@ void			print_p(t_value *lst, char *s)
 {
 	lst->size = ft_strlen(s);
 	lst->ret += lst->size;
-	if (lst->src[1] == '0' && lst->src[2] == '-')
-		flag_minus(lst, s);
-	else if (lst->src[1] == '-')
+	if (lst->src[1] == '-' || (lst->src[1] == '0' && lst->src[2] == '-'))
 		flag_minus(lst, s);
 	else if (lst->src[1] == '0')
 		flag_zero(lst, s);

@@ -12,6 +12,19 @@
 
 #include "ft_printf.h"
 
+static void	wid_pre_over9(t_value *lst, char *src, int sign)
+{
+	char	*s;
+
+	s = (char *)ft_calloc(1, 3);
+	ft_strlcpy(s, src, 3);
+	if (!sign)
+		lst->wid = ft_atoi(s);
+	else
+		lst->pre = ft_atoi(s);
+	free_p(0, &s);
+}
+
 static void	pre_check(va_list ap, t_value *lst)
 {
 	char	*src;
@@ -23,24 +36,19 @@ static void	pre_check(va_list ap, t_value *lst)
 		if (*src == '.')
 		{
 			src++;
-			if (*src >= '0' && *src <= '9')
-				lst->pre = *src - '0';
-			else
+			if (*src == '*')
 				lst->pre = va_arg(ap, int);
+			else
+			{
+				if (src[1] >= '0' && src[1] <= '9')
+					wid_pre_over9(lst, src, 1);
+				else
+					lst->pre = *src - '0';
+			}
 			break ;
 		}
 		src++;
 	}
-}
-
-static void	wid_over9(t_value *lst, char *src)
-{
-	char	*wid_s;
-
-	wid_s = (char *)ft_calloc(1, 3);
-	ft_strlcpy(wid_s, src, 3);
-	lst->wid = ft_atoi(wid_s);
-	free_p(0, &wid_s);
 }
 
 static void	wid_check(va_list ap, t_value *lst)
@@ -53,18 +61,18 @@ static void	wid_check(va_list ap, t_value *lst)
 	{
 		if (*src == '.')
 			break ;
-		if (*src == '*')
+		if (*src == '*' || (*src > '0' && *src <= '9'))
 		{
-			lst->wid = va_arg(ap, int);
-			break ;
-		}
-		else if (*src > '0' && *src <= '9')
-		{
-			if (src[1] >= '0' && src[1] <= '9')
-				wid_over9(lst, src);
+			if (*src == '*')
+				lst->wid = va_arg(ap, int);
 			else
-				lst->wid = *src - '0';
-			break ;
+			{
+				if (src[1] >= '0' && src[1] <= '9')
+					wid_pre_over9(lst, src, 0);
+				else
+					lst->wid = *src - '0';
+			}
+			break;
 		}
 		src++;
 	}

@@ -366,6 +366,33 @@ libft/ft_strdup.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_strdup.c.s
 .PHONY : libft/ft_strdup.c.s
 
+libft/ft_strjoin.o: libft/ft_strjoin.c.o
+
+.PHONY : libft/ft_strjoin.o
+
+# target to build an object file
+libft/ft_strjoin.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_strjoin.c.o
+.PHONY : libft/ft_strjoin.c.o
+
+libft/ft_strjoin.i: libft/ft_strjoin.c.i
+
+.PHONY : libft/ft_strjoin.i
+
+# target to preprocess a source file
+libft/ft_strjoin.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_strjoin.c.i
+.PHONY : libft/ft_strjoin.c.i
+
+libft/ft_strjoin.s: libft/ft_strjoin.c.s
+
+.PHONY : libft/ft_strjoin.s
+
+# target to generate assembly for a file
+libft/ft_strjoin.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/libft/ft_strjoin.c.s
+.PHONY : libft/ft_strjoin.c.s
+
 libft/ft_strlcpy.o: libft/ft_strlcpy.c.o
 
 .PHONY : libft/ft_strlcpy.o
@@ -501,33 +528,6 @@ print_c.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_c.c.s
 .PHONY : print_c.c.s
 
-print_minus.o: print_minus.c.o
-
-.PHONY : print_minus.o
-
-# target to build an object file
-print_minus.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_minus.c.o
-.PHONY : print_minus.c.o
-
-print_minus.i: print_minus.c.i
-
-.PHONY : print_minus.i
-
-# target to preprocess a source file
-print_minus.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_minus.c.i
-.PHONY : print_minus.c.i
-
-print_minus.s: print_minus.c.s
-
-.PHONY : print_minus.s
-
-# target to generate assembly for a file
-print_minus.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_minus.c.s
-.PHONY : print_minus.c.s
-
 print_plus.o: print_plus.c.o
 
 .PHONY : print_plus.o
@@ -554,6 +554,33 @@ print_plus.s: print_plus.c.s
 print_plus.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_plus.c.s
 .PHONY : print_plus.c.s
+
+print_sign.o: print_sign.c.o
+
+.PHONY : print_sign.o
+
+# target to build an object file
+print_sign.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_sign.c.o
+.PHONY : print_sign.c.o
+
+print_sign.i: print_sign.c.i
+
+.PHONY : print_sign.i
+
+# target to preprocess a source file
+print_sign.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_sign.c.i
+.PHONY : print_sign.c.i
+
+print_sign.s: print_sign.c.s
+
+.PHONY : print_sign.s
+
+# target to generate assembly for a file
+print_sign.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_sign.c.s
+.PHONY : print_sign.c.s
 
 type.o: type.c.o
 
@@ -618,6 +645,9 @@ help:
 	@echo "... libft/ft_strdup.o"
 	@echo "... libft/ft_strdup.i"
 	@echo "... libft/ft_strdup.s"
+	@echo "... libft/ft_strjoin.o"
+	@echo "... libft/ft_strjoin.i"
+	@echo "... libft/ft_strjoin.s"
 	@echo "... libft/ft_strlcpy.o"
 	@echo "... libft/ft_strlcpy.i"
 	@echo "... libft/ft_strlcpy.s"
@@ -633,12 +663,12 @@ help:
 	@echo "... print_c.o"
 	@echo "... print_c.i"
 	@echo "... print_c.s"
-	@echo "... print_minus.o"
-	@echo "... print_minus.i"
-	@echo "... print_minus.s"
 	@echo "... print_plus.o"
 	@echo "... print_plus.i"
 	@echo "... print_plus.s"
+	@echo "... print_sign.o"
+	@echo "... print_sign.i"
+	@echo "... print_sign.s"
 	@echo "... type.o"
 	@echo "... type.i"
 	@echo "... type.s"

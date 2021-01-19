@@ -86,9 +86,7 @@ static void		flag_minus(t_value *lst, char c)
 
 void			print_c(t_value *lst, char c)
 {
-	if (lst->src[1] == '0' && lst->src[2] == '-')
-		flag_minus(lst, c);
-	else if (lst->src[1] == '-')
+	if (lst->src[1] == '-' || (lst->src[1] == '0' && lst->src[2] == '-'))
 		flag_minus(lst, c);
 	else if (lst->src[1] == '0')
 		flag_zero(lst, c);

@@ -4,11 +4,11 @@ int main(void)
 {
 	int ret;
 
-	//printf("p +\n");
-	int a = 345;
-	ret = printf("|%c|", 'c');
+	printf("p\n");
+	int a = 12;
+	ret = printf("|%20.20p|", &a);
 	printf("\tret: %d\n", ret);
-	ret = ft_printf("|%c|", 'c');
+	ret = ft_printf("|%20.20p|", &a);
 	printf("\tret: %d\n", ret);
 	printf("\n\n");
 
@@ -257,5 +257,40 @@ int main(void)
 	printf("w=6\t\t\t\t:%6x\n", p);
 	printf("p=6\t\t\t\t:%.6x\n", p);
 	printf("w=6/p=2\t\t\t:%6.2x\n", p);*/
+
+	/*printf("----------p----------\n");
+	int n = 12;
+	ret = printf("flag -\t\t\t|%-20p|", &n);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("flag -\t\t\t|%-6p|", p);
+	printf("\tret: %d\n\n", ret);
+	ret = printf("flag 0\t\t\t|%020p|", &n);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("flag 0\t\t\t|%06p|", p);
+	printf("\tret: %d\n\n", ret);
+	ret = printf("flag 0-\t\t\t|%0-20p|", &n);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("flag 0-\t\t\t|%0-6p|", p);
+	printf("\tret: %d\n\n", ret);
+	ret = printf("wid:20\t\t\t|%20p|", &n);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("wid:6\t\t\t|%6p|", p);
+	printf("\tret: %d\n\n", ret);
+	ret = printf("pre:9\t\t\t|%.9p|", &n);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("pre:6\t\t\t|%.6p|", p);
+	printf("\tret: %d\n\n", ret);
+	ret = printf("wid:20, pre:9\t|%20.9p|", &n);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("wid:6, pre:2\t|%6.2p|", p);
+	printf("\tret: %d\n\n", ret);
+	ret = printf("wid:20, pre:9\t|%20.9p|", &n);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("wid:6, pre:5\t|%6.5p|", p);
+	printf("\tret: %d\n\n", ret);
+	ret = printf("wid:10, pre:5\t|%10.5p|", &n);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("wid:10, pre:5\t|%10.5p|", p);
+	printf("\tret: %d\n\n", ret);*/
 	return (0);
 }

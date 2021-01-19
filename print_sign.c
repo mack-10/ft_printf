@@ -30,15 +30,15 @@ static void		non_flag(t_value *lst, char *src)
 	if (lst->wid > lst->size)
 	{
 		if (lst->pre > lst->size)
-			print(lst, lst->wid - (lst->pre + 1), ' ');
+			print(lst, lst->wid - (lst->pre + lst->sign), ' ');
 		else
 			print(lst, lst->wid - lst->size, ' ');
 	}
 	if (lst->pre > lst->size)
 	{
-		write(1, "-", 1);
-		print(lst, lst->pre - (lst->size - 1), '0');
-		write(1, src + 1, lst->size - 1);
+		write(1, src, lst->sign);
+		print(lst, lst->pre - (lst->size - lst->sign), '0');
+		write(1, src + lst->sign, lst->size - lst->sign);
 	}
 	else
 		write(1, src, lst->size);
@@ -49,46 +49,49 @@ static void		flag_zero(t_value *lst, char *src)
 	if (lst->pre)
 	{
 		if (lst->pre > lst->size)
-			print(lst, lst->wid - (lst->pre + 1), ' ');
+			print(lst, lst->wid - (lst->pre + lst->sign), ' ');
 		else
 			print(lst, lst->wid - lst->size, ' ');
-		write(1, "-", 1);
-		print(lst, lst->pre - (lst->size - 1), '0');
+		write(1, src, lst->sign);
+		print(lst, lst->pre - (lst->size - lst->sign), '0');
 	}
 	else
 	{
-		write(1, "-", 1);
+		write(1, src, lst->sign);
 		print(lst, lst->wid - lst->size, '0');
 	}
-	write(1, src + 1, lst->size - 1);
+	write(1, src + lst->sign, lst->size - lst->sign);
 }
 
 static void		flag_minus(t_value *lst, char *src)
 {
 	if (lst->pre > lst->size)
 	{
-		write(1, "-", 1);
-		print(lst, lst->pre - (lst->size - 1), '0');
-		write(1, src + 1, lst->size - 1);
+		write(1, src, lst->sign);
+		print(lst, lst->pre - (lst->size - lst->sign), '0');
+		write(1, src + 1, lst->size - lst->sign);
 	}
 	else
 		write(1, src, lst->size);
 	if (lst->wid > lst->size)
 	{
 		if (lst->pre > lst->size)
-			print(lst, lst->wid - (lst->pre + 1), ' ');
+			print(lst, lst->wid - (lst->pre + lst->sign), ' ');
 		else
 			print(lst, lst->wid - lst->size, ' ');
 	}
 }
 
-void			print_n(t_value *lst, char *s)
+void			print_sign(t_value *lst, char *s)
 {
+	lst->sign = 0;
+	if (lst->type == 'd')
+		lst->sign = 1;
+	else
+		lst->sign = 2;
 	lst->size = ft_strlen(s);
 	lst->ret += lst->size;
-	if (lst->src[1] == '0' && lst->src[2] == '-')
-		flag_minus(lst, s);
-	else if (lst->src[1] == '-')
+	if (lst->src[1] == '-' || (lst->src[1] == '0' && lst->src[2] == '-'))
 		flag_minus(lst, s);
 	else if (lst->src[1] == '0')
 		flag_zero(lst, s);

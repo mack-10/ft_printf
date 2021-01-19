@@ -25,6 +25,7 @@ typedef struct	s_value
 	int		wid;
 	int		pre;
 	int		size;
+	int 	sign;
 	char	*src;
 	char	type;
 }				t_value;
@@ -37,7 +38,7 @@ void 			type_p(va_list ap, t_value *lst);
 void 			type_s(va_list ap, t_value *lst);
 void			print_p(t_value *lst, char *s);
 void			print_c(t_value *lst, char c);
-void			print_n(t_value *lst, char *s);
+void			print_sign(t_value *lst, char *s);
 
 void			free_p(t_value **p1, char **p2);
 int				search_dot(t_value *lst);

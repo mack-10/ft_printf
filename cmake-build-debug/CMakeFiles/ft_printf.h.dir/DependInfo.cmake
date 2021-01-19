@@ -13,13 +13,14 @@ set(CMAKE_DEPENDS_CHECK_C
   "/mnt/c/Users/macke/Desktop/ft_printf/libft/ft_itoa.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/libft/ft_itoa.c.o"
   "/mnt/c/Users/macke/Desktop/ft_printf/libft/ft_strchr.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/libft/ft_strchr.c.o"
   "/mnt/c/Users/macke/Desktop/ft_printf/libft/ft_strdup.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/libft/ft_strdup.c.o"
+  "/mnt/c/Users/macke/Desktop/ft_printf/libft/ft_strjoin.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/libft/ft_strjoin.c.o"
   "/mnt/c/Users/macke/Desktop/ft_printf/libft/ft_strlcpy.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/libft/ft_strlcpy.c.o"
   "/mnt/c/Users/macke/Desktop/ft_printf/libft/ft_strlen.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/libft/ft_strlen.c.o"
   "/mnt/c/Users/macke/Desktop/ft_printf/libft/ft_toupper.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/libft/ft_toupper.c.o"
   "/mnt/c/Users/macke/Desktop/ft_printf/main.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/main.c.o"
   "/mnt/c/Users/macke/Desktop/ft_printf/print_c.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/print_c.c.o"
-  "/mnt/c/Users/macke/Desktop/ft_printf/print_minus.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/print_minus.c.o"
   "/mnt/c/Users/macke/Desktop/ft_printf/print_plus.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/print_plus.c.o"
+  "/mnt/c/Users/macke/Desktop/ft_printf/print_sign.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/print_sign.c.o"
   "/mnt/c/Users/macke/Desktop/ft_printf/type.c" "/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.h.dir/type.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

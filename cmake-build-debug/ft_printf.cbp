@@ -106,6 +106,9 @@
 		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/libft/ft_strdup.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/libft/ft_strjoin.c">
+			<Option target="ft_printf.h"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/libft/ft_strlcpy.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
@@ -124,10 +127,10 @@
 		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/print_c.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/print_minus.c">
+		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/print_plus.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/print_plus.c">
+		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/print_sign.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/type.c">

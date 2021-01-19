@@ -24,7 +24,7 @@ void	type_di(va_list ap, t_value *lst)
 	else if (!n)
 		print_c(lst, '0');
 	else
-		print_n(lst, s);
+		print_sign(lst, s);
 	free_p(0, &s);
 }
 
@@ -58,11 +58,14 @@ void	type_x(va_list ap, t_value *lst)
 
 void 	type_p(va_list ap, t_value *lst)
 {
-	char *s;
+	char	*s1;
+	char	*s2;
 
-	s = trans_d_h(lst, va_arg(ap, unsigned long long));
-	print_p(lst, s);
-	free_p(0, &s);
+	s1 = trans_d_h(lst, va_arg(ap, unsigned long long));
+	s2 = ft_strjoin("0x", s1);
+	print_sign(lst, s2);
+	free_p(0, &s1);
+	free_p(0, &s2);
 }
 
 void 	type_s(va_list ap, t_value *lst)
