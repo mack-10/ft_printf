@@ -86,10 +86,13 @@ static void	find_type(va_list ap, t_value *lst)
 		type_u(ap, lst);
 	else if (lst->type == 'X' || lst->type == 'x')
 		type_x(ap, lst);
-	else if (lst->type == 'c' || lst->type == 's')
-		type_cs(ap, lst);
+	else if (lst->type == 'c')
+		print_c(lst, va_arg(ap, int));
+	else if (lst->type == 's')
+		type_s(ap, lst);
 	else if (lst->type == 'p')
 		type_p(ap, lst);
+	lst->src += cnt_add(lst);
 }
 
 int			ft_printf(const char *s, ...)

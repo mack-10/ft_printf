@@ -26,7 +26,6 @@ void	type_di(va_list ap, t_value *lst)
 	else
 		print_n(lst, s);
 	free_p(0, &s);
-	lst->src += cnt_add(lst);
 }
 
 void	type_u(va_list ap, t_value *lst)
@@ -40,6 +39,7 @@ void	type_u(va_list ap, t_value *lst)
 		print_p(lst, s);
 	else if (!n)
 		print_c(lst, '0');
+	free_p(0, &s);
 }
 
 void	type_x(va_list ap, t_value *lst)
@@ -54,7 +54,6 @@ void	type_x(va_list ap, t_value *lst)
 	else
 		print_c(lst, '0');
 	free_p(0, &s);
-	lst->src += cnt_add(lst);
 }
 
 void 	type_p(va_list ap, t_value *lst)
@@ -64,14 +63,9 @@ void 	type_p(va_list ap, t_value *lst)
 	s = trans_d_h(lst, va_arg(ap, unsigned long long));
 	print_p(lst, s);
 	free_p(0, &s);
-	lst->src += cnt_add(lst);
 }
 
-void 	type_cs(va_list ap, t_value *lst)
+void 	type_s(va_list ap, t_value *lst)
 {
-	if (lst->type == 'c')
-		print_c(lst, va_arg(ap, int));
-	else
-		print_p(lst, va_arg(ap, char *));
-	lst->src += cnt_add(lst);
+	print_p(lst, va_arg(ap, char *));
 }
