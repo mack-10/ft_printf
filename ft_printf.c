@@ -80,18 +80,16 @@ static void	find_type(va_list ap, t_value *lst)
 		write(1, "%", 1);
 		lst->src += cnt_add(lst);
 	}
-	else if (lst->type == 'd' || lst->type == 'i' || lst->type == 'u')
-		type_diu(ap, lst);
+	else if (lst->type == 'd' || lst->type == 'i')
+		type_di(ap, lst);
+	else if (lst->type == 'u')
+		type_u(ap, lst);
 	else if (lst->type == 'X' || lst->type == 'x')
 		type_x(ap, lst);
-	else if (lst->type == 'c')
-		;
-		//type_c(ap, lst);
-	else if (lst->type == 's')
-		;
+	else if (lst->type == 'c' || lst->type == 's')
+		type_cs(ap, lst);
 	else if (lst->type == 'p')
-		;
-		//type_p(ap, lst);
+		type_p(ap, lst);
 }
 
 int			ft_printf(const char *s, ...)

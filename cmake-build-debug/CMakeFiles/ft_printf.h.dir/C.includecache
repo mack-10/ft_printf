@@ -6,14 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/macke/Desktop/ft_printf/ex_base.c
-ft_printf.h
-/mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
-
-/mnt/c/Users/macke/Desktop/ft_printf/ft_printf.c
-ft_printf.h
-/mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
-
 /mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
 stdarg.h
 -
@@ -24,10 +16,6 @@ unistd.h
 stdio.h
 -
 
-/mnt/c/Users/macke/Desktop/ft_printf/ft_printf_utils.c
-ft_printf.h
-/mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
-
 /mnt/c/Users/macke/Desktop/ft_printf/libft/libft.h
 stddef.h
 -
@@ -35,22 +23,6 @@ stdlib.h
 -
 unistd.h
 -
-
-/mnt/c/Users/macke/Desktop/ft_printf/main.c
-ft_printf.h
-/mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
-
-/mnt/c/Users/macke/Desktop/ft_printf/print_minus.c
-ft_printf.h
-/mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
-
-/mnt/c/Users/macke/Desktop/ft_printf/print_plus.c
-ft_printf.h
-/mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
-
-/mnt/c/Users/macke/Desktop/ft_printf/print_zero.c
-ft_printf.h
-/mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
 
 /mnt/c/Users/macke/Desktop/ft_printf/type.c
 ft_printf.h

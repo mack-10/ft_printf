@@ -474,6 +474,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/main.c.s
 .PHONY : main.c.s
 
+print_c.o: print_c.c.o
+
+.PHONY : print_c.o
+
+# target to build an object file
+print_c.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_c.c.o
+.PHONY : print_c.c.o
+
+print_c.i: print_c.c.i
+
+.PHONY : print_c.i
+
+# target to preprocess a source file
+print_c.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_c.c.i
+.PHONY : print_c.c.i
+
+print_c.s: print_c.c.s
+
+.PHONY : print_c.s
+
+# target to generate assembly for a file
+print_c.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_c.c.s
+.PHONY : print_c.c.s
+
 print_minus.o: print_minus.c.o
 
 .PHONY : print_minus.o
@@ -527,33 +554,6 @@ print_plus.s: print_plus.c.s
 print_plus.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_plus.c.s
 .PHONY : print_plus.c.s
-
-print_zero.o: print_zero.c.o
-
-.PHONY : print_zero.o
-
-# target to build an object file
-print_zero.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_zero.c.o
-.PHONY : print_zero.c.o
-
-print_zero.i: print_zero.c.i
-
-.PHONY : print_zero.i
-
-# target to preprocess a source file
-print_zero.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_zero.c.i
-.PHONY : print_zero.c.i
-
-print_zero.s: print_zero.c.s
-
-.PHONY : print_zero.s
-
-# target to generate assembly for a file
-print_zero.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_zero.c.s
-.PHONY : print_zero.c.s
 
 type.o: type.c.o
 
@@ -630,15 +630,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... print_c.o"
+	@echo "... print_c.i"
+	@echo "... print_c.s"
 	@echo "... print_minus.o"
 	@echo "... print_minus.i"
 	@echo "... print_minus.s"
 	@echo "... print_plus.o"
 	@echo "... print_plus.i"
 	@echo "... print_plus.s"
-	@echo "... print_zero.o"
-	@echo "... print_zero.i"
-	@echo "... print_zero.s"
 	@echo "... type.o"
 	@echo "... type.i"
 	@echo "... type.s"

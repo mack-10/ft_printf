@@ -252,18 +252,18 @@ CMakeFiles/ft_printf.h.dir/print_plus.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf.h.dir/print_plus.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/macke/Desktop/ft_printf/print_plus.c -o CMakeFiles/ft_printf.h.dir/print_plus.c.s
 
-CMakeFiles/ft_printf.h.dir/print_zero.c.o: CMakeFiles/ft_printf.h.dir/flags.make
-CMakeFiles/ft_printf.h.dir/print_zero.c.o: ../print_zero.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/ft_printf.h.dir/print_zero.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.h.dir/print_zero.c.o   -c /mnt/c/Users/macke/Desktop/ft_printf/print_zero.c
+CMakeFiles/ft_printf.h.dir/print_c.c.o: CMakeFiles/ft_printf.h.dir/flags.make
+CMakeFiles/ft_printf.h.dir/print_c.c.o: ../print_c.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/macke/Desktop/ft_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/ft_printf.h.dir/print_c.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.h.dir/print_c.c.o   -c /mnt/c/Users/macke/Desktop/ft_printf/print_c.c
 
-CMakeFiles/ft_printf.h.dir/print_zero.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_printf.h.dir/print_zero.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/macke/Desktop/ft_printf/print_zero.c > CMakeFiles/ft_printf.h.dir/print_zero.c.i
+CMakeFiles/ft_printf.h.dir/print_c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_printf.h.dir/print_c.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/macke/Desktop/ft_printf/print_c.c > CMakeFiles/ft_printf.h.dir/print_c.c.i
 
-CMakeFiles/ft_printf.h.dir/print_zero.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf.h.dir/print_zero.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/macke/Desktop/ft_printf/print_zero.c -o CMakeFiles/ft_printf.h.dir/print_zero.c.s
+CMakeFiles/ft_printf.h.dir/print_c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf.h.dir/print_c.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/macke/Desktop/ft_printf/print_c.c -o CMakeFiles/ft_printf.h.dir/print_c.c.s
 
 CMakeFiles/ft_printf.h.dir/print_minus.c.o: CMakeFiles/ft_printf.h.dir/flags.make
 CMakeFiles/ft_printf.h.dir/print_minus.c.o: ../print_minus.c
@@ -295,7 +295,7 @@ ft_printf_h_OBJECTS = \
 "CMakeFiles/ft_printf.h.dir/type.c.o" \
 "CMakeFiles/ft_printf.h.dir/ex_base.c.o" \
 "CMakeFiles/ft_printf.h.dir/print_plus.c.o" \
-"CMakeFiles/ft_printf.h.dir/print_zero.c.o" \
+"CMakeFiles/ft_printf.h.dir/print_c.c.o" \
 "CMakeFiles/ft_printf.h.dir/print_minus.c.o"
 
 # External object files for target ft_printf.h
@@ -316,7 +316,7 @@ ft_printf.h: CMakeFiles/ft_printf.h.dir/libft/ft_toupper.c.o
 ft_printf.h: CMakeFiles/ft_printf.h.dir/type.c.o
 ft_printf.h: CMakeFiles/ft_printf.h.dir/ex_base.c.o
 ft_printf.h: CMakeFiles/ft_printf.h.dir/print_plus.c.o
-ft_printf.h: CMakeFiles/ft_printf.h.dir/print_zero.c.o
+ft_printf.h: CMakeFiles/ft_printf.h.dir/print_c.c.o
 ft_printf.h: CMakeFiles/ft_printf.h.dir/print_minus.c.o
 ft_printf.h: CMakeFiles/ft_printf.h.dir/build.make
 ft_printf.h: CMakeFiles/ft_printf.h.dir/link.txt

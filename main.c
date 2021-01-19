@@ -5,10 +5,10 @@ int main(void)
 	int ret;
 
 	//printf("p +\n");
-	int a = 2147483648;
-	ret = printf("|%u|", a);
+	int a = 345;
+	ret = printf("|%c|", 'c');
 	printf("\tret: %d\n", ret);
-	ret = ft_printf("|%u|", a);
+	ret = ft_printf("|%c|", 'c');
 	printf("\tret: %d\n", ret);
 	printf("\n\n");
 

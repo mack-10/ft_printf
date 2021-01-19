@@ -30,11 +30,13 @@ typedef struct	s_value
 }				t_value;
 
 int				ft_printf(const char *str, ...);
-void			type_diu(va_list ap, t_value *lst);
+void			type_di(va_list ap, t_value *lst);
+void			type_u(va_list ap, t_value *lst);
 void			type_x(va_list ap, t_value *lst);
 void 			type_p(va_list ap, t_value *lst);
+void 			type_cs(va_list ap, t_value *lst);
 void			print_p(t_value *lst, char *s);
-void			print_z(t_value *lst);
+void			print_c(t_value *lst, char c);
 void			print_n(t_value *lst, char *s);
 
 void			free_p(t_value **p1, char **p2);

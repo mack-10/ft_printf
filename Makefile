@@ -6,8 +6,8 @@ SRCS        =  	ft_printf.c			\
 				ex_base.c			\
 				type.c				\
 				print_plus.c		\
-				print_zero.c		\
-				print_minus.c
+				print_minus.c		\
+				print_c.c
 OBJS		=	$(SRCS:.c=.o)
 AR			=	ar rcs
 LIB			=	libft

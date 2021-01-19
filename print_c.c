@@ -25,7 +25,7 @@ static void		print(t_value *lst, int n, char c)
 	}
 }
 
-static void		non_flag(t_value *lst)
+static void		non_flag(t_value *lst, char c)
 {
 	if (!lst->pre && search_dot(lst))
 	{
@@ -43,11 +43,11 @@ static void		non_flag(t_value *lst)
 		}
 		if (lst->pre > 1)
 			print(lst, lst->pre - 1, '0');
-		write(1, "0", 1);
+		write(1, &c, 1);
 	}
 }
 
-static void		flag_zero(t_value *lst)
+static void		flag_zero(t_value *lst, char c)
 {
 	if (lst->pre)
 	{
@@ -59,10 +59,10 @@ static void		flag_zero(t_value *lst)
 	}
 	else
 		print(lst, lst->wid - 1, '0');
-	write(1, "0", 1);
+	write(1, &c, 1);
 }
 
-static void		flag_minus(t_value *lst)
+static void		flag_minus(t_value *lst, char c)
 {
 	if (!lst->pre && search_dot(lst))
 	{
@@ -73,7 +73,7 @@ static void		flag_minus(t_value *lst)
 	{
 		if (lst->pre > 1)
 			print(lst, lst->pre - 1, '0');
-		write(1, "0", 1);
+		write(1, &c, 1);
 		if (lst->wid > 1)
 		{
 			if (lst->pre > 1)
@@ -84,15 +84,15 @@ static void		flag_minus(t_value *lst)
 	}
 }
 
-void			print_z(t_value *lst)
+void			print_c(t_value *lst, char c)
 {
 	if (lst->src[1] == '0' && lst->src[2] == '-')
-		flag_minus(lst);
+		flag_minus(lst, c);
 	else if (lst->src[1] == '-')
-		flag_minus(lst);
+		flag_minus(lst, c);
 	else if (lst->src[1] == '0')
-		flag_zero(lst);
+		flag_zero(lst, c);
 	else
-		non_flag(lst);
+		non_flag(lst, c);
 	lst->ret++;
 }
