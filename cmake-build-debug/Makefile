@@ -528,33 +528,6 @@ print_c.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_c.c.s
 .PHONY : print_c.c.s
 
-print_plus.o: print_plus.c.o
-
-.PHONY : print_plus.o
-
-# target to build an object file
-print_plus.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_plus.c.o
-.PHONY : print_plus.c.o
-
-print_plus.i: print_plus.c.i
-
-.PHONY : print_plus.i
-
-# target to preprocess a source file
-print_plus.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_plus.c.i
-.PHONY : print_plus.c.i
-
-print_plus.s: print_plus.c.s
-
-.PHONY : print_plus.s
-
-# target to generate assembly for a file
-print_plus.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_plus.c.s
-.PHONY : print_plus.c.s
-
 print_sign.o: print_sign.c.o
 
 .PHONY : print_sign.o
@@ -581,6 +554,33 @@ print_sign.s: print_sign.c.s
 print_sign.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_sign.c.s
 .PHONY : print_sign.c.s
+
+print_str.o: print_str.c.o
+
+.PHONY : print_str.o
+
+# target to build an object file
+print_str.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_str.c.o
+.PHONY : print_str.c.o
+
+print_str.i: print_str.c.i
+
+.PHONY : print_str.i
+
+# target to preprocess a source file
+print_str.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_str.c.i
+.PHONY : print_str.c.i
+
+print_str.s: print_str.c.s
+
+.PHONY : print_str.s
+
+# target to generate assembly for a file
+print_str.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_str.c.s
+.PHONY : print_str.c.s
 
 type.o: type.c.o
 
@@ -663,12 +663,12 @@ help:
 	@echo "... print_c.o"
 	@echo "... print_c.i"
 	@echo "... print_c.s"
-	@echo "... print_plus.o"
-	@echo "... print_plus.i"
-	@echo "... print_plus.s"
 	@echo "... print_sign.o"
 	@echo "... print_sign.i"
 	@echo "... print_sign.s"
+	@echo "... print_str.o"
+	@echo "... print_str.i"
+	@echo "... print_str.s"
 	@echo "... type.o"
 	@echo "... type.i"
 	@echo "... type.s"

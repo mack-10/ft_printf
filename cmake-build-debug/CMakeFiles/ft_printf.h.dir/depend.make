@@ -49,13 +49,13 @@ CMakeFiles/ft_printf.h.dir/print_c.c.o: ../ft_printf.h
 CMakeFiles/ft_printf.h.dir/print_c.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.h.dir/print_c.c.o: ../print_c.c
 
-CMakeFiles/ft_printf.h.dir/print_plus.c.o: ../ft_printf.h
-CMakeFiles/ft_printf.h.dir/print_plus.c.o: ../libft/libft.h
-CMakeFiles/ft_printf.h.dir/print_plus.c.o: ../print_plus.c
-
 CMakeFiles/ft_printf.h.dir/print_sign.c.o: ../ft_printf.h
 CMakeFiles/ft_printf.h.dir/print_sign.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.h.dir/print_sign.c.o: ../print_sign.c
+
+CMakeFiles/ft_printf.h.dir/print_str.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.h.dir/print_str.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.h.dir/print_str.c.o: ../print_str.c
 
 CMakeFiles/ft_printf.h.dir/type.c.o: ../ft_printf.h
 CMakeFiles/ft_printf.h.dir/type.c.o: ../libft/libft.h

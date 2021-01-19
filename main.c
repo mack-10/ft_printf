@@ -6,9 +6,9 @@ int main(void)
 
 	printf("p\n");
 	int a = 12;
-	ret = printf("|%5.d|", a);
+	ret = printf("|%%|");
 	printf("\tret: %d\n", ret);
-	ret = ft_printf("|%5.d|", a);
+	ret = ft_printf("|%%|");
 	printf("\tret: %d\n", ret);
 	printf("\n\n");
 

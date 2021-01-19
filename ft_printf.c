@@ -86,7 +86,7 @@ static void	find_type(va_list ap, t_value *lst)
 	if (lst->type == '%')
 	{
 		write(1, "%", 1);
-		lst->src += cnt_add(lst);
+		lst->ret++;
 	}
 	else if (lst->type == 'd' || lst->type == 'i')
 		type_di(ap, lst);
