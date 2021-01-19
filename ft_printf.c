@@ -56,14 +56,18 @@ static void	wid_check(va_list ap, t_value *lst)
 
 	src = lst->src;
 	lst->wid = 0;
-	if (src[1] == '*')
-		lst->wid = va_arg(ap, int);
-	else if (src[1] > '0' && src[1] <= '9')
+	while (*src != lst->type)
 	{
-		if (src[2] >= '0' && src[2] <= '9')
-			wid_pre_over9(lst, src, 0);
-		else
-			lst->wid = src[1] - '0';
+		if (*src == '*')
+			lst->wid = va_arg(ap, int);
+		else if (*src > '0' && *src <= '9')
+		{
+			if (src[1] >= '0' && src[1] <= '9')
+				wid_pre_over9(lst, src, 0);
+			else
+				lst->wid = *src - '0';
+		}
+		src++;
 	}
 }
 

@@ -7,7 +7,7 @@ int main(void)
 	int a = 12;
 	ret = printf("|%5.5%|");
 	printf("\tret: %d\n", ret);
-	ret = ft_printf("|%5.5%|");
+	ret = ft_printf("|%-7d|", 123);
 	printf("\tret: %d\n", ret);
 	printf("\n\n");
 
