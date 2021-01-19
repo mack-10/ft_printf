@@ -4,11 +4,10 @@ int main(void)
 {
 	int ret;
 
-	printf("p\n");
 	int a = 12;
-	ret = printf("|%%|");
+	ret = printf("|%5.5%|");
 	printf("\tret: %d\n", ret);
-	ret = ft_printf("|%%|");
+	ret = ft_printf("|%5.5%|");
 	printf("\tret: %d\n", ret);
 	printf("\n\n");
 

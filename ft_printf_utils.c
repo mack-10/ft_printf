@@ -32,14 +32,12 @@ int			cnt_add(t_value *lst)
 	int		cnt;
 
 	src = lst->src;
-	cnt = 0;
+	cnt = 1;
 	while (src[cnt])
 	{
-		if (src[0] == '%' && src[1] == '%')
-			return (2);
-		if (src[cnt] == 'd' || src[cnt] == 'i' || src[cnt] == 'u'
-				|| src[cnt] == 'X' || src[cnt] == 'x' || src[cnt] == 'c'
-				|| src[cnt] == 's' || src[cnt] == 'p')
+		if (src[cnt] == '%' || src[cnt] == 'd' || src[cnt] == 'i'
+		|| src[cnt] == 'u' || src[cnt] == 'X' || src[cnt] == 'x'
+		|| src[cnt] == 'c' || src[cnt] == 's' || src[cnt] == 'p')
 			break ;
 		cnt++;
 	}

@@ -29,21 +29,20 @@ static void	pre_check(va_list ap, t_value *lst)
 {
 	char	*src;
 
-	src = lst->src;
+	src = lst->src + 1;
 	lst->pre = 0;
 	while (*src != lst->type)
 	{
 		if (*src == '.')
 		{
-			src++;
-			if (*src == '*')
+			if (src[1] == '*')
 				lst->pre = va_arg(ap, int);
-			else if (*src > '0' && *src <= '9')
+			else if (src[1] > '0' && src[1] <= '9')
 			{
-				if (src[1] >= '0' && src[1] <= '9')
+				if (src[2] >= '0' && src[2] <= '9')
 					wid_pre_over9(lst, src, 1);
 				else
-					lst->pre = *src - '0';
+					lst->pre = src[1] - '0';
 			}
 			break ;
 		}
@@ -57,24 +56,14 @@ static void	wid_check(va_list ap, t_value *lst)
 
 	src = lst->src;
 	lst->wid = 0;
-	while (*src != lst->type)
+	if (src[1] == '*')
+		lst->wid = va_arg(ap, int);
+	else if (src[1] > '0' && src[1] <= '9')
 	{
-		if (*src == '.')
-			break ;
-		if (*src == '*' || (*src > '0' && *src <= '9'))
-		{
-			if (*src == '*')
-				lst->wid = va_arg(ap, int);
-			else
-			{
-				if (src[1] >= '0' && src[1] <= '9')
-					wid_pre_over9(lst, src, 0);
-				else
-					lst->wid = *src - '0';
-			}
-			break ;
-		}
-		src++;
+		if (src[2] >= '0' && src[2] <= '9')
+			wid_pre_over9(lst, src, 0);
+		else
+			lst->wid = src[1] - '0';
 	}
 }
 
@@ -84,10 +73,7 @@ static void	find_type(va_list ap, t_value *lst)
 	wid_check(ap, lst);
 	pre_check(ap, lst);
 	if (lst->type == '%')
-	{
-		write(1, "%", 1);
-		lst->ret++;
-	}
+		print_c(lst, '%');
 	else if (lst->type == 'd' || lst->type == 'i')
 		type_di(ap, lst);
 	else if (lst->type == 'u')
