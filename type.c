@@ -58,10 +58,15 @@ void	type_x(va_list ap, t_value *lst)
 
 void	type_p(va_list ap, t_value *lst)
 {
+	unsigned long long n;
 	char	*s1;
 	char	*s2;
 
-	s1 = trans_d_h(lst, va_arg(ap, unsigned long long));
+	n = va_arg(ap, unsigned long long);
+	if (!n)
+		s1 = ft_strdup("0");
+	else
+		s1 = trans_d_h(lst, n);
 	s2 = ft_strjoin("0x", s1);
 	print_sign(lst, s2);
 	free_p(0, &s1);
