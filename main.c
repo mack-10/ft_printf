@@ -6,9 +6,9 @@ int main(void)
 
 	printf("p\n");
 	int a = 12;
-	ret = printf("|%20.20p|", &a);
+	ret = printf("|%5.d|", a);
 	printf("\tret: %d\n", ret);
-	ret = ft_printf("|%20.20p|", &a);
+	ret = ft_printf("|%5.d|", a);
 	printf("\tret: %d\n", ret);
 	printf("\n\n");
 
