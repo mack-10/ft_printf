@@ -54,7 +54,7 @@ static void	wid_check(va_list ap, t_value *lst)
 {
 	char *src;
 
-	src = lst->src;
+	src = lst->src + 1;
 	lst->wid = 0;
 	while (*src != lst->type)
 	{
