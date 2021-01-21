@@ -66,7 +66,7 @@ static void	wid_check(va_list ap, t_value *lst)
 	{
 		if (*src == '.')
 			break ;
-		else if (*src == '*' || (*src >= '0' && *src <= '9'))
+		else if (*src == '*' || (*src > '0' && *src <= '9'))
 		{
 			if (*src == '*')
 				lst->wid = va_arg(ap, int);
