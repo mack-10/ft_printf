@@ -7,7 +7,7 @@ int main(void)
 	char s[10] = "abcde";
 	ret = printf("|%10.3s|", NULL);
 	printf("\tret: %d\n", ret);
-	ret = ft_printf("|%10.3s|", NULL);
+	ret = ft_printf("|%.*s|", -3, NULL);
 	printf("\tret: %d\n", ret);
 	printf("\n\n");
 

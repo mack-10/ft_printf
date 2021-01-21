@@ -79,6 +79,8 @@ static void		flag_minus(t_value *lst, char *s)
 void			print_s(t_value *lst, char *s)
 {
 	lst->size = ft_strlen(s);
+	if (lst->pre < 0)
+		lst->pre = lst->size;
 	if (search_dot(lst))
 	{
 		if (lst->pre >= lst-> size)
