@@ -48,7 +48,7 @@ static void	pre_check(va_list ap, t_value *lst)
 				if (src[1] >= '0' && src[1] <= '9')
 					wid_pre_over9(lst, src, 1);
 				else
-					lst->pre = src[1] - '0';
+					lst->pre = *src - '0';
 			}
 			break ;
 		}
