@@ -80,8 +80,8 @@ void	type_s(va_list ap, t_value *lst)
 	s  = va_arg(ap, char *);
 	if (!s)
 	{
-		s = ft_strdup("");
-		print_s(lst, s);
+		s = ft_strdup("(null)");
+		print_nbr(lst, s);
 		free_p(0, &s);
 	}
 	else
