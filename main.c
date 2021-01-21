@@ -4,10 +4,10 @@ int main(void)
 {
 	int ret;
 
-	int a = 12;
-	ret = printf("|%p|", NULL);
+	char s[10] = "abcde";
+	ret = printf("|%s|", s);
 	printf("\tret: %d\n", ret);
-	ret = ft_printf("|%p|", NULL);
+	ret = ft_printf("|%s|", s);
 	printf("\tret: %d\n", ret);
 	printf("\n\n");
 

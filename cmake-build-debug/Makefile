@@ -528,6 +528,60 @@ print_c.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_c.c.s
 .PHONY : print_c.c.s
 
+print_nbr.o: print_nbr.c.o
+
+.PHONY : print_nbr.o
+
+# target to build an object file
+print_nbr.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_nbr.c.o
+.PHONY : print_nbr.c.o
+
+print_nbr.i: print_nbr.c.i
+
+.PHONY : print_nbr.i
+
+# target to preprocess a source file
+print_nbr.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_nbr.c.i
+.PHONY : print_nbr.c.i
+
+print_nbr.s: print_nbr.c.s
+
+.PHONY : print_nbr.s
+
+# target to generate assembly for a file
+print_nbr.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_nbr.c.s
+.PHONY : print_nbr.c.s
+
+print_s.o: print_s.c.o
+
+.PHONY : print_s.o
+
+# target to build an object file
+print_s.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_s.c.o
+.PHONY : print_s.c.o
+
+print_s.i: print_s.c.i
+
+.PHONY : print_s.i
+
+# target to preprocess a source file
+print_s.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_s.c.i
+.PHONY : print_s.c.i
+
+print_s.s: print_s.c.s
+
+.PHONY : print_s.s
+
+# target to generate assembly for a file
+print_s.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_s.c.s
+.PHONY : print_s.c.s
+
 print_sign.o: print_sign.c.o
 
 .PHONY : print_sign.o
@@ -554,33 +608,6 @@ print_sign.s: print_sign.c.s
 print_sign.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_sign.c.s
 .PHONY : print_sign.c.s
-
-print_str.o: print_str.c.o
-
-.PHONY : print_str.o
-
-# target to build an object file
-print_str.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_str.c.o
-.PHONY : print_str.c.o
-
-print_str.i: print_str.c.i
-
-.PHONY : print_str.i
-
-# target to preprocess a source file
-print_str.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_str.c.i
-.PHONY : print_str.c.i
-
-print_str.s: print_str.c.s
-
-.PHONY : print_str.s
-
-# target to generate assembly for a file
-print_str.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.h.dir/build.make CMakeFiles/ft_printf.h.dir/print_str.c.s
-.PHONY : print_str.c.s
 
 type.o: type.c.o
 
@@ -663,12 +690,15 @@ help:
 	@echo "... print_c.o"
 	@echo "... print_c.i"
 	@echo "... print_c.s"
+	@echo "... print_nbr.o"
+	@echo "... print_nbr.i"
+	@echo "... print_nbr.s"
+	@echo "... print_s.o"
+	@echo "... print_s.i"
+	@echo "... print_s.s"
 	@echo "... print_sign.o"
 	@echo "... print_sign.i"
 	@echo "... print_sign.s"
-	@echo "... print_str.o"
-	@echo "... print_str.i"
-	@echo "... print_str.s"
 	@echo "... type.o"
 	@echo "... type.i"
 	@echo "... type.s"

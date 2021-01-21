@@ -20,7 +20,7 @@ void	type_di(va_list ap, t_value *lst)
 	n = va_arg(ap, int);
 	s = ft_itoa(n);
 	if (n > 0)
-		print_p(lst, s);
+		print_nbr(lst, s);
 	else if (!n)
 		print_c(lst, '0');
 	else
@@ -36,7 +36,7 @@ void	type_u(va_list ap, t_value *lst)
 	n = va_arg(ap, unsigned int);
 	s = ft_itoa_un(n);
 	if (n)
-		print_p(lst, s);
+		print_nbr(lst, s);
 	else if (!n)
 		print_c(lst, '0');
 	free_p(0, &s);
@@ -50,7 +50,7 @@ void	type_x(va_list ap, t_value *lst)
 	n = va_arg(ap, unsigned int);
 	s = trans_d_h(lst, n);
 	if (n)
-		print_p(lst, s);
+		print_nbr(lst, s);
 	else
 		print_c(lst, '0');
 	free_p(0, &s);
@@ -75,5 +75,5 @@ void	type_p(va_list ap, t_value *lst)
 
 void	type_s(va_list ap, t_value *lst)
 {
-	print_p(lst, va_arg(ap, char *));
+	print_s(lst, va_arg(ap, char *));
 }

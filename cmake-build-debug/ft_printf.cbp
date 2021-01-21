@@ -127,10 +127,13 @@
 		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/print_c.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/print_sign.c">
+		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/print_nbr.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/print_str.c">
+		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/print_s.c">
+			<Option target="ft_printf.h"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/print_sign.c">
 			<Option target="ft_printf.h"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/macke/Desktop/ft_printf/type.c">

@@ -68,7 +68,7 @@ static void		flag_minus(t_value *lst, char *src)
 	}
 }
 
-void			print_p(t_value *lst, char *s)
+void			print_nbr(t_value *lst, char *s)
 {
 	lst->size = ft_strlen(s);
 	lst->ret += lst->size;
