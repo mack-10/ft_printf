@@ -75,5 +75,11 @@ void	type_p(va_list ap, t_value *lst)
 
 void	type_s(va_list ap, t_value *lst)
 {
-	print_s(lst, va_arg(ap, char *));
+	char *s;
+
+	s  = va_arg(ap, char *);
+	if (!s)
+		s = ft_strdup("");
+	print_s(lst, s);
+	free_p(0, &s);
 }
