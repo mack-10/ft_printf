@@ -17,7 +17,7 @@ static void	wid_pre_over9(t_value *lst, char *src, int sign)
 	char	*s;
 
 	if (*src == '0')
-		lst->pre = src[1];
+		lst->pre = src[1] - '0';
 	else
 	{
 		s = (char *)ft_calloc(1, 3);
@@ -40,11 +40,12 @@ static void	pre_check(va_list ap, t_value *lst)
 	{
 		if (*src == '.')
 		{
-			if (src[1] == '*')
+			src++;
+			if (*src == '*')
 				lst->pre = va_arg(ap, int);
-			else if (src[1] > '0' && src[1] <= '9')
+			else if (*src >= '0' && *src <= '9')
 			{
-				if (src[2] >= '0' && src[2] <= '9')
+				if (src[1] >= '0' && src[1] <= '9')
 					wid_pre_over9(lst, src, 1);
 				else
 					lst->pre = src[1] - '0';
@@ -71,7 +72,7 @@ static void	wid_check(va_list ap, t_value *lst)
 				lst->wid = va_arg(ap, int);
 			else
 			{
-				if (src[1] >= '0' && src[1] <= '9')
+				if (src[1] > '0' && src[1] <= '9')
 					wid_pre_over9(lst, src, 0);
 				else
 					lst->wid = *src - '0';
