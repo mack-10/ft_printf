@@ -5,9 +5,9 @@ int main(void)
 	int ret;
 
 	char s[10] = "abcde";
-	ret = printf("|%s|", s);
+	ret = printf("|%8.2s|", s);
 	printf("\tret: %d\n", ret);
-	ret = ft_printf("|%s|", s);
+	ret = ft_printf("|%8.2s|", s);
 	printf("\tret: %d\n", ret);
 	printf("\n\n");
 
