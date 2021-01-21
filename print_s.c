@@ -6,7 +6,7 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/12 23:23:45 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/18 03:29:33 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/22 05:36:12 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,7 @@ void			print_s(t_value *lst, char *s)
 		lst->pre = lst->size;
 	if (search_dot(lst))
 	{
-		if (lst->pre >= lst-> size)
+		if (lst->pre >= lst->size)
 			lst->ret += lst->size;
 		else
 			lst->ret += lst->pre;

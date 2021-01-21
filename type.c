@@ -6,7 +6,7 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/19 01:40:20 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/19 21:30:17 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/22 05:35:41 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,9 +58,9 @@ void	type_x(va_list ap, t_value *lst)
 
 void	type_p(va_list ap, t_value *lst)
 {
-	unsigned long long n;
-	char	*s1;
-	char	*s2;
+	unsigned long long	n;
+	char				*s1;
+	char				*s2;
 
 	n = va_arg(ap, unsigned long long);
 	if (!n)
@@ -77,7 +77,7 @@ void	type_s(va_list ap, t_value *lst)
 {
 	char *s;
 
-	s  = va_arg(ap, char *);
+	s = va_arg(ap, char *);
 	if (!s)
 	{
 		s = ft_strdup("(null)");
