@@ -72,7 +72,7 @@ static void	wid_check(va_list ap, t_value *lst)
 				lst->wid = va_arg(ap, int);
 			else
 			{
-				if (src[1] > '0' && src[1] <= '9')
+				if (*src > '0' && *src <= '9')
 					wid_pre_over9(lst, src, 0);
 				else
 					lst->wid = *src - '0';
