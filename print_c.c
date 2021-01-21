@@ -17,7 +17,8 @@ static void		print(t_value *lst, int n, char c)
 	int		i;
 
 	i = 0;
-	lst->ret += n;
+	if (n > 0)
+		lst->ret += n;
 	while (i < n)
 	{
 		write(1, &c, 1);
