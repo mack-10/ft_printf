@@ -15,84 +15,35 @@ Test  90 (s_prec_09_no_width_s_hidden) : FAILED.
 Test  91 (s_prec_03_no_width_s_null) : FAILED.
     First line of code: {return test("%.03s", NULL);}
       expected output : "(nu"
-      your output     : "(null)"
+      your output     : ""
       expected (nonprintable as hex) : "(nu"
-      actual   (nonprintable as hex) : "(null)"
+      actual   (nonprintable as hex) : ""
 
-Test  99 (s_prec_0_width_3_s_null) : FAILED.
-    First line of code: {return test("%3.s", NULL);}
-      expected output : "   "
-      your output     : "(null)"
-      expected (nonprintable as hex) : "   "
-      actual   (nonprintable as hex) : "(null)"
-
-Test 100 (s_prec_0_width_10_s_null) : FAILED.
-    First line of code: {return test("%10.s", NULL);}
-      expected output : "          "
-      your output     : "    (null)"
-      expected (nonprintable as hex) : "          "
-      actual   (nonprintable as hex) : "    (null)"
-
-Test 106 (s_prec_0_lj_width_3_s_null) : FAILED.
-    First line of code: {return test("%-3.s", NULL);}
-      expected output : "   "
-      your output     : "(null)"
-      expected (nonprintable as hex) : "   "
-      actual   (nonprintable as hex) : "(null)"
-
-Test 107 (s_prec_0_lj_width_8_s_null) : FAILED.
-    First line of code: {return test("%-8.s", NULL);}
-      expected output : "        "
-      your output     : "(null)  "
-      expected (nonprintable as hex) : "        "
-      actual   (nonprintable as hex) : "(null)  "
-
-Test 113 (s_prec_1_width_3_s_null) : FAILED.
-    First line of code: {return test("%3.1s", NULL);}
-      expected output : "  ("
-      your output     : "(null)"
-      expected (nonprintable as hex) : "  ("
-      actual   (nonprintable as hex) : "(null)"
-
-Test 114 (s_prec_1_width_9_s_null) : FAILED.
-    First line of code: {return test("%9.1s", NULL);}
-      expected output : "        ("
-      your output     : "   (null)"
-      expected (nonprintable as hex) : "        ("
-      actual   (nonprintable as hex) : "   (null)"
-
-Test 117 (s_prec_1_lj_width_3_s_null) : FAILED.
-    First line of code: {return test("%-3.1s", NULL);}
-      expected output : "(  "
-      your output     : "(null)"
-      expected (nonprintable as hex) : "(  "
-      actual   (nonprintable as hex) : "(null)"
-
-Test 118 (s_prec_1_lj_width_9_s_null) : FAILED.
-    First line of code: {return test("%-9.1s", NULL);}
-      expected output : "(        "
-      your output     : "(null)   "
-      expected (nonprintable as hex) : "(        "
-      actual   (nonprintable as hex) : "(null)   "
-
-Test 131 (s_prec_8_lj_width_3_s_null) : FAILED.
-    First line of code: {return test("%-3.8s", NULL);}
+Test  92 (s_prec_09_no_width_s_null) : FAILED.
+    First line of code: {return test("%.09s", NULL);}
       expected output : "(null)"
-      your output     : "00(null)"
+      your output     : ""
       expected (nonprintable as hex) : "(null)"
-      actual   (nonprintable as hex) : "00(null)"
-
-Test 132 (s_prec_8_lj_width_10_s_null) : FAILED.
-    First line of code: {return test("%-10.8s", NULL);}
-      expected output : "(null)    "
-      your output     : "00(null)  "
-      expected (nonprintable as hex) : "(null)    "
-      actual   (nonprintable as hex) : "00(null)  "
+      actual   (nonprintable as hex) : ""
 
 Test 134 (s_prec_09_lj_s_hidden_notrunc) : FAILED.
     First line of code: {return test("%-.09s", s_hidden);}
       expected output : "hi low"
       your output     : ""
       expected (nonprintable as hex) : "hi low"
+      actual   (nonprintable as hex) : ""
+
+Test 4201 (s_neg_prec_star_01) : FAILED.
+    First line of code: {return test("%.*s", -3, 0);}
+      expected output : "(null)"
+      your output     : ""
+      expected (nonprintable as hex) : "(null)"
+      actual   (nonprintable as hex) : ""
+
+Test 4202 (s_neg_prec_star_02) : FAILED.
+    First line of code: {return test("%.*s", -1, 0);}
+      expected output : "(null)"
+      your output     : ""
+      expected (nonprintable as hex) : "(null)"
       actual   (nonprintable as hex) : ""
 
