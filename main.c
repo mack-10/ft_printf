@@ -4,10 +4,9 @@ int main(void)
 {
 	int ret;
 
-	char s[10] = "abcde";
-	ret = printf("|%10.3s|", NULL);
+	ret = printf("|%03d|", 12);
 	printf("\tret: %d\n", ret);
-	ret = ft_printf("|%.*s|", -3, NULL);
+	ret = ft_printf("|%03d|", 12);
 	printf("\tret: %d\n", ret);
 	printf("\n\n");
 

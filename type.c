@@ -35,7 +35,7 @@ void	type_u(va_list ap, t_value *lst)
 
 	n = va_arg(ap, unsigned int);
 	s = ft_itoa_un(n);
-	if (n)
+	if (n > 0)
 		print_nbr(lst, s);
 	else if (!n)
 		print_c(lst, '0');

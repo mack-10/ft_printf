@@ -85,7 +85,7 @@ static void		flag_minus(t_value *lst, char *src)
 void			print_sign(t_value *lst, char *s)
 {
 	lst->sign = 0;
-	if (lst->type == 'u')
+	if (lst->type == 'p')
 		lst->sign = 2;
 	else
 		lst->sign = 1;
