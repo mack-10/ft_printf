@@ -28,21 +28,20 @@ static void		print(t_value *lst, int n, char c)
 
 static void		non_flag(t_value *lst, char *src)
 {
-	if (lst->wid > lst->size)
+	if (search_dot(lst))
 	{
-		if (lst->pre > lst->size)
+		if (lst->wid > (lst->pre + lst->sign))
 			print(lst, lst->wid - (lst->pre + lst->sign), ' ');
-		else
-			print(lst, lst->wid - lst->size, ' ');
-	}
-	if (lst->pre > (lst->size - lst->sign))
-	{
 		write(1, src, lst->sign);
 		print(lst, lst->pre - (lst->size - lst->sign), '0');
 		write(1, src + lst->sign, lst->size - lst->sign);
 	}
 	else
+	{
+		if (lst->wid > lst->size)
+			print(lst, lst->wid - lst->size, ' ');
 		write(1, src, lst->size);
+	}
 }
 
 static void		flag_zero(t_value *lst, char *src)
