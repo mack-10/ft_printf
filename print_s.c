@@ -90,8 +90,12 @@ void			print_s(t_value *lst, char *s)
 	}
 	else
 		lst->ret += lst->size;
-	if (lst->src[1] == '-')
+	if (lst->src[1] == '-' || lst->wid < 0)
+	{
+		if (lst->wid < 0)
+			lst->wid *= -1;
 		flag_minus(lst, s);
+	}
 	else
 		non_flag(lst, s);
 }
