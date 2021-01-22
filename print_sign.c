@@ -30,9 +30,9 @@ static void		non_flag(t_value *lst, char *src)
 {
 	if (search_dot(lst))
 	{
-		if (lst->wid > (lst->pre + lst->sign) || lst->wid > lst->size)
+		if (lst->wid > 0)
 		{
-			if (lst->wid > (lst->pre + lst->sign))
+			if ((lst->pre + lst->sign) > lst->size)
 				print(lst, lst->wid - (lst->pre + lst->sign), ' ');
 			else
 				print(lst, lst->wid - lst->size, ' ');
