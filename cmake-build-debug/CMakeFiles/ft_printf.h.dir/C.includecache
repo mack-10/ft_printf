@@ -24,11 +24,7 @@ stdlib.h
 unistd.h
 -
 
-/mnt/c/Users/macke/Desktop/ft_printf/print_sign.c
-ft_printf.h
-/mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
-
-/mnt/c/Users/macke/Desktop/ft_printf/type.c
+/mnt/c/Users/macke/Desktop/ft_printf/print_s.c
 ft_printf.h
 /mnt/c/Users/macke/Desktop/ft_printf/ft_printf.h
 

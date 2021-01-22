@@ -51,6 +51,32 @@ static void		non_flag(t_value *lst, char *s)
 	}
 }
 
+static void		flag_zero(t_value *lst, char *s)
+{
+	if (!search_dot(lst))
+	{
+		if (lst->wid)
+			print(lst, lst->wid - lst->size, '0');
+		write(1, s, lst->size);
+	}
+	else
+	{
+		if (lst->pre >= lst->size)
+		{
+			if (lst->wid)
+				print(lst, lst->wid - lst->pre, ' ');
+			print(lst, lst->pre - lst->size, '0');
+			write(1, s, lst->size);
+		}
+		else
+		{
+			if (lst->wid)
+				print(lst, lst->wid - lst->pre, ' ');
+			write(1, s, lst->pre);
+		}
+	}
+}
+
 static void		flag_minus(t_value *lst, char *s)
 {
 	if (!search_dot(lst))
@@ -96,6 +122,8 @@ void			print_s(t_value *lst, char *s)
 			lst->wid *= -1;
 		flag_minus(lst, s);
 	}
+	else if (lst->src[1] == '0')
+		flag_zero(lst, s);
 	else
 		non_flag(lst, s);
 }
