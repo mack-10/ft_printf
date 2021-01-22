@@ -63,12 +63,15 @@ void	type_p(va_list ap, t_value *lst)
 	char				*s2;
 
 	n = va_arg(ap, unsigned long long);
-	if (!n)
-		s1 = ft_strdup("0");
-	else
+	if (n > 0)
 		s1 = trans_d_h(lst, n);
-	s2 = ft_strjoin("0x", s1);
-	print_sign(lst, s2);
+	else
+		s1 = ft_strdup("0");
+	if (!lst->pre && search_dot(lst))
+		s2 = ft_strdup("0x");
+	else
+		s2 = ft_strjoin("0x", s1);
+	print_nbr(lst, s2);
 	free_p(0, &s1);
 	free_p(0, &s2);
 }

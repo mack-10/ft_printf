@@ -7,7 +7,7 @@ int main(void)
 	// 8, -12, 123456789, 0, -12345678, 97, -2147483648, 2147483647
 	/*ret = printf("%02.-2d", 8);
 	printf("\tret: %d\n", ret);*/
-	ret = ft_printf("|%-4s, %-4s, %-4s, %-4s, %-4s, %-4s, %-4s, %-4s|", "abcdefghijklmnop", "-a", "-12", "0", "%%", "-2147483648", "0x2147483648", "-0");
+	ret = ft_printf("|%.p|", NULL);
 	printf("\tret: %d\n", ret);
 	printf("\n\n");
 
