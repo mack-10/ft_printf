@@ -49,7 +49,7 @@ static void		flag_zero(t_value *lst, char *src)
 {
 	if (lst->pre)
 	{
-		if (lst->pre > lst->size)
+		if (lst->pre > (lst->size - lst->sign))
 			print(lst, lst->wid - (lst->pre + lst->sign), ' ');
 		else
 			print(lst, lst->wid - lst->size, ' ');
@@ -68,7 +68,7 @@ static void		flag_minus(t_value *lst, char *src)
 {
 	if (lst->wid < 0)
 		lst->wid *= -1;
-	if (lst->pre > lst->size)
+	if (lst->pre > (lst->size - lst->sign))
 	{
 		write(1, src, lst->sign);
 		print(lst, lst->pre - (lst->size - lst->sign), '0');
@@ -78,7 +78,7 @@ static void		flag_minus(t_value *lst, char *src)
 		write(1, src, lst->size);
 	if (lst->wid > lst->size)
 	{
-		if (lst->pre > lst->size)
+		if (lst->pre > (lst->size - lst->sign))
 			print(lst, lst->wid - (lst->pre + lst->sign), ' ');
 		else
 			print(lst, lst->wid - lst->size, ' ');
