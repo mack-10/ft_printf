@@ -42,7 +42,7 @@ static void		non_flag(t_value *lst, char *src)
 
 static void		flag_zero(t_value *lst, char *src)
 {
-	if (lst->pre > 0)
+	if (search_dot(lst))
 	{
 		if (lst->pre > lst->size)
 			print(lst, lst->wid - lst->pre, ' ');
@@ -50,8 +50,11 @@ static void		flag_zero(t_value *lst, char *src)
 			print(lst, lst->wid - lst->size, ' ');
 		print(lst, lst->pre - lst->size, '0');
 	}
-	else
-		print(lst, lst->wid - lst->size, '0');
+	else //pre가 아예 존재하지 않음
+	{
+		if (lst->wid > lst->size)
+			print(lst, lst->wid - lst->size, ' ');
+	}
 	write(1, src, lst->size);
 }
 
