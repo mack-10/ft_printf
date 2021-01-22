@@ -30,7 +30,7 @@ static void		non_flag(t_value *lst, char c)
 {
 	if (!lst->pre && search_dot(lst))
 	{
-		if (lst->wid > 1)
+		if (lst->wid > 0)
 			print(lst, lst->wid, ' ');
 	}
 	else
@@ -54,7 +54,7 @@ static void		flag_zero(t_value *lst, char c)
 	{
 		if (!lst->pre)
 		{
-			if (lst->wid > 1)
+			if (lst->wid > 0)
 				print(lst, lst->wid, ' ');
 		}
 		else
@@ -80,7 +80,7 @@ static void		flag_minus(t_value *lst, char c)
 {
 	if (!lst->pre && search_dot(lst))
 	{
-		if (lst->wid > 1)
+		if (lst->wid > 0)
 			print(lst, lst->wid, ' ');
 	}
 	else
