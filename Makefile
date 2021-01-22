@@ -1,5 +1,5 @@
 CC          =   gcc
-FLAGS       =   -Wall -Wextra -Werror
+CFLAGS      =   -Wall -Wextra -Werror
 NAME        =   libftprintf.a
 SRCS        =  	ft_printf.c			\
 				ft_printf_utils.c	\

@@ -66,13 +66,13 @@ static void	wid_check(va_list ap, t_value *lst)
 	{
 		if (*src == '.')
 			break ;
-		else if (*src == '*' || (*src > '0' && *src <= '9') || *src == '-')
+		else if (*src == '*' || (*src > '0' && *src <= '9'))
 		{
 			if (*src == '*')
 				lst->wid = va_arg(ap, int);
 			else
 			{
-				if ((*src > '0' && *src <= '9') || *src == '-')
+				if (*src > '0' && *src <= '9')
 					wid_pre_ex(lst, src, 0);
 				else
 					lst->wid = *src - '0';
