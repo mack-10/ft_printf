@@ -78,6 +78,8 @@ static void		flag_zero(t_value *lst, char c)
 
 static void		flag_minus(t_value *lst, char c)
 {
+	if (lst->wid < 0)
+		lst->wid *= -1;
 	if (!lst->pre && search_dot(lst))
 	{
 		if (lst->wid > 0)
@@ -102,7 +104,8 @@ void			print_c(t_value *lst, char c)
 {
 	if ((lst-> pre && search_dot(lst)) || (!lst->pre && !search_dot(lst)))
 		lst->ret++;
-	if (lst->src[1] == '-' || (lst->src[1] == '0' && lst->src[2] == '-'))
+	if (lst->src[1] == '-' || (lst->src[1] == '0' && lst->src[2] == '-')
+	|| lst->wid < 0)
 		flag_minus(lst, c);
 	else if (lst->src[1] == '0')
 		flag_zero(lst, c);

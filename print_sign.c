@@ -66,6 +66,8 @@ static void		flag_zero(t_value *lst, char *src)
 
 static void		flag_minus(t_value *lst, char *src)
 {
+	if (lst->wid < 0)
+		lst->wid *= -1;
 	if (lst->pre > lst->size)
 	{
 		write(1, src, lst->sign);
@@ -92,7 +94,8 @@ void			print_sign(t_value *lst, char *s)
 		lst->sign = 1;
 	lst->size = ft_strlen(s);
 	lst->ret += lst->size;
-	if (lst->src[1] == '-' || (lst->src[1] == '0' && lst->src[2] == '-'))
+	if (lst->src[1] == '-' || (lst->src[1] == '0' && lst->src[2] == '-')
+	|| lst->wid < 0)
 		flag_minus(lst, s);
 	else if (lst->src[1] == '0')
 		flag_zero(lst, s);
