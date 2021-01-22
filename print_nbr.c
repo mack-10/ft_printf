@@ -6,7 +6,7 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/12 23:23:45 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/18 03:29:33 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/22 23:46:40 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,10 +50,10 @@ static void		flag_zero(t_value *lst, char *src)
 			print(lst, lst->wid - lst->size, ' ');
 		print(lst, lst->pre - lst->size, '0');
 	}
-	else //pre가 아예 존재하지 않음
+	else
 	{
 		if (lst->wid > lst->size)
-			print(lst, lst->wid - lst->size, ' ');
+			print(lst, lst->wid - lst->size, '0');
 	}
 	write(1, src, lst->size);
 }
