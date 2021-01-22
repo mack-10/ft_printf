@@ -44,11 +44,16 @@ static void		flag_zero(t_value *lst, char *src)
 {
 	if (search_dot(lst))
 	{
-		if (lst->pre > lst->size)
-			print(lst, lst->wid - lst->pre, ' ');
+		if (lst->pre < 0)
+			print(lst, lst->wid - lst->size, '0');
 		else
-			print(lst, lst->wid - lst->size, ' ');
-		print(lst, lst->pre - lst->size, '0');
+		{
+			if (lst->pre > lst->size)
+				print(lst, lst->wid - lst->pre, ' ');
+			else
+				print(lst, lst->wid - lst->size, ' ');
+			print(lst, lst->pre - lst->size, '0');
+		}
 	}
 	else
 	{
