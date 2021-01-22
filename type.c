@@ -71,7 +71,7 @@ void	type_p(va_list ap, t_value *lst)
 		s2 = ft_strdup("0x");
 	else
 		s2 = ft_strjoin("0x", s1);
-	print_nbr(lst, s2);
+	print_sign(lst, s2);
 	free_p(0, &s1);
 	free_p(0, &s2);
 }
