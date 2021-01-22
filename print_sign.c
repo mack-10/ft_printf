@@ -35,7 +35,7 @@ static void		non_flag(t_value *lst, char *src)
 		else
 			print(lst, lst->wid - lst->size, ' ');
 	}
-	if (lst->pre > lst->size)
+	if (lst->pre > (lst->size - lst->sign))
 	{
 		write(1, src, lst->sign);
 		print(lst, lst->pre - (lst->size - lst->sign), '0');
