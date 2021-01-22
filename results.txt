@@ -7,39 +7,24 @@ WARNING: The return values reported here may be bugged on some systems.
           the function output--only the reported return value.
 
 
-Test 429 (p_void) : FAILED.
-    First line of code: {return test("%.p", NULL);}
-      expected return value : 2
-      your return value     : 3
-      expected output : "0x"
-      your output     : "0x0"
-      expected (nonprintable as hex) : "0x"
-      actual   (nonprintable as hex) : "0x0"
+Test 433 (p_ftfc_literal_2w_prec9_undefbehav) : FAILED.
+    First line of code: {return test("%2.9p
+", 1234);}
+      expected return value : 13
+      your return value     : 11
+      expected output : "0x0000004d2
+"
+      your output     : "00000x4d2
+"
+      expected (nonprintable as hex) : "0x0000004d2\x0a"
+      actual   (nonprintable as hex) : "00000x4d2\x0a"
 
-Test 430 (p_void_width_fit) : FAILED.
-    First line of code: {return test("%5.p", NULL);}
-      expected return value : 5
+Test 434 (p_ftfc_zero_prec5_undefbehav) : FAILED.
+    First line of code: {return test("%.5p", 0);}
+      expected return value : 7
       your return value     : 5
-      expected output : "   0x"
-      your output     : "  0x0"
-      expected (nonprintable as hex) : "   0x"
-      actual   (nonprintable as hex) : "  0x0"
-
-Test 431 (p_void_width_nofit) : FAILED.
-    First line of code: {return test("%2.p", NULL);}
-      expected return value : 2
-      your return value     : 3
-      expected output : "0x"
-      your output     : "0x0"
-      expected (nonprintable as hex) : "0x"
-      actual   (nonprintable as hex) : "0x0"
-
-Test 435 (p_ftfc_zero_prec0_undefbehav) : FAILED.
-    First line of code: {return test("%.0p", 0);}
-      expected return value : 2
-      your return value     : 3
-      expected output : "0x"
-      your output     : "0x0"
-      expected (nonprintable as hex) : "0x"
-      actual   (nonprintable as hex) : "0x0"
+      expected output : "0x00000"
+      your output     : "000x0"
+      expected (nonprintable as hex) : "0x00000"
+      actual   (nonprintable as hex) : "000x0"
 
