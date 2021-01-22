@@ -50,7 +50,7 @@ static void		non_flag(t_value *lst, char c)
 
 static void		flag_zero(t_value *lst, char c)
 {
-	if (search_dot(lst))
+	if (search_dot(lst) && lst->pre >= 0)
 	{
 		if (!lst->pre)
 		{

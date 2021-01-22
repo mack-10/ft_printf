@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-static void	wid_pre_over9(t_value *lst, char *src, int sign)
+static void	wid_pre_ex(t_value *lst, char *src, int sign)
 {
 	char	*s;
 
@@ -43,10 +43,10 @@ static void	pre_check(va_list ap, t_value *lst)
 			src++;
 			if (*src == '*')
 				lst->pre = va_arg(ap, int);
-			else if (*src >= '0' && *src <= '9')
+			else if (*src >= '0' && *src <= '9' || *src == '-')
 			{
 				if (src[1] >= '0' && src[1] <= '9')
-					wid_pre_over9(lst, src, 1);
+					wid_pre_ex(lst, src, 1);
 				else
 					lst->pre = *src - '0';
 			}
@@ -66,14 +66,14 @@ static void	wid_check(va_list ap, t_value *lst)
 	{
 		if (*src == '.')
 			break ;
-		else if (*src == '*' || (*src > '0' && *src <= '9'))
+		else if (*src == '*' || (*src > '0' && *src <= '9') || *src == '-')
 		{
 			if (*src == '*')
 				lst->wid = va_arg(ap, int);
 			else
 			{
-				if (*src > '0' && *src <= '9')
-					wid_pre_over9(lst, src, 0);
+				if (*src > '0' && *src <= '9' || *src == '-')
+					wid_pre_ex(lst, src, 0);
 				else
 					lst->wid = *src - '0';
 			}

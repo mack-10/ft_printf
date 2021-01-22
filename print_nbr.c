@@ -42,7 +42,7 @@ static void		non_flag(t_value *lst, char *src)
 
 static void		flag_zero(t_value *lst, char *src)
 {
-	if (lst->pre)
+	if (lst->pre >= 0)
 	{
 		if (lst->pre > lst->size)
 			print(lst, lst->wid - lst->pre, ' ');
