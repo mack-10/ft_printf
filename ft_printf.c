@@ -6,7 +6,7 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/18 01:28:10 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/19 21:28:54 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/22 22:44:53 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ static void	pre_check(va_list ap, t_value *lst)
 			src++;
 			if (*src == '*')
 				lst->pre = va_arg(ap, int);
-			else if (*src >= '0' && *src <= '9' || *src == '-')
+			else if ((*src >= '0' && *src <= '9') || *src == '-')
 			{
 				if (src[1] >= '0' && src[1] <= '9')
 					wid_pre_ex(lst, src, 1);
@@ -72,7 +72,7 @@ static void	wid_check(va_list ap, t_value *lst)
 				lst->wid = va_arg(ap, int);
 			else
 			{
-				if (*src > '0' && *src <= '9' || *src == '-')
+				if ((*src > '0' && *src <= '9') || *src == '-')
 					wid_pre_ex(lst, src, 0);
 				else
 					lst->wid = *src - '0';
