@@ -6,7 +6,7 @@
 /*   By: sujeon <sujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/14 01:39:37 by sujeon            #+#    #+#             */
-/*   Updated: 2021/01/18 03:30:29 by sujeon           ###   ########.fr       */
+/*   Updated: 2021/01/23 02:12:35 by sujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,8 +72,6 @@ static void		flag_zero(t_value *lst, char c)
 		print(lst, lst->wid - 1, '0');
 		write(1, &c, 1);
 	}
-
-
 }
 
 static void		flag_minus(t_value *lst, char c)
@@ -102,7 +100,7 @@ static void		flag_minus(t_value *lst, char c)
 
 void			print_c(t_value *lst, char c)
 {
-	if ((lst-> pre && search_dot(lst)) || (!lst->pre && !search_dot(lst)))
+	if ((lst->pre && search_dot(lst)) || (!lst->pre && !search_dot(lst)))
 		lst->ret++;
 	if (lst->src[1] == '-' || (lst->src[1] == '0' && lst->src[2] == '-')
 	|| lst->wid < 0)
