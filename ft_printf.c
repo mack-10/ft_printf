@@ -45,7 +45,7 @@ static void	pre_check(va_list ap, t_value *lst)
 				lst->pre = va_arg(ap, int);
 			else if ((*src >= '0' && *src <= '9') || *src == '-')
 			{
-				if (src[1] >= '0' && src[1] <= '9')
+				if ((src[1] >= '0' && src[1] <= '9') || *src == '-')
 					wid_pre_ex(lst, src, 1);
 				else
 					lst->pre = *src - '0';
