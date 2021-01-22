@@ -7,7 +7,7 @@ int main(void)
 	// 8, -12, 123456789, 0, -12345678, 97, -2147483648, 2147483647
 	/*ret = printf("%02.-2d", 8);
 	printf("\tret: %d\n", ret);*/
-	ret = ft_printf("|%4d|", -12);
+	ret = ft_printf("|%8.3d|", -12);
 	printf("\tret: %d\n", ret);
 	printf("\n\n");
 
