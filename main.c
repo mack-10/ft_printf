@@ -3,13 +3,87 @@
 int main(void)
 {
 	int ret;
+	int a = 10;
 
-	// 8, -12, 123456789, 0, -12345678, 97, -2147483648, 2147483647
-	ret = printf("|%09s|", "hi low");
+	printf("-Simple conversion management\n");
+	ret = printf("|%d %i %u %X %x %c %s %p %%|", 1, 1, 1, 1, 1, 'c', "sss", &a);
 	printf("\tret: %d\n", ret);
-	ret = ft_printf("|%09s|", "hi low");
+	ret = ft_printf("|%d %i %u %X %x %c %s %p %%|", 1, 1, 1, 1, 1, 'c', "sss", &a);
+	printf("\tret: %d\n\n", ret);
+	ret = printf("|%d %d %s %p|", 0, -2137483648, NULL, NULL);
 	printf("\tret: %d\n", ret);
-	printf("\n\n");
+	ret = ft_printf("|%d %d %s %p|", 0, -2137483648, NULL, NULL);
+	printf("\tret: %d\n\n", ret);
+
+	printf("----------------------------------------\n\n");
+
+	printf("-Simple flags management\n");
+	ret = printf("|%8s %5s %3s|", "abcde", "abcde", "abcde");
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("|%8s %5s %3s|", "abcde", "abcde", "abcde");
+	printf("\tret: %d\n\n", ret);
+	ret = printf("|%-8s %-5s %-3s|", "abcde", "abcde", "abcde");
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("|%-8s %-5s %-3s|", "abcde", "abcde", "abcde");
+	printf("\tret: %d\n\n", ret);
+	ret = printf("|%08s %05s %03s|", "abcde", "abcde", "abcde");
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("|%08s %05s %03s|", "abcde", "abcde", "abcde");
+	printf("\tret: %d\n\n", ret);
+	ret = printf("|%3.2s %3.5s %3.8s|", "abcde", "abcde", "abcde");
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("|%3.2s %3.5s %3.8s|", "abcde", "abcde", "abcde");
+	printf("\tret: %d\n\n", ret);
+
+	printf("----------------------------------------\n\n");
+
+	printf("-Advanced flags management\n");
+	ret = printf("|%*s|", -8, "abcde");
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("|%*s|", -8, "abcde");
+	printf("\tret: %d\n\n", ret);
+	ret = printf("|%*s|", 0, "abcde");
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("|%*s|", 0, "abcde");
+	printf("\tret: %d\n\n", ret);
+	ret = printf("|%.*s|", -8, "abcde");
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("|%.*s|", -8, "abcde");
+	printf("\tret: %d\n\n", ret);
+	ret = printf("|%.*s|", 0, "abcde");
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("|%.*s|", 0, "abcde");
+	printf("\tret: %d\n\n", ret);
+	ret = printf("|%0*s|", -8, "abcde");
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("|%0*s|", -8, "abcde");
+	printf("\tret: %d\n\n", ret);
+	ret = printf("|%0.*s|", -8, "abcde");
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("|%0.*s|", -8, "abcde");
+	printf("\tret: %d\n\n", ret);
+
+	printf("----------------------------------------\n\n");
+
+	printf("-Get crazy\n");
+
+	ret = printf("|%-.*d|", 8, 10);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("|%-.*d|", 8, 10);
+	printf("\tret: %d\n\n", ret);
+	ret = printf("|%0.*d|", 8, 10);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("|%0.*d|", 8, 10);
+	printf("\tret: %d\n\n", ret);
+	ret = printf("|%0-.*d|", 8, 10);
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("|%0-.*d|", 8, 10);
+	printf("\tret: %d\n\n", ret);
+	ret = printf("|%0-.*s|", 8, "abcde");
+	printf("\tret: %d\n", ret);
+	ret = ft_printf("|%0-.*s|", 8, "abcde");
+	printf("\tret: %d\n\n", ret);
+
 
 	/*printf("----------di----------\n");
 	printf("+\n");
