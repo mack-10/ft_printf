@@ -16,13 +16,16 @@ LIB_NAME	=	libft.a
 
 all : $(NAME)
 
+.c.o :
+	$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
+
 $(NAME) : $(OBJS)
 	make all -C $(LIB)
 	cp $(LIB)/$(LIB_NAME) $(NAME)
-	$(AR) $@ $^
+	$(AR) $(NAME) $(OBJS)
 
-clean : $(OBJS)
-	rm -f $^
+clean :
+	rm -f $(OBJS)
 	make clean -C $(LIB)
 
 fclean : clean
